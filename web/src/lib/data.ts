@@ -7,10 +7,32 @@ let expCache: Record<string, Explanation> | null = null;
 // Bump this when data files change to bust browser cache.
 const DATA_VERSION = "v2";
 
+type OverridePatch = { id: string; correct: string[]; numeric?: string; note?: string };
+
 export async function loadQuestions(): Promise<Question[]> {
   if (cache) return cache;
-  const res = await fetch(`/data/questions.json?${DATA_VERSION}`, { cache: "no-store" });
-  cache = (await res.json()) as Question[];
+  const [qs, patches] = await Promise.all([
+    fetch(`/data/questions.json?${DATA_VERSION}`, { cache: "no-store" }).then(
+      (r) => r.json() as Promise<Question[]>
+    ),
+    fetch(`/data/overrides.json?${DATA_VERSION}`, { cache: "no-store" })
+      .then((r) => r.json() as Promise<OverridePatch[]>)
+      .catch(() => [] as OverridePatch[]),
+  ]);
+  if (patches.length > 0) {
+    const map = new Map(patches.map((p) => [p.id, p]));
+    cache = qs.map((q) => {
+      const p = map.get(q.id);
+      if (!p) return q;
+      return {
+        ...q,
+        correct_labels: p.correct,
+        ...(p.numeric !== undefined && { numeric_answer: p.numeric }),
+      };
+    });
+  } else {
+    cache = qs;
+  }
   return cache;
 }
 

@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import { AlertCircle, Save, Trash2, Download, ArrowLeft, ArrowRight, Bookmark, BookmarkCheck } from "lucide-react";
+import { AlertCircle, Save, Trash2, CheckCircle, ArrowLeft, ArrowRight, Bookmark, BookmarkCheck } from "lucide-react";
 import { loadQuestions } from "@/lib/data";
 import type { Question } from "@/lib/types";
 import { useExam } from "@/lib/store";
@@ -11,6 +11,7 @@ export default function ReviewPage() {
   const [all, setAll] = useState<Question[]>([]);
   const [filter, setFilter] = useState<Filter>("needs_review");
   const [idx, setIdx] = useState(0);
+  const [saveState, setSaveState] = useState<"idle" | "saving" | "saved" | "error">("idle");
   const overrides = useExam((s) => s.overrides);
   const setOverride = useExam((s) => s.setOverride);
   const clearOverride = useExam((s) => s.clearOverride);
@@ -46,15 +47,22 @@ export default function ReviewPage() {
     setDraft((d) => (d.includes(label) ? d.filter((x) => x !== label) : [...d, label]));
   }
 
-  function exportPatch() {
-    const patch = Object.entries(overrides).map(([id, v]) => ({ id, ...v }));
-    const blob = new Blob([JSON.stringify(patch, null, 2)], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `os-onthi-overrides-${Date.now()}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
+  async function saveToFile() {
+    setSaveState("saving");
+    try {
+      const patch = Object.entries(overrides).map(([id, v]) => ({ id, ...v }));
+      const res = await fetch("/api/save-overrides", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(patch),
+      });
+      if (!res.ok) throw new Error(await res.text());
+      setSaveState("saved");
+      setTimeout(() => setSaveState("idle"), 2500);
+    } catch {
+      setSaveState("error");
+      setTimeout(() => setSaveState("idle"), 3000);
+    }
   }
 
   return (
@@ -67,11 +75,24 @@ export default function ReviewPage() {
           </p>
         </div>
         <button
-          onClick={exportPatch}
-          disabled={Object.keys(overrides).length === 0}
-          className="inline-flex items-center gap-1.5 rounded-md border border-zinc-700/60 bg-zinc-900/40 px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-800/60 disabled:opacity-40"
+          onClick={saveToFile}
+          disabled={Object.keys(overrides).length === 0 || saveState === "saving"}
+          className={`inline-flex items-center gap-1.5 rounded-md border px-3 py-2 text-sm transition-colors disabled:opacity-40 ${
+            saveState === "saved"
+              ? "border-emerald-500/50 bg-emerald-500/10 text-emerald-300"
+              : saveState === "error"
+                ? "border-rose-500/50 bg-rose-500/10 text-rose-300"
+                : "border-zinc-700/60 bg-zinc-900/40 text-zinc-300 hover:bg-zinc-800/60"
+          }`}
         >
-          <Download className="h-3.5 w-3.5" /> Export ({Object.keys(overrides).length})
+          <CheckCircle className="h-3.5 w-3.5" />
+          {saveState === "saving"
+            ? "Đang lưu..."
+            : saveState === "saved"
+              ? `Đã lưu file (${Object.keys(overrides).length})`
+              : saveState === "error"
+                ? "Lỗi!"
+                : `Lưu ra file (${Object.keys(overrides).length})`}
         </button>
       </div>
 
