@@ -159,10 +159,10 @@ function ReadCard({
 }) {
   const isVerified = q.confidence >= 0.85;
   return (
-    <div className="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/30">
+    <div className="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/30 transition-all duration-150 hover:border-zinc-700/80">
       <button
         onClick={onToggle}
-        className="flex w-full items-start gap-3 px-4 py-3 text-left transition-colors hover:bg-zinc-800/40"
+        className="flex w-full items-start gap-3 px-4 py-3 text-left transition-colors duration-150 hover:bg-zinc-800/40"
       >
         <span className="flex-shrink-0 grid place-items-center rounded-xl bg-violet-600 text-white font-bold font-mono text-sm shadow shadow-violet-700/40 min-w-[2rem] h-8 px-2">
           {index}

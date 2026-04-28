@@ -80,10 +80,10 @@ export default function ReviewPage() {
           <button
             key={f}
             onClick={() => setFilter(f)}
-            className={`rounded-full border px-3 py-1.5 text-sm transition-colors ${
+            className={`rounded-full border px-3 py-1.5 text-sm font-medium transition-all duration-150 active:scale-95 ${
               filter === f
-                ? "border-violet-400/60 bg-violet-500/15 text-violet-100"
-                : "border-zinc-700/60 bg-zinc-900/40 text-zinc-400 hover:bg-zinc-800/60"
+                ? "border-violet-500/60 bg-violet-600 text-white shadow-sm shadow-violet-900/40"
+                : "border-zinc-700/60 bg-zinc-900/40 text-zinc-400 hover:bg-zinc-800/60 hover:text-zinc-200 hover:border-zinc-600/60"
             }`}
           >
             {labelFor(f)}
@@ -100,7 +100,7 @@ export default function ReviewPage() {
           <div className="text-xs text-zinc-500">
             {idx + 1} / {list.length}
           </div>
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6">
+          <div className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 transition-all duration-150">
             <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">
               <span className="rounded-md bg-zinc-800/80 px-2 py-0.5 font-mono text-zinc-300">
                 Ch {q.chapter}

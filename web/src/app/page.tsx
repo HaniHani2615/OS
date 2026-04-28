@@ -23,11 +23,11 @@ export default function HomePage() {
   return (
     <div className="space-y-12">
       <section className="pt-8 text-center">
-        <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-violet-300/70">
+        <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.25em] text-violet-400">
           Hệ điều hành — Giữa kì
         </p>
-        <h1 className="mx-auto max-w-3xl text-balance text-4xl font-semibold tracking-tight md:text-6xl">
-          Ôn cho buổi thi <span className="text-zinc-400">không có lần thi lại</span>
+        <h1 className="mx-auto max-w-3xl text-balance text-4xl font-bold tracking-tight md:text-6xl">
+          Ôn cho buổi thi <span className="text-zinc-500">không có lần thi lại</span>
         </h1>
         <p className="mx-auto mt-5 max-w-xl text-balance text-zinc-400">
           {stats ? (
@@ -41,7 +41,7 @@ export default function HomePage() {
         </p>
       </section>
 
-      <section className="grid gap-4 md:grid-cols-3">
+      <section className="grid gap-3 md:grid-cols-3">
         <ModeCard
           href="/exam"
           icon={<ClipboardList className="h-5 w-5" />}
@@ -54,7 +54,7 @@ export default function HomePage() {
           href="/learn/quiz"
           icon={<Zap className="h-5 w-5" />}
           title="Quiz nhanh"
-          desc="Trả lời từng câu, có phản hồi tức thì + streak + giải thích."
+          desc="Trả lời từng câu, phản hồi tức thì + streak + giải thích."
           accent="emerald"
         />
         <ModeCard
@@ -164,8 +164,8 @@ function ModeCard({
   return (
     <Link
       href={href}
-      className={`group relative overflow-hidden rounded-2xl border bg-zinc-900/40 p-6 transition-all hover:-translate-y-0.5 hover:bg-zinc-900/60 ${
-        highlight ? a.border : "border-zinc-800/80 hover:border-zinc-700/80"
+      className={`group relative overflow-hidden rounded-2xl border bg-zinc-900/40 p-6 transition-all duration-150 hover:-translate-y-1 hover:bg-zinc-900/70 active:translate-y-0 active:duration-75 ${
+        highlight ? a.border : "border-zinc-800/80 hover:border-zinc-700/60"
       }`}
     >
       {a.glow && (
@@ -177,9 +177,9 @@ function ModeCard({
         </div>
         <h3 className="text-lg font-semibold tracking-tight text-zinc-100">{title}</h3>
         <p className="mt-1.5 text-sm text-zinc-400">{desc}</p>
-        <div className="mt-4 inline-flex items-center gap-1 text-sm text-zinc-400 transition-colors group-hover:text-zinc-200">
+        <div className="mt-4 inline-flex items-center gap-1 text-xs font-medium uppercase tracking-wide text-zinc-500 transition-all duration-150 group-hover:gap-2 group-hover:text-zinc-300">
           Bắt đầu
-          <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+          <ArrowRight className="h-3 w-3 transition-transform duration-150 group-hover:translate-x-0.5" />
         </div>
       </div>
     </Link>
