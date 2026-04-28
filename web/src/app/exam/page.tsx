@@ -63,9 +63,9 @@ export default function ExamConfigPage() {
             <button
               key={v}
               onClick={() => setN(v)}
-              className={`rounded-md border px-4 py-1.5 text-sm transition-colors ${
+              className={`rounded-md border px-4 py-1.5 text-sm font-medium transition-all duration-150 active:scale-95 ${
                 n === v
-                  ? "border-violet-400/60 bg-violet-500/15 text-violet-100"
+                  ? "border-violet-500/60 bg-violet-600 text-white shadow-sm shadow-violet-900/40"
                   : "border-zinc-700/60 bg-zinc-900/40 text-zinc-300 hover:bg-zinc-800/60"
               }`}
             >
@@ -81,9 +81,9 @@ export default function ExamConfigPage() {
             <button
               key={v}
               onClick={() => setMins(v)}
-              className={`rounded-md border px-4 py-1.5 text-sm transition-colors ${
+              className={`rounded-md border px-4 py-1.5 text-sm font-medium transition-all duration-150 active:scale-95 ${
                 mins === v
-                  ? "border-violet-400/60 bg-violet-500/15 text-violet-100"
+                  ? "border-violet-500/60 bg-violet-600 text-white shadow-sm shadow-violet-900/40"
                   : "border-zinc-700/60 bg-zinc-900/40 text-zinc-300 hover:bg-zinc-800/60"
               }`}
             >

@@ -167,7 +167,7 @@ export default function QuizPage() {
                     </span>
                     <button
                       onClick={nextQ}
-                      className="rounded-md bg-violet-500/20 px-4 py-2 text-sm font-medium text-violet-100 ring-1 ring-violet-500/40 hover:bg-violet-500/30"
+                      className="rounded-md bg-violet-600 px-4 py-2 text-sm font-medium text-white shadow-sm shadow-violet-900/40 transition-all duration-150 hover:bg-violet-500 active:scale-95"
                     >
                       Câu tiếp →
                     </button>

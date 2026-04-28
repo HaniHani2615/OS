@@ -130,13 +130,13 @@ export default function ExamRunPage({ params }: { params: { id: string } }) {
                   onClick={() => setAnswer(q.id, on ? null : c.label)}
                   className={`flex items-start gap-3 rounded-xl border px-4 py-3 text-left transition-colors ${
                     on
-                      ? "border-violet-400/60 bg-violet-500/15 text-violet-50"
+                      ? "border-violet-500/60 bg-violet-600/90 text-white"
                       : "border-zinc-800 bg-zinc-900/40 hover:bg-zinc-800/50"
                   }`}
                 >
                   <span
                     className={`mt-0.5 grid h-6 w-6 flex-shrink-0 place-items-center rounded-md font-mono text-xs uppercase ${
-                      on ? "bg-violet-500/40 text-white" : "bg-zinc-800/80 text-zinc-300"
+                      on ? "bg-white/20 text-white" : "bg-zinc-800/80 text-zinc-300"
                     }`}
                   >
                     {c.label}
@@ -159,14 +159,14 @@ export default function ExamRunPage({ params }: { params: { id: string } }) {
           {idx < questions.length - 1 ? (
             <button
               onClick={() => setIdx((i) => i + 1)}
-              className="rounded-md bg-violet-500/20 px-4 py-2 text-sm font-medium text-violet-100 ring-1 ring-violet-500/40 hover:bg-violet-500/30"
+              className="rounded-md bg-violet-600 px-4 py-2 text-sm font-medium text-white shadow-sm shadow-violet-900/40 transition-all duration-150 hover:bg-violet-500 active:scale-95"
             >
               Câu sau →
             </button>
           ) : (
             <button
               onClick={() => setConfirmingSubmit(true)}
-              className="inline-flex items-center gap-1.5 rounded-md bg-emerald-500/20 px-4 py-2 text-sm font-medium text-emerald-100 ring-1 ring-emerald-500/40 hover:bg-emerald-500/30"
+              className="inline-flex items-center gap-1.5 rounded-md bg-emerald-600 px-4 py-2 text-sm font-medium text-white shadow-sm shadow-emerald-900/40 transition-all duration-150 hover:bg-emerald-500 active:scale-95"
             >
               <Send className="h-4 w-4" /> Nộp bài
             </button>
@@ -185,8 +185,8 @@ export default function ExamRunPage({ params }: { params: { id: string } }) {
               const f = active.flagged[qq.id];
               const isCur = i === idx;
               let cls = "bg-zinc-800/60 text-zinc-400";
-              if (ans != null) cls = "bg-violet-500/30 text-violet-50 ring-1 ring-violet-500/40";
-              if (f) cls = "bg-amber-500/30 text-amber-100 ring-1 ring-amber-500/40";
+              if (ans != null) cls = "bg-violet-600 text-white";
+              if (f) cls = "bg-amber-500 text-zinc-950";
               if (isCur) cls += " outline outline-2 outline-zinc-200/60";
               return (
                 <button
@@ -201,7 +201,7 @@ export default function ExamRunPage({ params }: { params: { id: string } }) {
           </div>
           <button
             onClick={() => setConfirmingSubmit(true)}
-            className="mt-3 w-full rounded-md bg-emerald-500/20 px-3 py-2 text-sm font-medium text-emerald-100 ring-1 ring-emerald-500/40 hover:bg-emerald-500/30"
+            className="mt-3 w-full rounded-md bg-emerald-600 px-3 py-2 text-sm font-medium text-white shadow-sm shadow-emerald-900/40 transition-all duration-150 hover:bg-emerald-500 active:scale-95"
           >
             Nộp bài
           </button>
