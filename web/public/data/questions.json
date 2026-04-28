@@ -1,7 +1,7 @@
 [
   {
     "qtype": "single",
-    "question_text": "Đúng Tiến trình nào có thể ảnh hưởng đến / bị ảnh hưởng bởi các tiến trình khác đang thực thi trong hệ thống ?",
+    "question_text": "Tiến trình nào có thể ảnh hưởng đến / bị ảnh hưởng bởi các tiến trình khác đang thực thi trong hệ thống ?",
     "choices": [
       {
         "label": "a",
@@ -82,7 +82,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Bế tắc sẽ xảy ra nếu và chỉ nếu các điều kiện sau xảy ra cùng một lúc",
+    "question_text": "Bế tắc sẽ xảy ra nếu và chỉ nếu các điều kiện sau xảy ra cùng một lúc",
     "choices": [
       {
         "label": "a",
@@ -162,8 +162,8 @@
     "is_theory": true
   },
   {
-    "qtype": "single",
-    "question_text": "Đúng Hai tiến trình sau chia sẻ một biến chung X, và một biến semaphore nhị phân T: Tiến trình A {Int Y; Wait (T) A1: Y = X * 2; A2: X = Y; } Tiến trình B {Int Z; B1: Z = X + 1; B2: X = Z; Signal(T) } X được khởi tạo bằng 5, T được khởi tạo bằng 0 trước khi các tiến trình bắt đầu thực thi. Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Giá trị cuối cùng của X sau khi thực thi xong hai tiến trình A và B sẽ là:",
+    "qtype": "multi",
+    "question_text": "Hai tiến trình sau chia sẻ một biến chung X, và một biến semaphore nhị phân T: Tiến trình A {Int Y; Wait (T) A1: Y = X * 2; A2: X = Y; } Tiến trình B {Int Z; B1: Z = X + 1; B2: X = Z; Signal(T) } X được khởi tạo bằng 5, T được khởi tạo bằng 0 trước khi các tiến trình bắt đầu thực thi. Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Giá trị cuối cùng của X sau khi thực thi xong hai tiến trình A và B sẽ là:",
     "choices": [
       {
         "label": "a",
@@ -250,7 +250,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Chọn mô tả tốt nhất về hệ điều hành cho máy tính",
+    "question_text": "Chọn mô tả tốt nhất về hệ điều hành cho máy tính",
     "choices": [
       {
         "label": "a",
@@ -331,7 +331,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Semaphore là một _______ để giải quyết bài toán khu vực quan trọng.",
+    "question_text": "Semaphore là một _______ để giải quyết bài toán khu vực quan trọng.",
     "choices": [
       {
         "label": "a",
@@ -412,7 +412,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Tránh bế tắc là gì?",
+    "question_text": "Tránh bế tắc là gì?",
     "choices": [
       {
         "label": "a",
@@ -493,7 +493,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Điều kiện loại trừ lẫn nhau có thể được đảm bảo bằng cách sử dụng _________.",
+    "question_text": "Điều kiện loại trừ lẫn nhau có thể được đảm bảo bằng cách sử dụng _________.",
     "choices": [
       {
         "label": "a",
@@ -574,7 +574,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Hệ điều hành Linux có",
+    "question_text": "Hệ điều hành Linux có",
     "choices": [
       {
         "label": "a",
@@ -655,7 +655,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Trong môi trường đa nhiệm, khi một tiến trình luôn bị từ chối cho phép dùng tài nguyên nó được gọi là:",
+    "question_text": "Trong môi trường đa nhiệm, khi một tiến trình luôn bị từ chối cho phép dùng tài nguyên nó được gọi là:",
     "choices": [
       {
         "label": "a",
@@ -736,7 +736,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Trong truyền thông gián tiếp giữa tiến trình P và Q:",
+    "question_text": "Trong truyền thông gián tiếp giữa tiến trình P và Q:",
     "choices": [
       {
         "label": "a",
@@ -817,7 +817,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Phương pháp ĐÚNG để phục hồi từ bế tắc là gì?",
+    "question_text": "Phương pháp ĐÚNG để phục hồi từ bế tắc là gì?",
     "choices": [
       {
         "label": "a",
@@ -898,7 +898,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Windows XP thuộc loại hệ điều hành nào?",
+    "question_text": "Windows XP thuộc loại hệ điều hành nào?",
     "choices": [
       {
         "label": "a",
@@ -979,7 +979,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Đâu là thuật toán lập lịch CPU cho phép dừng?",
+    "question_text": "Đâu là thuật toán lập lịch CPU cho phép dừng?",
     "choices": [
       {
         "label": "a",
@@ -1060,7 +1060,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Xem xét bài toán nhà sản xuất - người tiêu dùng với hai tiến trình chia sẻ bộ đệm tròn, phát biểu nào sau đây là ĐÚNG?",
+    "question_text": "Xem xét bài toán nhà sản xuất - người tiêu dùng với hai tiến trình chia sẻ bộ đệm tròn, phát biểu nào sau đây là ĐÚNG?",
     "choices": [
       {
         "label": "a",
@@ -1141,7 +1141,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Đâu KHÔNG PHẢI là cấu trúc hệ điều hành?",
+    "question_text": "Đâu KHÔNG PHẢI là cấu trúc hệ điều hành?",
     "choices": [
       {
         "label": "a",
@@ -1222,7 +1222,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Điều nào ĐÚNG về mục tiêu của điều kiện tiến triển của khu vực quan trọng?",
+    "question_text": "Điều nào ĐÚNG về mục tiêu của điều kiện tiến triển của khu vực quan trọng?",
     "choices": [
       {
         "label": "a",
@@ -1303,7 +1303,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Điều nào KHÔNG ĐÚNG về truyền thông giữa các tiến trình (IPC - Inter-process communication)?",
+    "question_text": "Điều nào KHÔNG ĐÚNG về truyền thông giữa các tiến trình (IPC - Inter-process communication)?",
     "choices": [
       {
         "label": "a",
@@ -1384,7 +1384,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Hệ điều hành cung cấp phương thức nào để truy cập đến các dịch vụ của hệ điều hành:",
+    "question_text": "Hệ điều hành cung cấp phương thức nào để truy cập đến các dịch vụ của hệ điều hành:",
     "choices": [
       {
         "label": "a",
@@ -1465,7 +1465,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Nếu tất cả các tiến trình liên tục vào/ra dữ liệu thì hàng đợi sẵn sàng sẽ luôn......., bộ lập lịch ngắn hạn sẽ làm việc ........",
+    "question_text": "Nếu tất cả các tiến trình liên tục vào/ra dữ liệu thì hàng đợi sẵn sàng sẽ luôn......., bộ lập lịch ngắn hạn sẽ làm việc ........",
     "choices": [
       {
         "label": "a",
@@ -1546,7 +1546,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạy Số hiệu ưu tiên Thời gian đến P1    2    2   0 P2    3    1    3 P3    8    4    5 P4    4    5    7 P5    5    3    9 Sử dụng thuật toán Round Robin với time quantum q = 4 ms. Khẳng định nào sau đây là đúng:",
+    "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạy Số hiệu ưu tiên Thời gian đến P1    2    2   0 P2    3    1    3 P3    8    4    5 P4    4    5    7 P5    5    3    9 Sử dụng thuật toán Round Robin với time quantum q = 4 ms. Khẳng định nào sau đây là đúng:",
     "choices": [
       {
         "label": "a",
@@ -1627,7 +1627,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Round Robin là phiên bản cho phép dừng của thuật toán nào sau đây ?",
+    "question_text": "Round Robin là phiên bản cho phép dừng của thuật toán nào sau đây ?",
     "choices": [
       {
         "label": "a",
@@ -1708,7 +1708,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy  Thời gian đến P1   3    0 P2  12    4 P3   4    6 P4   7    8 P5   3    11 Sử dụng thuật toán FCFS. Khẳng định nào sau đây là đúng:",
+    "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy  Thời gian đến P1   3    0 P2  12    4 P3   4    6 P4   7    8 P5   3    11 Sử dụng thuật toán FCFS. Khẳng định nào sau đây là đúng:",
     "choices": [
       {
         "label": "a",
@@ -1789,7 +1789,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Khi một tiến trình P thực hiện phần mã ở khu vực quan trọng (critical section), không có tiến trình Q nào khác có thể thực hiện trong khu vực quan trọng (của Q). Tình huống này được gọi là",
+    "question_text": "Khi một tiến trình P thực hiện phần mã ở khu vực quan trọng (critical section), không có tiến trình Q nào khác có thể thực hiện trong khu vực quan trọng (của Q). Tình huống này được gọi là",
     "choices": [
       {
         "label": "a",
@@ -1951,7 +1951,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Sai Đâu là phát biểu KHÔNG ĐÚNG về đồ thị phân bổ tài nguyên (RAG - Resource Allocation Graph)?",
+    "question_text": "Đâu là phát biểu KHÔNG ĐÚNG về đồ thị phân bổ tài nguyên (RAG - Resource Allocation Graph)?",
     "choices": [
       {
         "label": "a",
@@ -2034,7 +2034,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Đâu không phải là hàng đợi cho các tiến trình:",
+    "question_text": "Đâu không phải là hàng đợi cho các tiến trình:",
     "choices": [
       {
         "label": "a",
@@ -2196,7 +2196,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Đúng Đâu là điều KHÔNG ĐÚNG về một chương trình ứng dụng?",
+    "question_text": "Đâu là điều KHÔNG ĐÚNG về một chương trình ứng dụng?",
     "choices": [
       {
         "label": "a",
@@ -3993,7 +3993,7 @@
     "is_theory": true
   },
   {
-    "qtype": "single",
+    "qtype": "multi",
     "question_text": "RAID cấp độ ___________ sử dụng chế độ phân dải dữ liệu cấp độ khối và bit chẵn lẻ cho mỗi khối và khối bit chẵn lẻ được lưu trên ổ đĩa riêng.",
     "choices": [
       {
@@ -9933,7 +9933,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Điều nào KHÔNG ĐÚNG về Biểu đồ phân bổ tài nguyên (RAG - Resource Allocation Graph)?",
+    "question_text": "Điều nào KHÔNG ĐÚNG về Biểu đồ phân bổ tài nguyên (RAG - Resource Allocation Graph)?",
     "choices": [
       {
         "label": "a",
@@ -10034,7 +10034,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Tiến trình được phân thành các nhóm khác nhau trong:",
+    "question_text": "Tiến trình được phân thành các nhóm khác nhau trong:",
     "choices": [
       {
         "label": "a",
@@ -10135,7 +10135,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Phương pháp ĐÚNG để phục hồi từ bế tắc là gì?",
+    "question_text": "Phương pháp ĐÚNG để phục hồi từ bế tắc là gì?",
     "choices": [
       {
         "label": "a",
@@ -10243,7 +10243,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Điều nào KHÔNG ĐÚNG về truyền thông giữa các tiến trình (IPC - Inter-process communication)?",
+    "question_text": "Điều nào KHÔNG ĐÚNG về truyền thông giữa các tiến trình (IPC - Inter-process communication)?",
     "choices": [
       {
         "label": "a",
@@ -10337,7 +10337,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đâu không phải là một trạng thái của tiến trình:",
+    "question_text": "Đâu không phải là một trạng thái của tiến trình:",
     "choices": [
       {
         "label": "a",
@@ -10421,7 +10421,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đâu không là tiêu chí để đánh giá thuật toán lập lịch CPU?",
+    "question_text": "Đâu không là tiêu chí để đánh giá thuật toán lập lịch CPU?",
     "choices": [
       {
         "label": "a",
@@ -10507,7 +10507,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Đâu là thuật toán lập lịch CPU cho phép dừng?",
+    "question_text": "Đâu là thuật toán lập lịch CPU cho phép dừng?",
     "choices": [
       {
         "label": "a",
@@ -10601,7 +10601,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Khi tiến trình có yêu cầu vào/ra dữ liệu thì ____________________________.",
+    "question_text": "Khi tiến trình có yêu cầu vào/ra dữ liệu thì ____________________________.",
     "choices": [
       {
         "label": "a",
@@ -10697,7 +10697,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Truyền thông giữa các tiến trình__________________",
+    "question_text": "Truyền thông giữa các tiến trình__________________",
     "choices": [
       {
         "label": "a",
@@ -10781,7 +10781,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Tình huống mà một số tiến trình truy cập và thao tác đồng thời trên cùng một vùng dữ liệu và kết quả của việc thực hiện phụ thuộc vào thứ tự các tiến trình truy cập vào vùng dữ liệu được gọi là:",
+    "question_text": "Tình huống mà một số tiến trình truy cập và thao tác đồng thời trên cùng một vùng dữ liệu và kết quả của việc thực hiện phụ thuộc vào thứ tự các tiến trình truy cập vào vùng dữ liệu được gọi là:",
     "choices": [
       {
         "label": "a",
@@ -10882,7 +10882,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Điều kiện giữ và chờ (trong bế tắc) xảy ra khi:",
+    "question_text": "Điều kiện giữ và chờ (trong bế tắc) xảy ra khi:",
     "choices": [
       {
         "label": "a",
@@ -10968,7 +10968,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạy Số hiệu ưu tiên Thời gian đến P1    2    2   0 P2    3    1    3 P3    8    4    5 P4    4    5    7 P5    5    3    9 Sử dụng thuật toán SJF cho phép dừng. Khẳng định nào sau đây là đúng:",
+    "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạy Số hiệu ưu tiên Thời gian đến P1    2    2   0 P2    3    1    3 P3    8    4    5 P4    4    5    7 P5    5    3    9 Sử dụng thuật toán SJF cho phép dừng. Khẳng định nào sau đây là đúng:",
     "choices": [
       {
         "label": "a",
@@ -11052,7 +11052,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Cấu trúc ĐÚNG của một tiến trình?",
+    "question_text": "Cấu trúc ĐÚNG của một tiến trình?",
     "choices": [
       {
         "label": "a",
@@ -11148,7 +11148,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Giả sử một hệ thống sử dụng thuật toán lập lịch CPU không cho phép dừng SJF, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là: P1 (0,7), P2 (2,4), P3 (4,1), P4 (5,5). Đâu là tổng thời gian chờ đợi của các tiến trình?",
+    "question_text": "Giả sử một hệ thống sử dụng thuật toán lập lịch CPU không cho phép dừng SJF, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là: P1 (0,7), P2 (2,4), P3 (4,1), P4 (5,5). Đâu là tổng thời gian chờ đợi của các tiến trình?",
     "choices": [
       {
         "label": "a",
@@ -11242,7 +11242,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Đâu là một TIÊU CHUẨN để hủy bỏ một tiến trình trong bế tắc để phục hồi hệ thống?",
+    "question_text": "Đâu là một TIÊU CHUẨN để hủy bỏ một tiến trình trong bế tắc để phục hồi hệ thống?",
     "choices": [
       {
         "label": "a",
@@ -11336,7 +11336,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Ai có thể sử dụng máy tính mà không cần HĐH",
+    "question_text": "Ai có thể sử dụng máy tính mà không cần HĐH",
     "choices": [
       {
         "label": "a",
@@ -11422,7 +11422,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Đâu là điều KHÔNG ĐÚNG về hệ thống theo mẻ/hàng loạt?",
+    "question_text": "Đâu là điều KHÔNG ĐÚNG về hệ thống theo mẻ/hàng loạt?",
     "choices": [
       {
         "label": "a",
@@ -11508,7 +11508,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Hai tiến trình sau chia sẻ một semaphore nhị phân S (khởi tạo bằng 0): Tiến trình P1 { wait (S);  print (\"1\"); print (\"2\"); } Tiến trình P2 { print (\"3\"); print (\"4\"); signal (S);} Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Chuỗi kết quả  in ra màn hình sau khi cả hai tiến trình kết thúc thực thi ?",
+    "question_text": "Hai tiến trình sau chia sẻ một semaphore nhị phân S (khởi tạo bằng 0): Tiến trình P1 { wait (S);  print (\"1\"); print (\"2\"); } Tiến trình P2 { print (\"3\"); print (\"4\"); signal (S);} Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Chuỗi kết quả  in ra màn hình sau khi cả hai tiến trình kết thúc thực thi ?",
     "choices": [
       {
         "label": "a",
@@ -11592,7 +11592,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy Thời gian đến P1   3    0 P2  5    4 P3   8    6 P4   4    8 P5   12    9 Sử dụng thuật toán Round Robin với time quantum q = 3 ms. Khẳng định nào sau đây là đúng:",
+    "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy Thời gian đến P1   3    0 P2  5    4 P3   8    6 P4   4    8 P5   12    9 Sử dụng thuật toán Round Robin với time quantum q = 3 ms. Khẳng định nào sau đây là đúng:",
     "choices": [
       {
         "label": "a",
@@ -11678,7 +11678,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Hai tiến trình, P1 và P2, cần truy cập vào khu vực quan trọng. Xem xét đoạn mã đồng bộ hóa sau được sử dụng bởi các tiến trình: P1: while(true) { w1 = true; while(w2 == true); Critical section w1 = false; } Remainder Section P2 : while(true) { w2 = true; while(w1 == true); Critical section w2 = false; } Remainder Section Ở đây, w1 và w2 là các biến chia sẻ, được khởi tạo bằng false. Điều nào dưới đây là đúng về đoạn mã trên ?",
+    "question_text": "Hai tiến trình, P1 và P2, cần truy cập vào khu vực quan trọng. Xem xét đoạn mã đồng bộ hóa sau được sử dụng bởi các tiến trình: P1: while(true) { w1 = true; while(w2 == true); Critical section w1 = false; } Remainder Section P2 : while(true) { w2 = true; while(w1 == true); Critical section w2 = false; } Remainder Section Ở đây, w1 và w2 là các biến chia sẻ, được khởi tạo bằng false. Điều nào dưới đây là đúng về đoạn mã trên ?",
     "choices": [
       {
         "label": "a",
@@ -11762,7 +11762,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Hệ thống có M tiến trình chia sẻ N tài nguyên cùng kiểu. Mỗi tiến trình cần nhiều nhất N tài nguyên, và tổng số tài nguyên cần thiết của M tiến trình luôn ít hơn (M+N). Khẳng định nào sau đây là đúng:",
+    "question_text": "Hệ thống có M tiến trình chia sẻ N tài nguyên cùng kiểu. Mỗi tiến trình cần nhiều nhất N tài nguyên, và tổng số tài nguyên cần thiết của M tiến trình luôn ít hơn (M+N). Khẳng định nào sau đây là đúng:",
     "choices": [
       {
         "label": "a",
@@ -11849,7 +11849,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Chọn mô tả đúng nhất về tài nguyên mà một máy tính có thể có",
+    "question_text": "Chọn mô tả đúng nhất về tài nguyên mà một máy tính có thể có",
     "choices": [
       {
         "label": "a",
@@ -11945,7 +11945,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Ý nào KHÔNG ĐÚNG về thuật toán lập lịch CPU First Comes First Served (FCFS)?",
+    "question_text": "Ý nào KHÔNG ĐÚNG về thuật toán lập lịch CPU First Comes First Served (FCFS)?",
     "choices": [
       {
         "label": "a",
@@ -12031,7 +12031,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Xem xét bài toán nhà sản xuất - người tiêu dùng với hai tiến trình chia sẻ bộ đệm tròn, phát biểu nào sau đây là ĐÚNG?",
+    "question_text": "Xem xét bài toán nhà sản xuất - người tiêu dùng với hai tiến trình chia sẻ bộ đệm tròn, phát biểu nào sau đây là ĐÚNG?",
     "choices": [
       {
         "label": "a",
@@ -12127,7 +12127,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Giả sử một hệ thống sử dụng thuật toán lập lịch RR, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là:P1 (0,20), P2 (30,10), P3 (20,40), P4 (40,25) và lượng tử thời gian là 15. Tổng thời gian chờ của các tiến trình là gì?",
+    "question_text": "Giả sử một hệ thống sử dụng thuật toán lập lịch RR, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là:P1 (0,20), P2 (30,10), P3 (20,40), P4 (40,25) và lượng tử thời gian là 15. Tổng thời gian chờ của các tiến trình là gì?",
     "choices": [
       {
         "label": "a",
@@ -12211,7 +12211,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Đâu không phải là một phương pháp xử lý bế tắc?",
+    "question_text": "Đâu không phải là một phương pháp xử lý bế tắc?",
     "choices": [
       {
         "label": "a",
@@ -12297,7 +12297,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đâu là mối quan hệ ĐÚNG giữa các khái niệm tiến trình (process), chương trình (program) và chương trình ứng dụng (application)?",
+    "question_text": "Đâu là mối quan hệ ĐÚNG giữa các khái niệm tiến trình (process), chương trình (program) và chương trình ứng dụng (application)?",
     "choices": [
       {
         "label": "a",
@@ -12398,7 +12398,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Giả sử một hệ thống sử dụng thuật toán lập lịch Không cho phép dừng SJF , thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là:P1 (0,7), P2 (2,4), P3 (4,1), P4 (5,4). Đâu là thông lượng của hệ thống?",
+    "question_text": "Giả sử một hệ thống sử dụng thuật toán lập lịch Không cho phép dừng SJF , thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là:P1 (0,7), P2 (2,4), P3 (4,1), P4 (5,4). Đâu là thông lượng của hệ thống?",
     "choices": [
       {
         "label": "a",
@@ -12497,7 +12497,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Windows XP thuộc loại hệ điều hành nào?",
+    "question_text": "Windows XP thuộc loại hệ điều hành nào?",
     "choices": [
       {
         "label": "a",
@@ -12583,7 +12583,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Chọn mã chương trình mà một CPU có thể hiểu và thực thi được",
+    "question_text": "Chọn mã chương trình mà một CPU có thể hiểu và thực thi được",
     "choices": [
       {
         "label": "a",
@@ -12679,7 +12679,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Tránh bế tắc là gì?",
+    "question_text": "Tránh bế tắc là gì?",
     "choices": [
       {
         "label": "a",
@@ -12780,7 +12780,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy  Thời gian đến P1   3    0 P2  12    4 P3   4    6 P4   7    8 P5   3    11 Sử dụng thuật toán FCFS. Khẳng định nào sau đây là đúng:",
+    "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy  Thời gian đến P1   3    0 P2  12    4 P3   4    6 P4   7    8 P5   3    11 Sử dụng thuật toán FCFS. Khẳng định nào sau đây là đúng:",
     "choices": [
       {
         "label": "a",
@@ -12876,7 +12876,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Mô tả TỐT NHẤT về trạng thái an toàn là gì?",
+    "question_text": "Mô tả TỐT NHẤT về trạng thái an toàn là gì?",
     "choices": [
       {
         "label": "a",
@@ -12962,7 +12962,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Trường hợp nào KHÔNG phù hợp để sử dụng counting semaphore?",
+    "question_text": "Trường hợp nào KHÔNG phù hợp để sử dụng counting semaphore?",
     "choices": [
       {
         "label": "a",
@@ -13058,7 +13058,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Chương trình sau đây bao gồm 3 tiến trình đang chạy và 3 semaphore nhị phân. Các semaphore được khởi tạo như sau S0 = 1, S1 = 0, S2 = 0. Tiến trình P0    Tiến trình P1     Tiến trình P2 while(true) {             wait(S1);           wait(S2); wait(S0);           signal (S0);             signal (S0); print ‘0’; signal(S1); signal (S2);} Bao nhiêu lần P0 sẽ in '0'?",
+    "question_text": "Chương trình sau đây bao gồm 3 tiến trình đang chạy và 3 semaphore nhị phân. Các semaphore được khởi tạo như sau S0 = 1, S1 = 0, S2 = 0. Tiến trình P0    Tiến trình P1     Tiến trình P2 while(true) {             wait(S1);           wait(S2); wait(S0);           signal (S0);             signal (S0); print ‘0’; signal(S1); signal (S2);} Bao nhiêu lần P0 sẽ in '0'?",
     "choices": [
       {
         "label": "a",
@@ -13159,7 +13159,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Thuật toán lập lịch Round Robin là ______________________",
+    "question_text": "Thuật toán lập lịch Round Robin là ______________________",
     "choices": [
       {
         "label": "a",
@@ -13245,7 +13245,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Ý nào KHÔNG ĐÚNG về sự cho phép dừng trong các thuật toán lập lịch CPU?",
+    "question_text": "Ý nào KHÔNG ĐÚNG về sự cho phép dừng trong các thuật toán lập lịch CPU?",
     "choices": [
       {
         "label": "a",
@@ -13341,7 +13341,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Tại một thời điểm, giá trị của một semaphore đếm là 7. Sau khi thực thi 20 lần wait () và 15 lần signal() trên semaphore này, giá trị của semaphore sẽ là:",
+    "question_text": "Tại một thời điểm, giá trị của một semaphore đếm là 7. Sau khi thực thi 20 lần wait () và 15 lần signal() trên semaphore này, giá trị của semaphore sẽ là:",
     "choices": [
       {
         "label": "a",
@@ -13425,7 +13425,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Nếu chúng ta đảm bảo hệ thống không bao giờ rơi vào bế tắc, đó là loại phương pháp xử lý bế tắc này?",
+    "question_text": "Nếu chúng ta đảm bảo hệ thống không bao giờ rơi vào bế tắc, đó là loại phương pháp xử lý bế tắc này?",
     "choices": [
       {
         "label": "a",
@@ -13526,7 +13526,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Điều gì là KHÔNG ĐÚNG về các trạng thái của một tiến trình?",
+    "question_text": "Điều gì là KHÔNG ĐÚNG về các trạng thái của một tiến trình?",
     "choices": [
       {
         "label": "a",
@@ -13622,7 +13622,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Chọn ngôn ngữ mà một CPU có thể hiểu được",
+    "question_text": "Chọn ngôn ngữ mà một CPU có thể hiểu được",
     "choices": [
       {
         "label": "a",
@@ -13696,7 +13696,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Mô tả TỐT NHẤT về bản chất của một semaphore là gì?",
+    "question_text": "Mô tả TỐT NHẤT về bản chất của một semaphore là gì?",
     "choices": [
       {
         "label": "a",
@@ -13792,7 +13792,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạy Số hiệu ưu tiên Thời gian đến P1    2    2   0 P2    3    1    3 P3    8    4    5 P4    4    5    7 P5    5    3    9 Sử dụng thuật toán số hiệu ưu tiên cho phép dừng (tiến trình có số hiệu ưu tiên cao hơn sẽ chạy trước). Khẳng định nào sau đây là đúng:",
+    "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạy Số hiệu ưu tiên Thời gian đến P1    2    2   0 P2    3    1    3 P3    8    4    5 P4    4    5    7 P5    5    3    9 Sử dụng thuật toán số hiệu ưu tiên cho phép dừng (tiến trình có số hiệu ưu tiên cao hơn sẽ chạy trước). Khẳng định nào sau đây là đúng:",
     "choices": [
       {
         "label": "a",
@@ -13886,7 +13886,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đâu là điều KHÔNG ĐÚNG về hệ thống theo mẻ/hàng loạt?",
+    "question_text": "Đâu là điều KHÔNG ĐÚNG về hệ thống theo mẻ/hàng loạt?",
     "choices": [
       {
         "label": "a",
@@ -13982,7 +13982,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Hai tiến trình sau : Tiến trình P1 { print (\"1\"); print (\"2\"); } Tiến trình P2 { print (\"3\"); print (\"4\"); } Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Có bao nhiêu chuỗi kết quả khác nhau có thể được  in ra màn hình sau khi cả hai tiến trình kết thúc thực thi ?",
+    "question_text": "Hai tiến trình sau : Tiến trình P1 { print (\"1\"); print (\"2\"); } Tiến trình P2 { print (\"3\"); print (\"4\"); } Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Có bao nhiêu chuỗi kết quả khác nhau có thể được  in ra màn hình sau khi cả hai tiến trình kết thúc thực thi ?",
     "choices": [
       {
         "label": "a",
@@ -14066,7 +14066,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Điều nào KHÔNG ĐÚNG về các thuật toán tránh bế tắc?",
+    "question_text": "Điều nào KHÔNG ĐÚNG về các thuật toán tránh bế tắc?",
     "choices": [
       {
         "label": "a",
@@ -14152,7 +14152,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Giả sử một hệ thống sử dụng thuật toán lập lịch Không cho phép dừng SJF , thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là:P1 (0,7), P2 (2,4), P3 (4,1), P4 (5,5). Thời gian đáp ứng của tiến trình P2 là bao nhiêu?",
+    "question_text": "Giả sử một hệ thống sử dụng thuật toán lập lịch Không cho phép dừng SJF , thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là:P1 (0,7), P2 (2,4), P3 (4,1), P4 (5,5). Thời gian đáp ứng của tiến trình P2 là bao nhiêu?",
     "choices": [
       {
         "label": "a",
@@ -14236,7 +14236,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đâu là điều KHÔNG ĐÚNG về khối điều khiển tiến trình (PCB)?",
+    "question_text": "Đâu là điều KHÔNG ĐÚNG về khối điều khiển tiến trình (PCB)?",
     "choices": [
       {
         "label": "a",
@@ -14332,7 +14332,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Nếu tất cả các tiến trình liên tục vào/ra dữ liệu thì hàng đợi sẵn sàng sẽ luôn......., bộ lập lịch ngắn hạn sẽ làm việc ........",
+    "question_text": "Nếu tất cả các tiến trình liên tục vào/ra dữ liệu thì hàng đợi sẵn sàng sẽ luôn......., bộ lập lịch ngắn hạn sẽ làm việc ........",
     "choices": [
       {
         "label": "a",
@@ -14426,7 +14426,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Hệ thống truyền thông điệp cho phép các tiến trình:",
+    "question_text": "Hệ thống truyền thông điệp cho phép các tiến trình:",
     "choices": [
       {
         "label": "a",
@@ -14510,7 +14510,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đâu là phát biểu ĐÚNG về một chương trình?",
+    "question_text": "Đâu là phát biểu ĐÚNG về một chương trình?",
     "choices": [
       {
         "label": "a",
@@ -14596,7 +14596,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Trong chế độ không chờ gửi:",
+    "question_text": "Trong chế độ không chờ gửi:",
     "choices": [
       {
         "label": "a",
@@ -14682,7 +14682,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Trong hệ điều hành chia sẻ thời gian, khi khoảng thời gian cấp cho tiến trình (time slot) kết thúc, tiến trình chuyển từ trạng thái đang chạy sang trạng thái __________.",
+    "question_text": "Trong hệ điều hành chia sẻ thời gian, khi khoảng thời gian cấp cho tiến trình (time slot) kết thúc, tiến trình chuyển từ trạng thái đang chạy sang trạng thái __________.",
     "choices": [
       {
         "label": "a",
@@ -14768,7 +14768,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Ý nào KHÔNG ĐÚNG về việc không cho phép dừng trong các thuật toán lập lịch CPU?",
+    "question_text": "Ý nào KHÔNG ĐÚNG về việc không cho phép dừng trong các thuật toán lập lịch CPU?",
     "choices": [
       {
         "label": "a",
@@ -14864,7 +14864,7 @@
   },
   {
     "qtype": "text",
-    "question_text": "Not flaggedNot flaggedFlag question Kỹ thuật nào sau đây giúp giảm thiểu tình trạng nhàn rỗi của CPU hoặc các thiết bị vào/ra khi hệ điều hành đơn vi xử lý ?",
+    "question_text": "Kỹ thuật nào sau đây giúp giảm thiểu tình trạng nhàn rỗi của CPU hoặc các thiết bị vào/ra khi hệ điều hành đơn vi xử lý ?",
     "choices": [
       {
         "label": "a",
@@ -16198,7 +16198,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đâu là phát biểu ĐÚNG về bế tắc?",
+    "question_text": "Đâu là phát biểu ĐÚNG về bế tắc?",
     "choices": [
       {
         "label": "a",
@@ -16282,7 +16282,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Điều nào KHÔNG ĐÚNG về truyền thông giữa các tiến trình (IPC - Inter-process communication)?",
+    "question_text": "Điều nào KHÔNG ĐÚNG về truyền thông giữa các tiến trình (IPC - Inter-process communication)?",
     "choices": [
       {
         "label": "a",
@@ -16366,7 +16366,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Trong truyền thông giữa các tiến trình, vùng đệm với kích thước 0:",
+    "question_text": "Trong truyền thông giữa các tiến trình, vùng đệm với kích thước 0:",
     "choices": [
       {
         "label": "a",
@@ -16452,7 +16452,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Giả sử một hệ thống sử dụng thuật toán lập lịch CPU FCFS, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là: P1 (21), P2 (10), P3 (6). Đâu là thời gian chờ đợi trung bình của các tiến trình?",
+    "question_text": "Giả sử một hệ thống sử dụng thuật toán lập lịch CPU FCFS, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là: P1 (21), P2 (10), P3 (6). Đâu là thời gian chờ đợi trung bình của các tiến trình?",
     "choices": [
       {
         "label": "a",
@@ -16536,7 +16536,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạy Số hiệu ưu tiên Thời gian đến P1    2    2   0 P2    3    1    3 P3    8    4    5 P4    4    5    7 P5    5    3    9 Sử dụng thuật toán số hiệu ưu tiên cho phép dừng (tiến trình có số hiệu ưu tiên cao hơn sẽ chạy trước). Khẳng định nào sau đây là đúng:",
+    "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạy Số hiệu ưu tiên Thời gian đến P1    2    2   0 P2    3    1    3 P3    8    4    5 P4    4    5    7 P5    5    3    9 Sử dụng thuật toán số hiệu ưu tiên cho phép dừng (tiến trình có số hiệu ưu tiên cao hơn sẽ chạy trước). Khẳng định nào sau đây là đúng:",
     "choices": [
       {
         "label": "a",
@@ -16620,7 +16620,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Hệ điều hành Linux có",
+    "question_text": "Hệ điều hành Linux có",
     "choices": [
       {
         "label": "a",
@@ -16704,7 +16704,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Chọn mô tả tốt nhất về hệ điều hành cho máy tính",
+    "question_text": "Chọn mô tả tốt nhất về hệ điều hành cho máy tính",
     "choices": [
       {
         "label": "a",
@@ -16790,7 +16790,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Thời gian chuyển trạng thái là ___________________________",
+    "question_text": "Thời gian chuyển trạng thái là ___________________________",
     "choices": [
       {
         "label": "a",
@@ -16876,7 +16876,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Giả sử một hệ thống sử dụng thuật toán lập lịch CPU không cho phép dừng SJF, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là: P1 (0,7), P2 (2,4), P3 (4,1), P4 (5,5). Đâu là tổng thời gian chờ đợi của các tiến trình?",
+    "question_text": "Giả sử một hệ thống sử dụng thuật toán lập lịch CPU không cho phép dừng SJF, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là: P1 (0,7), P2 (2,4), P3 (4,1), P4 (5,5). Đâu là tổng thời gian chờ đợi của các tiến trình?",
     "choices": [
       {
         "label": "a",
@@ -16960,7 +16960,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đâu không phải là một phương pháp xử lý bế tắc?",
+    "question_text": "Đâu không phải là một phương pháp xử lý bế tắc?",
     "choices": [
       {
         "label": "a",
@@ -17046,7 +17046,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Khi một tiến trình kết thúc:",
+    "question_text": "Khi một tiến trình kết thúc:",
     "choices": [
       {
         "label": "a",
@@ -17142,7 +17142,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Phát biểu nào KHÔNG ĐÚNG về thuật toán phát hiện bế tắc dựa trên biểu đồ?",
+    "question_text": "Phát biểu nào KHÔNG ĐÚNG về thuật toán phát hiện bế tắc dựa trên biểu đồ?",
     "choices": [
       {
         "label": "a",
@@ -17286,7 +17286,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Sự khác biệt chính giữa bộ lập lịch ngắn hạn và bộ lập lịch dài hạn là:",
+    "question_text": "Sự khác biệt chính giữa bộ lập lịch ngắn hạn và bộ lập lịch dài hạn là:",
     "choices": [
       {
         "label": "a",
@@ -17380,7 +17380,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Đâu là điều KHÔNG ĐÚNG về khối điều khiển tiến trình (PCB)?",
+    "question_text": "Đâu là điều KHÔNG ĐÚNG về khối điều khiển tiến trình (PCB)?",
     "choices": [
       {
         "label": "a",
@@ -17466,7 +17466,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Thuật toán lập lịch CPU nào là không dừng?",
+    "question_text": "Thuật toán lập lịch CPU nào là không dừng?",
     "choices": [
       {
         "label": "a",
@@ -17550,7 +17550,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Thuật toán lập lịch Round Robin là ______________________",
+    "question_text": "Thuật toán lập lịch Round Robin là ______________________",
     "choices": [
       {
         "label": "a",
@@ -17636,7 +17636,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "FlaggedFlaggedRemove flag Giả sử một hệ thống sử dụng thuật toán lập lịch RR, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là:P1 (0,20), P2 (30,10), P3 (20,40), P4 (40,25) và lượng tử thời gian là 15. Tổng thời gian chờ của các tiến trình là gì?",
+    "question_text": "Giả sử một hệ thống sử dụng thuật toán lập lịch RR, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là:P1 (0,20), P2 (30,10), P3 (20,40), P4 (40,25) và lượng tử thời gian là 15. Tổng thời gian chờ của các tiến trình là gì?",
     "choices": [
       {
         "label": "a",
@@ -17720,7 +17720,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đâu là thuật toán lập lịch CPU không cho phép dừng?",
+    "question_text": "Đâu là thuật toán lập lịch CPU không cho phép dừng?",
     "choices": [
       {
         "label": "a",
@@ -17804,7 +17804,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Điều nào ĐÚNG về mục tiêu của điều kiện tiến triển của khu vực quan trọng?",
+    "question_text": "Điều nào ĐÚNG về mục tiêu của điều kiện tiến triển của khu vực quan trọng?",
     "choices": [
       {
         "label": "a",
@@ -17888,7 +17888,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Tiến trình nào có thể ảnh hưởng đến / bị ảnh hưởng bởi các tiến trình khác đang thực thi trong hệ thống ?",
+    "question_text": "Tiến trình nào có thể ảnh hưởng đến / bị ảnh hưởng bởi các tiến trình khác đang thực thi trong hệ thống ?",
     "choices": [
       {
         "label": "a",
@@ -17974,7 +17974,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Mô-đun nào giao quyền kiểm soát CPU cho tiến trình được lựa chọn bởi bộ lập lịch ngắn hạn ?",
+    "question_text": "Mô-đun nào giao quyền kiểm soát CPU cho tiến trình được lựa chọn bởi bộ lập lịch ngắn hạn ?",
     "choices": [
       {
         "label": "a",
@@ -18060,7 +18060,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đoạn mã, trong đó tiến trình có thể thay đổi các biến toàn cục, cập nhật vào các tệp tin được gọi là:",
+    "question_text": "Đoạn mã, trong đó tiến trình có thể thay đổi các biến toàn cục, cập nhật vào các tệp tin được gọi là:",
     "choices": [
       {
         "label": "a",
@@ -18156,7 +18156,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đâu là điều KHÔNG ĐÚNG về một chương trình ứng dụng?",
+    "question_text": "Đâu là điều KHÔNG ĐÚNG về một chương trình ứng dụng?",
     "choices": [
       {
         "label": "a",
@@ -18242,7 +18242,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Round Robin là phiên bản cho phép dừng của thuật toán nào sau đây ?",
+    "question_text": "Round Robin là phiên bản cho phép dừng của thuật toán nào sau đây ?",
     "choices": [
       {
         "label": "a",
@@ -18326,7 +18326,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đâu là điều KHÔNG ĐÚNG về hệ điều hành nhiều người dùng (multi-user operating systems)?",
+    "question_text": "Đâu là điều KHÔNG ĐÚNG về hệ điều hành nhiều người dùng (multi-user operating systems)?",
     "choices": [
       {
         "label": "a",
@@ -18410,7 +18410,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Semaphore dùng để _____________________",
+    "question_text": "Semaphore dùng để _____________________",
     "choices": [
       {
         "label": "a",
@@ -18506,7 +18506,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Trong chế độ chờ gửi:",
+    "question_text": "Trong chế độ chờ gửi:",
     "choices": [
       {
         "label": "a",
@@ -18602,7 +18602,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đâu là phát biểu ĐÚNG về thuật toán banker?",
+    "question_text": "Đâu là phát biểu ĐÚNG về thuật toán banker?",
     "choices": [
       {
         "label": "a",
@@ -18686,7 +18686,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Bế tắc sẽ xảy ra nếu và chỉ nếu các điều kiện sau xảy ra cùng một lúc",
+    "question_text": "Bế tắc sẽ xảy ra nếu và chỉ nếu các điều kiện sau xảy ra cùng một lúc",
     "choices": [
       {
         "label": "a",
@@ -18770,7 +18770,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Điều kiện loại trừ lẫn nhau (trong bế tắc) xảy ra khi:",
+    "question_text": "Điều kiện loại trừ lẫn nhau (trong bế tắc) xảy ra khi:",
     "choices": [
       {
         "label": "a",
@@ -18854,7 +18854,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Chọn mô tả KHÔNG ĐÚNG về các tác vụ chính của hệ điều hành",
+    "question_text": "Chọn mô tả KHÔNG ĐÚNG về các tác vụ chính của hệ điều hành",
     "choices": [
       {
         "label": "a",
@@ -18940,7 +18940,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Thuật ngữ phân chia thời gian tương đương với _____________________",
+    "question_text": "Thuật ngữ phân chia thời gian tương đương với _____________________",
     "choices": [
       {
         "label": "a",
@@ -19026,7 +19026,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Giả sử một hệ thống sử dụng thuật toán lập lịch CPU FCFS, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là: P1 (21), P2 (10), P3 (6). Đâu là thời gian chờ đợi trung bình của các tiến trình?",
+    "question_text": "Giả sử một hệ thống sử dụng thuật toán lập lịch CPU FCFS, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là: P1 (21), P2 (10), P3 (6). Đâu là thời gian chờ đợi trung bình của các tiến trình?",
     "choices": [
       {
         "label": "a",
@@ -19120,7 +19120,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Hai tiến trình sau chia sẻ một biến chung X, và một biến semaphore nhị phân T: Tiến trình A {Int Y; Wait (T) A1: Y = X * 2; A2: X = Y; } Tiến trình B {Int Z; B1: Z = X + 1; B2: X = Z; Signal(T) } X được khởi tạo bằng 5, T được khởi tạo bằng 0 trước khi các tiến trình bắt đầu thực thi. Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Giá trị cuối cùng của X sau khi thực thi xong hai tiến trình A và B sẽ là:",
+    "question_text": "Hai tiến trình sau chia sẻ một biến chung X, và một biến semaphore nhị phân T: Tiến trình A {Int Y; Wait (T) A1: Y = X * 2; A2: X = Y; } Tiến trình B {Int Z; B1: Z = X + 1; B2: X = Z; Signal(T) } X được khởi tạo bằng 5, T được khởi tạo bằng 0 trước khi các tiến trình bắt đầu thực thi. Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Giá trị cuối cùng của X sau khi thực thi xong hai tiến trình A và B sẽ là:",
     "choices": [
       {
         "label": "a",
@@ -19204,7 +19204,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đâu không phải là hàng đợi cho các tiến trình:",
+    "question_text": "Đâu không phải là hàng đợi cho các tiến trình:",
     "choices": [
       {
         "label": "a",
@@ -19300,7 +19300,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Thuật toán nào sau đây được dùng để phòng tránh bế tắc:",
+    "question_text": "Thuật toán nào sau đây được dùng để phòng tránh bế tắc:",
     "choices": [
       {
         "label": "a",
@@ -19396,7 +19396,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Điều gì là KHÔNG ĐÚNG về chuyển đổi ngữ cảnh?",
+    "question_text": "Điều gì là KHÔNG ĐÚNG về chuyển đổi ngữ cảnh?",
     "choices": [
       {
         "label": "a",
@@ -19480,7 +19480,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạy Số hiệu ưu tiên Thời gian đến P1    2    2   0 P2    3    1    3 P3    8    4    5 P4    4    5    7 P5    5    3    9 Sử dụng thuật toán Round Robin với time quantum q = 4 ms. Khẳng định nào sau đây là đúng:",
+    "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạy Số hiệu ưu tiên Thời gian đến P1    2    2   0 P2    3    1    3 P3    8    4    5 P4    4    5    7 P5    5    3    9 Sử dụng thuật toán Round Robin với time quantum q = 4 ms. Khẳng định nào sau đây là đúng:",
     "choices": [
       {
         "label": "a",
@@ -19566,7 +19566,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đâu không phải là một trong những nhiệm vụ chính của hệ điều hành?",
+    "question_text": "Đâu không phải là một trong những nhiệm vụ chính của hệ điều hành?",
     "choices": [
       {
         "label": "a",
@@ -19650,7 +19650,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Trạng thái của tiến trình được xác định bởi:",
+    "question_text": "Trạng thái của tiến trình được xác định bởi:",
     "choices": [
       {
         "label": "a",
@@ -19746,7 +19746,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Hạn chế của thuật toán banker là gì ?",
+    "question_text": "Hạn chế của thuật toán banker là gì ?",
     "choices": [
       {
         "label": "a",
@@ -19832,7 +19832,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Có 5 tiến trình P0, P1, P2, P3, P4 và 4 kiểu tài nguyên A, B, C, D. Tại thời điểm t0, trạng thái của hệ thống như sau: Đã cấp phát   Cần tối đa  Còn A B C D    A B C D   A B C D P0  2 0 0 1     4 2 1 2   3 3 2 1 P1  3 1 2 1     5 2 5 2 P2  2 1 0 3    2 3 1 6 P3  1 3 1 2     1 4 2 4 P4  1 4 3 2    3 6 6 5 Đâu là một trình tự an toàn của hệ thống:",
+    "question_text": "Có 5 tiến trình P0, P1, P2, P3, P4 và 4 kiểu tài nguyên A, B, C, D. Tại thời điểm t0, trạng thái của hệ thống như sau: Đã cấp phát   Cần tối đa  Còn A B C D    A B C D   A B C D P0  2 0 0 1     4 2 1 2   3 3 2 1 P1  3 1 2 1     5 2 5 2 P2  2 1 0 3    2 3 1 6 P3  1 3 1 2     1 4 2 4 P4  1 4 3 2    3 6 6 5 Đâu là một trình tự an toàn của hệ thống:",
     "choices": [
       {
         "label": "a",
@@ -19918,7 +19918,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Semaphore là một _______ để giải quyết bài toán khu vực quan trọng.",
+    "question_text": "Semaphore là một _______ để giải quyết bài toán khu vực quan trọng.",
     "choices": [
       {
         "label": "a",
@@ -20004,7 +20004,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Chọn mô tả đúng nhất về những gì một máy tính thuần túy (một máy tính không có hệ điều hành) có thể làm",
+    "question_text": "Chọn mô tả đúng nhất về những gì một máy tính thuần túy (một máy tính không có hệ điều hành) có thể làm",
     "choices": [
       {
         "label": "a",
@@ -20090,7 +20090,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Nội dung nào sau đây không được lưu khi chuyển trạng giữa các tiến trình:",
+    "question_text": "Nội dung nào sau đây không được lưu khi chuyển trạng giữa các tiến trình:",
     "choices": [
       {
         "label": "a",
@@ -20174,7 +20174,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Phát biểu nào sau đây là đúng: (I) Thuật toán lập lịch SJF có thể gây ra nạn đói. (II) Thuật toán lập lịch ưu tiên có thể gây ra nạn đói.",
+    "question_text": "Phát biểu nào sau đây là đúng: (I) Thuật toán lập lịch SJF có thể gây ra nạn đói. (II) Thuật toán lập lịch ưu tiên có thể gây ra nạn đói.",
     "choices": [
       {
         "label": "a",
@@ -20270,7 +20270,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Ý nào KHÔNG ĐÚNG về thuật toán lập lịch CPU Shortest Job First (SJF) ?",
+    "question_text": "Ý nào KHÔNG ĐÚNG về thuật toán lập lịch CPU Shortest Job First (SJF) ?",
     "choices": [
       {
         "label": "a",
@@ -20366,7 +20366,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Mục tiêu chính xác của điều kiện tiến triển của khu vực quan trọng là gì?",
+    "question_text": "Mục tiêu chính xác của điều kiện tiến triển của khu vực quan trọng là gì?",
     "choices": [
       {
         "label": "a",
@@ -20450,7 +20450,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Mục tiêu ĐÚNG của điều kiện tiến triển của khu vực quan trọng là gì?",
+    "question_text": "Mục tiêu ĐÚNG của điều kiện tiến triển của khu vực quan trọng là gì?",
     "choices": [
       {
         "label": "a",
@@ -20536,7 +20536,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Kỹ thuật nào sau đây giúp giảm thiểu tình trạng nhàn rỗi của CPU hoặc các thiết bị vào/ra khi hệ điều hành đơn vi xử lý ?",
+    "question_text": "Kỹ thuật nào sau đây giúp giảm thiểu tình trạng nhàn rỗi của CPU hoặc các thiết bị vào/ra khi hệ điều hành đơn vi xử lý ?",
     "choices": [
       {
         "label": "a",
@@ -20670,7 +20670,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Giả sử một hệ thống sử dụng thuật toán lập lịch CPU không cho phép dừng SJF, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là: P1 (0,7), P2 (2,4), P3 (4,1), P4 (5,5). Đâu là thời gian chờ đợi trung bình của các tiến trình?",
+    "question_text": "Giả sử một hệ thống sử dụng thuật toán lập lịch CPU không cho phép dừng SJF, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là: P1 (0,7), P2 (2,4), P3 (4,1), P4 (5,5). Đâu là thời gian chờ đợi trung bình của các tiến trình?",
     "choices": [
       {
         "label": "a",
@@ -20754,7 +20754,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Mục tiêu chính xác của điều kiện tiến triển của khu vực quan trọng là gì?",
+    "question_text": "Mục tiêu chính xác của điều kiện tiến triển của khu vực quan trọng là gì?",
     "choices": [
       {
         "label": "a",
@@ -20840,7 +20840,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Có 4 tiến trình P1, P2, P3, P4 và 2 kiểu tài nguyên A, B. Tại thời điểm t, trạng thái của hệ thống như sau: Đã cấp phát Yêu cầu A B  A B P1  1 3   1 2 P2 4 1   4 3 P3  1 2   1 7 P4  2 0   5 1 A còn 1 đơn vị tài nguyên, B còn 4 đơn vị tài nguyên. Hệ thống đang ở trạng thái nào:",
+    "question_text": "Có 4 tiến trình P1, P2, P3, P4 và 2 kiểu tài nguyên A, B. Tại thời điểm t, trạng thái của hệ thống như sau: Đã cấp phát Yêu cầu A B  A B P1  1 3   1 2 P2 4 1   4 3 P3  1 2   1 7 P4  2 0   5 1 A còn 1 đơn vị tài nguyên, B còn 4 đơn vị tài nguyên. Hệ thống đang ở trạng thái nào:",
     "choices": [
       {
         "label": "a",
@@ -20924,7 +20924,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Hệ thống có 6 đĩa từ, và N tiến trình chia sẻ tài nguyên này. Mỗi tiến trình cần 3 đĩa từ. Giá trị lớn nhất của N để hệ thống không bị bế tắc:",
+    "question_text": "Hệ thống có 6 đĩa từ, và N tiến trình chia sẻ tài nguyên này. Mỗi tiến trình cần 3 đĩa từ. Giá trị lớn nhất của N để hệ thống không bị bế tắc:",
     "choices": [
       {
         "label": "a",
@@ -21008,7 +21008,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Chọn ngôn ngữ mà một CPU có thể hiểu được",
+    "question_text": "Chọn ngôn ngữ mà một CPU có thể hiểu được",
     "choices": [
       {
         "label": "a",
@@ -21082,7 +21082,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Trạng thái của tiến trình được xác định bởi:",
+    "question_text": "Trạng thái của tiến trình được xác định bởi:",
     "choices": [
       {
         "label": "a",
@@ -21168,7 +21168,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Hai tiến trình, P1 và P2, cần truy cập vào khu vực quan trọng. Xem xét đoạn mã đồng bộ hóa sau được sử dụng bởi các tiến trình: P1: while(true) { w1 = true; while(w2 == true); Critical section w1 = false; } Remainder Section P2 : while(true) { w2 = true; while(w1 == true); Critical section w2 = false; } Remainder Section Ở đây, w1 và w2 là các biến chia sẻ, được khởi tạo bằng false. Điều nào dưới đây là đúng về đoạn mã trên ?",
+    "question_text": "Hai tiến trình, P1 và P2, cần truy cập vào khu vực quan trọng. Xem xét đoạn mã đồng bộ hóa sau được sử dụng bởi các tiến trình: P1: while(true) { w1 = true; while(w2 == true); Critical section w1 = false; } Remainder Section P2 : while(true) { w2 = true; while(w1 == true); Critical section w2 = false; } Remainder Section Ở đây, w1 và w2 là các biến chia sẻ, được khởi tạo bằng false. Điều nào dưới đây là đúng về đoạn mã trên ?",
     "choices": [
       {
         "label": "a",
@@ -21264,7 +21264,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Đâu là phát biểu KHÔNG ĐÚNG về semaphore?",
+    "question_text": "Đâu là phát biểu KHÔNG ĐÚNG về semaphore?",
     "choices": [
       {
         "label": "a",
@@ -21350,7 +21350,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Bộ lập lịch dài hạn dùng để:",
+    "question_text": "Bộ lập lịch dài hạn dùng để:",
     "choices": [
       {
         "label": "a",
@@ -21436,7 +21436,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Điều nào KHÔNG ĐÚNG về việc sử dụng Biểu đồ phân bổ tài nguyên (RAG - Resource Allocation Graph) để tránh bế tắc?",
+    "question_text": "Điều nào KHÔNG ĐÚNG về việc sử dụng Biểu đồ phân bổ tài nguyên (RAG - Resource Allocation Graph) để tránh bế tắc?",
     "choices": [
       {
         "label": "a",
@@ -21522,7 +21522,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Đâu là phát biểu ĐÚNG về một tiến trình?",
+    "question_text": "Đâu là phát biểu ĐÚNG về một tiến trình?",
     "choices": [
       {
         "label": "a",
@@ -21608,7 +21608,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Đâu là điều KHÔNG ĐÚNG về hệ điều hành nhiều người dùng (multi-user operating systems)?",
+    "question_text": "Đâu là điều KHÔNG ĐÚNG về hệ điều hành nhiều người dùng (multi-user operating systems)?",
     "choices": [
       {
         "label": "a",
@@ -21692,7 +21692,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Điều kiện giữ và chờ (trong bế tắc) xảy ra khi:",
+    "question_text": "Điều kiện giữ và chờ (trong bế tắc) xảy ra khi:",
     "choices": [
       {
         "label": "a",
@@ -21778,7 +21778,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Đâu là mối quan hệ ĐÚNG giữa các khái niệm tiến trình (process), chương trình (program) và chương trình ứng dụng (application)?",
+    "question_text": "Đâu là mối quan hệ ĐÚNG giữa các khái niệm tiến trình (process), chương trình (program) và chương trình ứng dụng (application)?",
     "choices": [
       {
         "label": "a",
@@ -21862,7 +21862,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Đâu là ý ĐÚNG về nhiệm vụ lập lịch tiến trình?",
+    "question_text": "Đâu là ý ĐÚNG về nhiệm vụ lập lịch tiến trình?",
     "choices": [
       {
         "label": "a",
@@ -21948,7 +21948,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Vấn đề khó khăn của bộ lập lịch ngắn hạn khi sử dụng SJF là:",
+    "question_text": "Vấn đề khó khăn của bộ lập lịch ngắn hạn khi sử dụng SJF là:",
     "choices": [
       {
         "label": "a",
@@ -22034,7 +22034,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Chương trình sau đây bao gồm 3 tiến trình đang chạy và 3 semaphore nhị phân. Các semaphore được khởi tạo như sau S0 = 1, S1 = 0, S2 = 0. Tiến trình P0    Tiến trình P1     Tiến trình P2 while(true) {             wait(S1);           wait(S2); wait(S0);           signal (S0);             signal (S0); print ‘0’; signal(S1); signal (S2);} Bao nhiêu lần P0 sẽ in '0'?",
+    "question_text": "Chương trình sau đây bao gồm 3 tiến trình đang chạy và 3 semaphore nhị phân. Các semaphore được khởi tạo như sau S0 = 1, S1 = 0, S2 = 0. Tiến trình P0    Tiến trình P1     Tiến trình P2 while(true) {             wait(S1);           wait(S2); wait(S0);           signal (S0);             signal (S0); print ‘0’; signal(S1); signal (S2);} Bao nhiêu lần P0 sẽ in '0'?",
     "choices": [
       {
         "label": "a",
@@ -22120,7 +22120,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Trong chế độ chờ gửi:",
+    "question_text": "Trong chế độ chờ gửi:",
     "choices": [
       {
         "label": "a",
@@ -22206,7 +22206,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Chức năng chính của chương trình biên dịch dòng lệnh là:",
+    "question_text": "Chức năng chính của chương trình biên dịch dòng lệnh là:",
     "choices": [
       {
         "label": "a",
@@ -22290,7 +22290,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Chọn mã chương trình mà một CPU có thể hiểu và thực thi được",
+    "question_text": "Chọn mã chương trình mà một CPU có thể hiểu và thực thi được",
     "choices": [
       {
         "label": "a",
@@ -22376,7 +22376,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Ở trang thái chờ, tiến trình _____________________",
+    "question_text": "Ở trang thái chờ, tiến trình _____________________",
     "choices": [
       {
         "label": "a",
@@ -22462,7 +22462,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy  Thời gian đến P1   3    0 P2  12    4 P3   4    6 P4   7    8 P5   3    11 Sử dụng thuật toán FCFS. Khẳng định nào sau đây là đúng:",
+    "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy  Thời gian đến P1   3    0 P2  12    4 P3   4    6 P4   7    8 P5   3    11 Sử dụng thuật toán FCFS. Khẳng định nào sau đây là đúng:",
     "choices": [
       {
         "label": "a",
@@ -22546,7 +22546,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Thuật toán nào sau đây được dùng để phòng tránh bế tắc:",
+    "question_text": "Thuật toán nào sau đây được dùng để phòng tránh bế tắc:",
     "choices": [
       {
         "label": "a",
@@ -22632,7 +22632,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Giả sử một hệ thống sử dụng thuật toán lập lịch Không cho phép dừng SJF , thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là:P1 (0,7), P2 (2,4), P3 (4,1), P4 (5,4). Đâu là thông lượng của hệ thống?",
+    "question_text": "Giả sử một hệ thống sử dụng thuật toán lập lịch Không cho phép dừng SJF , thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là:P1 (0,7), P2 (2,4), P3 (4,1), P4 (5,4). Đâu là thông lượng của hệ thống?",
     "choices": [
       {
         "label": "a",
@@ -22716,7 +22716,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Điều nào KHÔNG ĐÚNG về truyền thông giữa các tiến trình (IPC - Inter-process communication)?",
+    "question_text": "Điều nào KHÔNG ĐÚNG về truyền thông giữa các tiến trình (IPC - Inter-process communication)?",
     "choices": [
       {
         "label": "a",
@@ -22802,7 +22802,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedFlag question Một tiến trình có thể bị dừng do:",
+    "question_text": "Một tiến trình có thể bị dừng do:",
     "choices": [
       {
         "label": "a",
@@ -22888,7 +22888,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Trong truyền thông giữa các tiến trình, vùng đệm với kích thước 0:",
+    "question_text": "Trong truyền thông giữa các tiến trình, vùng đệm với kích thước 0:",
     "choices": [
       {
         "label": "a",
@@ -22974,7 +22974,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Giả sử một hệ thống sử dụng thuật toán lập lịch CPU không cho phép dừng SJF, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là: P1 (0,7), P2 (2,4), P3 (4,1), P4 (5,5). Đâu là thời gian chờ đợi trung bình của các tiến trình?",
+    "question_text": "Giả sử một hệ thống sử dụng thuật toán lập lịch CPU không cho phép dừng SJF, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là: P1 (0,7), P2 (2,4), P3 (4,1), P4 (5,5). Đâu là thời gian chờ đợi trung bình của các tiến trình?",
     "choices": [
       {
         "label": "a",
@@ -23058,7 +23058,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Ý nào KHÔNG ĐÚNG về thuật toán lập lịch Shortest Remaining Time First (SRTF) ?",
+    "question_text": "Ý nào KHÔNG ĐÚNG về thuật toán lập lịch Shortest Remaining Time First (SRTF) ?",
     "choices": [
       {
         "label": "a",
@@ -23144,7 +23144,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Bộ lập lịch nào sau đây chịu trách nhiệm chuyển tiến trình ra khỏi bộ nhớ chính ?",
+    "question_text": "Bộ lập lịch nào sau đây chịu trách nhiệm chuyển tiến trình ra khỏi bộ nhớ chính ?",
     "choices": [
       {
         "label": "a",
@@ -23230,7 +23230,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đâu là phát biểu KHÔNG ĐÚNG về semaphore?",
+    "question_text": "Đâu là phát biểu KHÔNG ĐÚNG về semaphore?",
     "choices": [
       {
         "label": "a",
@@ -23314,7 +23314,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Đâu là thuật toán lập lịch CPU cho phép dừng?",
+    "question_text": "Đâu là thuật toán lập lịch CPU cho phép dừng?",
     "choices": [
       {
         "label": "a",
@@ -23398,7 +23398,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Phòng ngừa bế tắc là gì?",
+    "question_text": "Phòng ngừa bế tắc là gì?",
     "choices": [
       {
         "label": "a",
@@ -23482,7 +23482,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Mục đích của đa chương trình là:",
+    "question_text": "Mục đích của đa chương trình là:",
     "choices": [
       {
         "label": "a",
@@ -23568,7 +23568,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Câu nào sau đây không đúng:",
+    "question_text": "Câu nào sau đây không đúng:",
     "choices": [
       {
         "label": "a",
@@ -23654,7 +23654,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Ba tiến trình sau chia sẻ  semaphore nhị phân S1, S2, S3 (khởi tạo bằng 0): Tiến trình P1 { wait (S1);  print (\"A\"); signal (S2);} Tiến trình P2 { wait (S2); print (\"B\"); signal (S3);} Tiến trình P3 { signal (S3); print (\"C\"); signal (S1);} Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Chuỗi kết quả  in ra màn hình sau khi cả ba tiến trình kết thúc thực thi ?",
+    "question_text": "Ba tiến trình sau chia sẻ  semaphore nhị phân S1, S2, S3 (khởi tạo bằng 0): Tiến trình P1 { wait (S1);  print (\"A\"); signal (S2);} Tiến trình P2 { wait (S2); print (\"B\"); signal (S3);} Tiến trình P3 { signal (S3); print (\"C\"); signal (S1);} Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Chuỗi kết quả  in ra màn hình sau khi cả ba tiến trình kết thúc thực thi ?",
     "choices": [
       {
         "label": "a",
@@ -23738,7 +23738,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Hệ điều hành cung cấp phương thức nào để truy cập đến các dịch vụ của hệ điều hành:",
+    "question_text": "Hệ điều hành cung cấp phương thức nào để truy cập đến các dịch vụ của hệ điều hành:",
     "choices": [
       {
         "label": "a",
@@ -23822,7 +23822,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not flaggedNot flaggedFlag question Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy Thời gian đến P1   3    0 P2  5    4 P3   8    6 P4   4    8 P5   12    9 Sử dụng thuật toán Round Robin với time quantum q = 3 ms. Khẳng định nào sau đây là đúng:",
+    "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy Thời gian đến P1   3    0 P2  5    4 P3   8    6 P4   4    8 P5   12    9 Sử dụng thuật toán Round Robin với time quantum q = 3 ms. Khẳng định nào sau đây là đúng:",
     "choices": [
       {
         "label": "a",
@@ -24006,7 +24006,7 @@
     "is_theory": true
   },
   {
-    "qtype": "single",
+    "qtype": "multi",
     "question_text": "Một tiến trình sử dụng 5 trang A, B, C, D, E theo trình tự: A, B, C, D, A, B, E, A, B, C, D, E. Nếu sử dụng thuật toán thay thế trang OPT (tối ưu), số lỗi trang xảy ra khi dùng 3 frame là:",
     "choices": [
       {
@@ -27611,7 +27611,7 @@
     "is_theory": true
   },
   {
-    "qtype": "single",
+    "qtype": "multi",
     "question_text": "Ánh xạ bộ nhớ ảo 2GB lên bộ nhớ vật lý có 256 frame, mỗi frame có kích thước 4 KB. Kích thước mỗi đơn vị bộ nhớ là 1 byte. Số bit cần dùng để đánh địa chỉ vật lý cho bộ nhớ chính ?",
     "choices": [
       {
@@ -28017,7 +28017,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Một cách để đảm bảo điều kiện giữ và chờ (trong bế tắc)  không xảy ra:",
+    "question_text": "Một cách để đảm bảo điều kiện giữ và chờ (trong bế tắc)  không xảy ra:",
     "choices": [
       {
         "label": "a",
@@ -28096,7 +28096,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Trong môi trường đa nhiệm, khi một tiến trình luôn bị từ chối cho phép dùng tài nguyên nó được gọi là:",
+    "question_text": "Trong môi trường đa nhiệm, khi một tiến trình luôn bị từ chối cho phép dùng tài nguyên nó được gọi là:",
     "choices": [
       {
         "label": "a",
@@ -28175,7 +28175,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Trong chế độ chờ nhận:",
+    "question_text": "Trong chế độ chờ nhận:",
     "choices": [
       {
         "label": "a",
@@ -28254,7 +28254,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Hai tiến trình sau chia sẻ một semaphore nhị phân S (khởi tạo bằng 0): Tiến trình P1 { wait (S);  print (\"1\"); print (\"2\"); } Tiến trình P2 { print (\"3\"); print (\"4\"); signal (S);} Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Chuỗi kết quả  in ra màn hình sau khi cả hai tiến trình kết thúc thực thi ?",
+    "question_text": "Hai tiến trình sau chia sẻ một semaphore nhị phân S (khởi tạo bằng 0): Tiến trình P1 { wait (S);  print (\"1\"); print (\"2\"); } Tiến trình P2 { print (\"3\"); print (\"4\"); signal (S);} Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Chuỗi kết quả  in ra màn hình sau khi cả hai tiến trình kết thúc thực thi ?",
     "choices": [
       {
         "label": "a",
@@ -28333,7 +28333,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Semaphore là một _______ để giải quyết bài toán khu vực quan trọng.",
+    "question_text": "Semaphore là một _______ để giải quyết bài toán khu vực quan trọng.",
     "choices": [
       {
         "label": "a",
@@ -28412,7 +28412,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Hệ thống truyền thông điệp cho phép các tiến trình:",
+    "question_text": "Hệ thống truyền thông điệp cho phép các tiến trình:",
     "choices": [
       {
         "label": "a",
@@ -28491,7 +28491,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Có 5 tiến trình P0, P1, P2, P3, P4 và 4 kiểu tài nguyên A, B, C, D. Tại thời điểm t0, trạng thái của hệ thống như sau: Đã cấp phát Cần tối đa Còn A B C D A B C D        A B C D P0 2 0 0 1          4 2 1 2        3 3 2 1 P1 3 1 2 1          5 2 5 2 P2 2 1 0 3 2 3 1 6 P3 1 3 1 2          1 4 2 4 P4 1 4 3 2 3 6 6 5 Hệ thống đang ở trạng thái nào:",
+    "question_text": "Có 5 tiến trình P0, P1, P2, P3, P4 và 4 kiểu tài nguyên A, B, C, D. Tại thời điểm t0, trạng thái của hệ thống như sau: Đã cấp phát Cần tối đa Còn A B C D A B C D        A B C D P0 2 0 0 1          4 2 1 2        3 3 2 1 P1 3 1 2 1          5 2 5 2 P2 2 1 0 3 2 3 1 6 P3 1 3 1 2          1 4 2 4 P4 1 4 3 2 3 6 6 5 Hệ thống đang ở trạng thái nào:",
     "choices": [
       {
         "label": "a",
@@ -28570,7 +28570,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Hệ thống có 6 đĩa từ, và N tiến trình chia sẻ tài nguyên này. Mỗi tiến trình cần 3 đĩa từ. Giá trị lớn nhất của N để hệ thống không bị bế tắc:",
+    "question_text": "Hệ thống có 6 đĩa từ, và N tiến trình chia sẻ tài nguyên này. Mỗi tiến trình cần 3 đĩa từ. Giá trị lớn nhất của N để hệ thống không bị bế tắc:",
     "choices": [
       {
         "label": "a",
@@ -28649,7 +28649,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Trong truyền thông gián tiếp giữa tiến trình P và Q:",
+    "question_text": "Trong truyền thông gián tiếp giữa tiến trình P và Q:",
     "choices": [
       {
         "label": "a",
@@ -28728,7 +28728,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Điều kiện loại trừ lẫn nhau có thể được đảm bảo bằng cách sử dụng _________.",
+    "question_text": "Điều kiện loại trừ lẫn nhau có thể được đảm bảo bằng cách sử dụng _________.",
     "choices": [
       {
         "label": "a",
@@ -28807,7 +28807,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Tiến trình không thể thực thi việc chuyển đổi trạng thái nào sau đây:",
+    "question_text": "Tiến trình không thể thực thi việc chuyển đổi trạng thái nào sau đây:",
     "choices": [
       {
         "label": "a",
@@ -28886,7 +28886,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Thuật toán lập lịch Round Robin là ______________________",
+    "question_text": "Thuật toán lập lịch Round Robin là ______________________",
     "choices": [
       {
         "label": "a",
@@ -28965,7 +28965,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành A system uses non-preemptive SJF scheduling algorithm. The process 's information (arrival time, duration, priority) is P1 (0,2,1), P2 (4,10,2), P3 (5,4,3), P4 (7,4,4). The turn around time of the process P1, P2, P3, P4 are respectively 2, 10, 13, 15 (Each number is rounded by 2  decimal digits, separated by a comma following by a  single blank character,",
+    "question_text": "A system uses non-preemptive SJF scheduling algorithm. The process 's information (arrival time, duration, priority) is P1 (0,2,1), P2 (4,10,2), P3 (5,4,3), P4 (7,4,4). The turn around time of the process P1, P2, P3, P4 are respectively 2, 10, 13, 15 (Each number is rounded by 2  decimal digits, separated by a comma following by a  single blank character,",
     "choices": [
       {
         "label": "a",
@@ -29013,7 +29013,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Mục đích của đa chương trình là:",
+    "question_text": "Mục đích của đa chương trình là:",
     "choices": [
       {
         "label": "a",
@@ -29092,7 +29092,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Tiến trình nào có thể ảnh hưởng đến / bị ảnh hưởng bởi các tiến trình khác đang thực thi trong hệ thống ?",
+    "question_text": "Tiến trình nào có thể ảnh hưởng đến / bị ảnh hưởng bởi các tiến trình khác đang thực thi trong hệ thống ?",
     "choices": [
       {
         "label": "a",
@@ -29171,7 +29171,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Hai tiến trình, P1 và P2, cần truy cập vào khu vực quan trọng. Xem xét đoạn mã đồng bộ hóa sau được sử dụng bởi các tiến trình: P1: while(true) { w1 = true; while(w2 == true); Critical section w1 = false; } Remainder Section P2 : while(true) { w2 = true; while(w1 == true); Critical section w2 = false; } Remainder Section Ở đây, w1 và w2 là các biến chia sẻ, được khởi tạo bằng false. Điều nào dưới đây là đúng về đoạn mã trên ?",
+    "question_text": "Hai tiến trình, P1 và P2, cần truy cập vào khu vực quan trọng. Xem xét đoạn mã đồng bộ hóa sau được sử dụng bởi các tiến trình: P1: while(true) { w1 = true; while(w2 == true); Critical section w1 = false; } Remainder Section P2 : while(true) { w2 = true; while(w1 == true); Critical section w2 = false; } Remainder Section Ở đây, w1 và w2 là các biến chia sẻ, được khởi tạo bằng false. Điều nào dưới đây là đúng về đoạn mã trên ?",
     "choices": [
       {
         "label": "a",
@@ -29255,7 +29255,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Ở trang thái chờ, tiến trình _____________________",
+    "question_text": "Ở trang thái chờ, tiến trình _____________________",
     "choices": [
       {
         "label": "a",
@@ -29334,7 +29334,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Bộ lập lịch nào sau đây chịu trách nhiệm chuyển tiến trình ra khỏi bộ nhớ chính ?",
+    "question_text": "Bộ lập lịch nào sau đây chịu trách nhiệm chuyển tiến trình ra khỏi bộ nhớ chính ?",
     "choices": [
       {
         "label": "a",
@@ -29413,7 +29413,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Nếu tất cả các tiến trình liên tục vào/ra dữ liệu thì hàng đợi sẵn sàng sẽ luôn......., bộ lập lịch ngắn hạn sẽ làm việc ........",
+    "question_text": "Nếu tất cả các tiến trình liên tục vào/ra dữ liệu thì hàng đợi sẵn sàng sẽ luôn......., bộ lập lịch ngắn hạn sẽ làm việc ........",
     "choices": [
       {
         "label": "a",
@@ -29492,7 +29492,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành A system uses preemptive SJF scheduling algorithm . The process 's information (arrival time, duration, priority) is P1 (0,2,1), P2 (4,10,2), P3 (5,4,3), P4 (7,4,4). The turn around time of the process P1, P2, P3, P4 are respectively 2, 18, 4, 6 (Each number is rounded by 2  decimal digits, separated by a comma following by a  single blank character,",
+    "question_text": "A system uses preemptive SJF scheduling algorithm . The process 's information (arrival time, duration, priority) is P1 (0,2,1), P2 (4,10,2), P3 (5,4,3), P4 (7,4,4). The turn around time of the process P1, P2, P3, P4 are respectively 2, 18, 4, 6 (Each number is rounded by 2  decimal digits, separated by a comma following by a  single blank character,",
     "choices": [
       {
         "label": "a",
@@ -29540,7 +29540,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Khi tiến trình có yêu cầu vào/ra dữ liệu thì ____________________________.",
+    "question_text": "Khi tiến trình có yêu cầu vào/ra dữ liệu thì ____________________________.",
     "choices": [
       {
         "label": "a",
@@ -29619,7 +29619,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành A system uses Round Robin scheduling algorithm with time quantum = 2. The process 's information (arrival time, duration, priority) is P1 (0,3,1), P2 (3,2,2), P3 (4,6,3), P4 (5,4,4). The waiting time of the process P1, P2, P3, P4 are respectively 0, 0, 5, 4 (Each number is rounded by 2  decimal digits, separated by a comma following by a  single blank character,",
+    "question_text": "A system uses Round Robin scheduling algorithm with time quantum = 2. The process 's information (arrival time, duration, priority) is P1 (0,3,1), P2 (3,2,2), P3 (4,6,3), P4 (5,4,4). The waiting time of the process P1, P2, P3, P4 are respectively 0, 0, 5, 4 (Each number is rounded by 2  decimal digits, separated by a comma following by a  single blank character,",
     "choices": [
       {
         "label": "a",
@@ -29662,7 +29662,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Khối điều khiển tiến trình (PCB) không chứa:",
+    "question_text": "Khối điều khiển tiến trình (PCB) không chứa:",
     "choices": [
       {
         "label": "a",
@@ -29741,7 +29741,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Thuật ngữ phân chia thời gian tương đương với _____________________",
+    "question_text": "Thuật ngữ phân chia thời gian tương đương với _____________________",
     "choices": [
       {
         "label": "a",
@@ -29820,7 +29820,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Thuật toán nào sau đây được dùng để phòng tránh bế tắc:",
+    "question_text": "Thuật toán nào sau đây được dùng để phòng tránh bế tắc:",
     "choices": [
       {
         "label": "a",
@@ -29899,7 +29899,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Một cách để đảm bảo điều kiện chờ đợi vòng tròn không xảy ra:",
+    "question_text": "Một cách để đảm bảo điều kiện chờ đợi vòng tròn không xảy ra:",
     "choices": [
       {
         "label": "a",
@@ -29978,7 +29978,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Hai tiến trình, P1 và P2, chia sẻ hai semaphore nhị phân S1, S2 (khởi tạo ngẫu nhiên): Tiến trình P1 : while(S1==S2); Critical section S1 = S2; Tiến trình P2 : while(S1!=S2); Critical section S2 = not(S1); Điều nào dưới đây là đúng về đoạn mã trên?",
+    "question_text": "Hai tiến trình, P1 và P2, chia sẻ hai semaphore nhị phân S1, S2 (khởi tạo ngẫu nhiên): Tiến trình P1 : while(S1==S2); Critical section S1 = S2; Tiến trình P2 : while(S1!=S2); Critical section S2 = not(S1); Điều nào dưới đây là đúng về đoạn mã trên?",
     "choices": [
       {
         "label": "a",
@@ -30057,7 +30057,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Tiến trình được phân thành các nhóm khác nhau trong:",
+    "question_text": "Tiến trình được phân thành các nhóm khác nhau trong:",
     "choices": [
       {
         "label": "a",
@@ -30136,7 +30136,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Khi nào hệ điều hành nên kiểm tra bế tắc ?",
+    "question_text": "Khi nào hệ điều hành nên kiểm tra bế tắc ?",
     "choices": [
       {
         "label": "a",
@@ -30294,7 +30294,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Khi một tiến trình kết thúc:",
+    "question_text": "Khi một tiến trình kết thúc:",
     "choices": [
       {
         "label": "a",
@@ -30373,7 +30373,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Mô-đun nào giao quyền kiểm soát CPU cho tiến trình được lựa chọn bởi bộ lập lịch ngắn hạn ?",
+    "question_text": "Mô-đun nào giao quyền kiểm soát CPU cho tiến trình được lựa chọn bởi bộ lập lịch ngắn hạn ?",
     "choices": [
       {
         "label": "a",
@@ -30452,7 +30452,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Kỹ thuật nào sau đây giúp giảm thiểu tình trạng nhàn rỗi của CPU hoặc các thiết bị vào/ra khi hệ điều hành đơn vi xử lý ?",
+    "question_text": "Kỹ thuật nào sau đây giúp giảm thiểu tình trạng nhàn rỗi của CPU hoặc các thiết bị vào/ra khi hệ điều hành đơn vi xử lý ?",
     "choices": [
       {
         "label": "a",
@@ -30531,7 +30531,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Có 4 tiến trình P1, P2, P3, P4 và 2 kiểu tài nguyên A, B. Tại thời điểm t, trạng thái của hệ thống như sau: Đã cấp phát Yêu cầu A BA B P1 1 3 1 2 P24 1 4 3 P3 1 2 1 7 P4 2 0 5 1 A còn 1 đơn vị tài nguyên, B còn 4 đơn vị tài nguyên. Hệ thống đang ở trạng thái nào:",
+    "question_text": "Có 4 tiến trình P1, P2, P3, P4 và 2 kiểu tài nguyên A, B. Tại thời điểm t, trạng thái của hệ thống như sau: Đã cấp phát Yêu cầu A BA B P1 1 3 1 2 P24 1 4 3 P3 1 2 1 7 P4 2 0 5 1 A còn 1 đơn vị tài nguyên, B còn 4 đơn vị tài nguyên. Hệ thống đang ở trạng thái nào:",
     "choices": [
       {
         "label": "a",
@@ -30610,7 +30610,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạySố hiệu ưu tiênThời gian đến P1 2 20 P2 3 1 3 P3 8 4 5 P4 4 5 7 P5 5 3 9 Sử dụng thuật toán Round Robin với time quantum q = 4 ms. Khẳng định nào sau đây là đúng:",
+    "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạySố hiệu ưu tiênThời gian đến P1 2 20 P2 3 1 3 P3 8 4 5 P4 4 5 7 P5 5 3 9 Sử dụng thuật toán Round Robin với time quantum q = 4 ms. Khẳng định nào sau đây là đúng:",
     "choices": [
       {
         "label": "a",
@@ -30689,7 +30689,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Điều kiện loại trừ lẫn nhau (trong bế tắc) xảy ra khi:",
+    "question_text": "Điều kiện loại trừ lẫn nhau (trong bế tắc) xảy ra khi:",
     "choices": [
       {
         "label": "a",
@@ -30768,7 +30768,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Trong hệ điều hành chia sẻ thời gian, khi khoảng thời gian cấp cho tiến trình (time slot) kết thúc, tiến trình chuyển từ trạng thái đang chạy sang trạng thái __________.",
+    "question_text": "Trong hệ điều hành chia sẻ thời gian, khi khoảng thời gian cấp cho tiến trình (time slot) kết thúc, tiến trình chuyển từ trạng thái đang chạy sang trạng thái __________.",
     "choices": [
       {
         "label": "a",
@@ -30847,7 +30847,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Trạng thái của tiến trình được xác định bởi:",
+    "question_text": "Trạng thái của tiến trình được xác định bởi:",
     "choices": [
       {
         "label": "a",
@@ -30926,7 +30926,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành A system uses FCFS scheduling algorithm. The process 's information (arrival time, duration, priority) is P1 (0,3,1), P2 (4,8,2), P3 (2,4,3), P4 (6,4,4). The waiting time of the process P1, P2, P3, P4 are respectively 0, 3, 1, 9 (Each number is rounded by 2  decimal digits, separated by a comma following by a  single blank character,",
+    "question_text": "A system uses FCFS scheduling algorithm. The process 's information (arrival time, duration, priority) is P1 (0,3,1), P2 (4,8,2), P3 (2,4,3), P4 (6,4,4). The waiting time of the process P1, P2, P3, P4 are respectively 0, 3, 1, 9 (Each number is rounded by 2  decimal digits, separated by a comma following by a  single blank character,",
     "choices": [
       {
         "label": "a",
@@ -30969,7 +30969,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Một tiến trình có thể bị dừng do:",
+    "question_text": "Một tiến trình có thể bị dừng do:",
     "choices": [
       {
         "label": "a",
@@ -31048,7 +31048,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạySố hiệu ưu tiênThời gian đến P1 2 20 P2 3 1 3 P3 8 4 5 P4 4 5 7 P5 5 3 9 Sử dụng thuật toán SJF cho phép dừng. Khẳng định nào sau đây là đúng:",
+    "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạySố hiệu ưu tiênThời gian đến P1 2 20 P2 3 1 3 P3 8 4 5 P4 4 5 7 P5 5 3 9 Sử dụng thuật toán SJF cho phép dừng. Khẳng định nào sau đây là đúng:",
     "choices": [
       {
         "label": "a",
@@ -31127,7 +31127,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Nếu tiến trình có sự có, hầu hết các hệ điều hành ghi các thông tin lỗi tại:",
+    "question_text": "Nếu tiến trình có sự có, hầu hết các hệ điều hành ghi các thông tin lỗi tại:",
     "choices": [
       {
         "label": "a",
@@ -31206,7 +31206,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Khi một tiến trình P thực hiện phần mã ở khu vực quan trọng (critical section), không có tiến trình Q nào khác có thể thực hiện trong khu vực quan trọng (của Q). Tình huống này được gọi là",
+    "question_text": "Khi một tiến trình P thực hiện phần mã ở khu vực quan trọng (critical section), không có tiến trình Q nào khác có thể thực hiện trong khu vực quan trọng (của Q). Tình huống này được gọi là",
     "choices": [
       {
         "label": "a",
@@ -31285,7 +31285,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Hoàn thành Phát biểu nào sau đây là đúng: (I) Thuật toán lập lịch SJF có thể gây ra nạn đói. (II) Thuật toán lập lịch ưu tiên có thể gây ra nạn đói.",
+    "question_text": "Phát biểu nào sau đây là đúng: (I) Thuật toán lập lịch SJF có thể gây ra nạn đói. (II) Thuật toán lập lịch ưu tiên có thể gây ra nạn đói.",
     "choices": [
       {
         "label": "a",
@@ -31566,7 +31566,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "19/ 6/2020 Bài kiểm tra thứ nhất Phát biểu nào KHÔNG ĐÚNG về việc tránh bế tắc?",
+    "question_text": "Phát biểu nào KHÔNG ĐÚNG về việc tránh bế tắc?",
     "choices": [
       {
         "label": "a",
@@ -31849,7 +31849,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "19/ 6/2020 Bài kiểm tra thứ nhất Hai tiến trình sau chia sẻ một semaphore nhị phân S (khởi tạo bằng 0): Tiến trình P1 { wait (S);  print (\"1\"); print (\"2\"); } Tiến trình P2 { print (\"3\"); print (\"4\"); signal (S);} Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Chuỗi kết quả  in ra màn hình sau khi cả hai tiến trình kết thúc thực thi ?",
+    "question_text": "Hai tiến trình sau chia sẻ một semaphore nhị phân S (khởi tạo bằng 0): Tiến trình P1 { wait (S);  print (\"1\"); print (\"2\"); } Tiến trình P2 { print (\"3\"); print (\"4\"); signal (S);} Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Chuỗi kết quả  in ra màn hình sau khi cả hai tiến trình kết thúc thực thi ?",
     "choices": [
       {
         "label": "a",
@@ -31927,7 +31927,7 @@
     "is_theory": true
   },
   {
-    "qtype": "single",
+    "qtype": "multi",
     "question_text": "Giả sử một hệ thống sử dụng thuật toán lập lịch Không cho phép dừng SJF , thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là:P1 (0,7), P2 (2,4), P3 (4,1), P4 (5,4). Đâu là thông lượng của hệ thống?",
     "choices": [
       {
@@ -33979,7 +33979,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Chọn mô tả tốt nhất về hệ điều hành cho máy tính",
+    "question_text": "Chọn mô tả tốt nhất về hệ điều hành cho máy tính",
     "choices": [
       {
         "label": "a",
@@ -34996,7 +34996,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Những điều kiện ĐÚNG của khu vực quan trọng là gì?",
+    "question_text": "Những điều kiện ĐÚNG của khu vực quan trọng là gì?",
     "choices": [
       {
         "label": "a",
@@ -36294,7 +36294,7 @@
     "is_theory": true
   },
   {
-    "qtype": "single",
+    "qtype": "multi",
     "question_text": "Phương pháp ĐÚNG để phục hồi từ bế tắc là gì?",
     "choices": [
       {
@@ -37267,7 +37267,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Hạn chế của thuật toán banker là gì ? Correct Mark 1.00 out of",
+    "question_text": "Hạn chế của thuật toán banker là gì ? Correct Mark 1.00 out of",
     "choices": [
       {
         "label": "a",
@@ -40950,7 +40950,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Tính thời gian truy cập bộ nhớ hiệu quả cho một hệ thống sử dụng kỹ thuật phân trang có tỉ suất trúng TLB là 80% khi thời gian truy cập cache là 10 ns, thời gian truy cập bộ nhớ chính là 100 ns.",
+    "question_text": "Tính thời gian truy cập bộ nhớ hiệu quả cho một hệ thống sử dụng kỹ thuật phân trang có tỉ suất trúng TLB là 80% khi thời gian truy cập cache là 10 ns, thời gian truy cập bộ nhớ chính là 100 ns.",
     "choices": [
       {
         "label": "a",
@@ -41029,7 +41029,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Đâu là phát biểu KHÔNG ĐÚNG về phân trang (bảng trang cấp 1)?",
+    "question_text": "Đâu là phát biểu KHÔNG ĐÚNG về phân trang (bảng trang cấp 1)?",
     "choices": [
       {
         "label": "a",
@@ -41209,7 +41209,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Đâu là phát biểu KHÔNG ĐÚNG về swapping và overlay?",
+    "question_text": "Đâu là phát biểu KHÔNG ĐÚNG về swapping và overlay?",
     "choices": [
       {
         "label": "a",
@@ -41377,7 +41377,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Lý do sử dụng thuật toán thay thế trang LFU là:",
+    "question_text": "Lý do sử dụng thuật toán thay thế trang LFU là:",
     "choices": [
       {
         "label": "a",
@@ -41658,7 +41658,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Một tiến trình sử dụng 5 trang A, B, C, D, E theo trình tự: A, B, C, D, A, B, E, A, B, C, D, E. Nếu sử dụng thuật toán thay thế trang OPT (tối ưu), số lỗi trang xảy ra khi dùng 3 frame là:",
+    "question_text": "Một tiến trình sử dụng 5 trang A, B, C, D, E theo trình tự: A, B, C, D, A, B, E, A, B, C, D, E. Nếu sử dụng thuật toán thay thế trang OPT (tối ưu), số lỗi trang xảy ra khi dùng 3 frame là:",
     "choices": [
       {
         "label": "a",
@@ -41842,7 +41842,7 @@
     "is_theory": false
   },
   {
-    "qtype": "single",
+    "qtype": "multi",
     "question_text": "Một tiến trình sử dụng 5 trang A, B, C, D, E theo trình tự: A, B, C, D, A, B, E, A, B, C, D, E. Nếu sử dụng thuật toán thay thế trang FIFO, số lỗi trang xảy ra khi tăng từ 3 frame lên 4 frame :",
     "choices": [
       {
@@ -41945,7 +41945,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not answered Marked out of 1.00 Với mô hình cửa sổ các trang đang làm việc, chuỗi trình tự các trang được sử dụng là 2 6 1 5 7 7 7 7 5 1 6 2 3 4 1 2 3 4 4 4 3 4 3 4 4 4 1 3 2 3. Nếu Delta=10 thì tập các trang đang làm việc tại thời điểm t1 (… 7 5 1) là:",
+    "question_text": "Với mô hình cửa sổ các trang đang làm việc, chuỗi trình tự các trang được sử dụng là 2 6 1 5 7 7 7 7 5 1 6 2 3 4 1 2 3 4 4 4 3 4 3 4 4 4 1 3 2 3. Nếu Delta=10 thì tập các trang đang làm việc tại thời điểm t1 (… 7 5 1) là:",
     "choices": [
       {
         "label": "a",
@@ -42709,7 +42709,7 @@
   },
   {
     "qtype": "numeric",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Cho chuỗi tham chiếu: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. Giả sử thuật toán Tối ưu (thay thế trang) được sử dụng (với 4 khung). Hãy hiển thị các trang (theo thứ tự xuất hiện) gây ra lỗi trang? (Các trang được viết liền nhau, chỉ ngăn cách nhau bởi dấu phẩy. VD: 1,2,4,3)",
+    "question_text": "Cho chuỗi tham chiếu: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. Giả sử thuật toán Tối ưu (thay thế trang) được sử dụng (với 4 khung). Hãy hiển thị các trang (theo thứ tự xuất hiện) gây ra lỗi trang? (Các trang được viết liền nhau, chỉ ngăn cách nhau bởi dấu phẩy. VD: 1,2,4,3)",
     "choices": [],
     "numeric_answer": "1,2,3,4,5,4",
     "correct_labels": [],
@@ -43293,7 +43293,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Giả sử một hệ thống sử dụng thuật toán phân bổ bộ nhớ cho Đa chương trình với số nhiệm vụ cố định (MFT - Multiprogramming with a Fixed number of Tasks) với n phân vùng và m tiến trình (m > n). Đâu là phát biểu KHÔNG ĐÚNG?",
+    "question_text": "Giả sử một hệ thống sử dụng thuật toán phân bổ bộ nhớ cho Đa chương trình với số nhiệm vụ cố định (MFT - Multiprogramming with a Fixed number of Tasks) với n phân vùng và m tiến trình (m > n). Đâu là phát biểu KHÔNG ĐÚNG?",
     "choices": [
       {
         "label": "a",
@@ -43796,7 +43796,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Thuật toán thay thế trang tối ưu:",
+    "question_text": "Thuật toán thay thế trang tối ưu:",
     "choices": [
       {
         "label": "a",
@@ -43976,7 +43976,7 @@
   },
   {
     "qtype": "numeric",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Cho chuỗi tham chiếu: 7 0 1 2 0 3 0 4 2 3 0 3 2 1 2 0 1 7 0 1. Giả sử hệ thống sử dụng thay thế trang FIFO với 3 khung. Tính tổng số lỗi trang?",
+    "question_text": "Cho chuỗi tham chiếu: 7 0 1 2 0 3 0 4 2 3 0 3 2 1 2 0 1 7 0 1. Giả sử hệ thống sử dụng thay thế trang FIFO với 3 khung. Tính tổng số lỗi trang?",
     "choices": [],
     "numeric_answer": "15",
     "correct_labels": [],
@@ -44139,7 +44139,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Phương thức bảo vệ bộ nhớ trong kỹ thuật phân trang sử dụng:",
+    "question_text": "Phương thức bảo vệ bộ nhớ trong kỹ thuật phân trang sử dụng:",
     "choices": [
       {
         "label": "a",
@@ -44902,7 +44902,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Bộ nhớ ảo cho phép:",
+    "question_text": "Bộ nhớ ảo cho phép:",
     "choices": [
       {
         "label": "a",
@@ -45582,7 +45582,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Khi tỷ lệ lỗi trang thấp:",
+    "question_text": "Khi tỷ lệ lỗi trang thấp:",
     "choices": [
       {
         "label": "a",
@@ -45763,7 +45763,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Thời gian truy cập hiệu quả là tỷ lệ thuận với",
+    "question_text": "Thời gian truy cập hiệu quả là tỷ lệ thuận với",
     "choices": [
       {
         "label": "a",
@@ -46522,7 +46522,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Ánh xạ bộ nhớ ảo 2GB lên bộ nhớ vật lý có 256 frame, mỗi frame có kích thước 4 KB. Kích thước mỗi đơn vị bộ nhớ là 1 byte. Số bit cần dùng để đánh số hiệu trang là ?",
+    "question_text": "Ánh xạ bộ nhớ ảo 2GB lên bộ nhớ vật lý có 256 frame, mỗi frame có kích thước 4 KB. Kích thước mỗi đơn vị bộ nhớ là 1 byte. Số bit cần dùng để đánh số hiệu trang là ?",
     "choices": [
       {
         "label": "a",
@@ -46872,7 +46872,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Phân vùng đĩa là 500GB (1GB = 1024MB, 1MB = 1024KB, …); kích thước khối là 1KB. Giả sử một hệ thống sử dụng phân bổ đĩa dạng danh sách liên kết. Kiểu dữ liệu của con trỏ là gì?",
+    "question_text": "Phân vùng đĩa là 500GB (1GB = 1024MB, 1MB = 1024KB, …); kích thước khối là 1KB. Giả sử một hệ thống sử dụng phân bổ đĩa dạng danh sách liên kết. Kiểu dữ liệu của con trỏ là gì?",
     "choices": [
       {
         "label": "a",
@@ -46951,7 +46951,7 @@
   },
   {
     "qtype": "numeric",
-    "question_text": "Not answered Marked out of 1.00 Một hệ thống tệp UNIX có kích thước khối 4KB; kích thước con trỏ 4 byte; 12 con trỏ trực tiếp; 1 con trỏ gián tiếp đơn; 1 con trỏ gián tiếp kép; và 1 con trỏ gián tiếp ba. Tính kích thước tệp tối đa (theo KB) khi con trỏ gián tiếp đơn được sử dụng?",
+    "question_text": "Một hệ thống tệp UNIX có kích thước khối 4KB; kích thước con trỏ 4 byte; 12 con trỏ trực tiếp; 1 con trỏ gián tiếp đơn; 1 con trỏ gián tiếp kép; và 1 con trỏ gián tiếp ba. Tính kích thước tệp tối đa (theo KB) khi con trỏ gián tiếp đơn được sử dụng?",
     "choices": [],
     "correct_labels": [],
     "wrong_labels": [],
@@ -47081,7 +47081,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "Not answered Marked out of 1.00 Giả sử một hệ thống sử dụng phân bổ theo chỉ mục (1 cấp) với kích thước khối 4KB; kích thước con trỏ 4 byte. Một tệp có kích thước 3MB. Đâu là vị trí chính xác của vị trí tệp tin 35KB?",
+    "question_text": "Giả sử một hệ thống sử dụng phân bổ theo chỉ mục (1 cấp) với kích thước khối 4KB; kích thước con trỏ 4 byte. Một tệp có kích thước 3MB. Đâu là vị trí chính xác của vị trí tệp tin 35KB?",
     "choices": [
       {
         "label": "a",
@@ -47160,7 +47160,7 @@
   },
   {
     "qtype": "numeric",
-    "question_text": "Not answered Marked out of 1.00 Một hệ thống sử dụng phân bổ theo chỉ mục 2 cấp với kích thước khối 4KB; kích thước con trỏ 4 byte. Tính kích thước tối đa (theo MB) của một tập tin mà hệ thống có thể tạo ra?",
+    "question_text": "Một hệ thống sử dụng phân bổ theo chỉ mục 2 cấp với kích thước khối 4KB; kích thước con trỏ 4 byte. Tính kích thước tối đa (theo MB) của một tập tin mà hệ thống có thể tạo ra?",
     "choices": [],
     "correct_labels": [],
     "wrong_labels": [],
@@ -47275,7 +47275,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Bảng ma trận truy cập toàn cục chứa________",
+    "question_text": "Bảng ma trận truy cập toàn cục chứa________",
     "choices": [
       {
         "label": "a",
@@ -47354,7 +47354,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Tập hợp các thao tác để thực thi một nhiệm vụ gọi là ________________",
+    "question_text": "Tập hợp các thao tác để thực thi một nhiệm vụ gọi là ________________",
     "choices": [
       {
         "label": "a",
@@ -47692,7 +47692,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Nguyên tắc nào mà các chương trình, người sử dụng và hệ thống chỉ được cấp đủ quyền để thực hiện nhiệm vụ của chúng?",
+    "question_text": "Nguyên tắc nào mà các chương trình, người sử dụng và hệ thống chỉ được cấp đủ quyền để thực hiện nhiệm vụ của chúng?",
     "choices": [
       {
         "label": "a",
@@ -47886,7 +47886,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Đâu là cách một tiến trình sử dụng các cơ chế tự sinh sôi để giảm hiệu năng hệ thống?",
+    "question_text": "Đâu là cách một tiến trình sử dụng các cơ chế tự sinh sôi để giảm hiệu năng hệ thống?",
     "choices": [
       {
         "label": "a",
@@ -48044,7 +48044,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất Nhược điểm của thư mục có cấu trúc danh sách tuyến tính là_______________",
+    "question_text": "Nhược điểm của thư mục có cấu trúc danh sách tuyến tính là_______________",
     "choices": [
       {
         "label": "a",
@@ -48123,7 +48123,7 @@
   },
   {
     "qtype": "single",
-    "question_text": "/9 19/ 6/2020 Bài kiểm tra thứ nhất FAT có cấu trúc giống như ______________________",
+    "question_text": "FAT có cấu trúc giống như ______________________",
     "choices": [
       {
         "label": "a",
@@ -48343,7 +48343,7 @@
   },
   {
     "qtype": "numeric",
-    "question_text": "Not answered Marked out of 1.00 Một hệ thống sử dụng phương pháp cấp phát bộ nhớ theo tỷ lệ. Có 3 tiến trình trong hệ thống là P1, P2 và P3 với kích thước lần lượt là 138KB, 96KB và 164KB. Giả sử kích thước bộ nhớ là 180KB và kích thước khung là 2KB, hãy tính số lượng khung được phân bổ cho các tiến trình P1, P2, P3? (Số khung của các tiến trình P1, P2, P3 được viết liền nhau, ngăn cách nhau bởi dấu phẩy. VD: 1,2,3)",
+    "question_text": "Một hệ thống sử dụng phương pháp cấp phát bộ nhớ theo tỷ lệ. Có 3 tiến trình trong hệ thống là P1, P2 và P3 với kích thước lần lượt là 138KB, 96KB và 164KB. Giả sử kích thước bộ nhớ là 180KB và kích thước khung là 2KB, hãy tính số lượng khung được phân bổ cho các tiến trình P1, P2, P3? (Số khung của các tiến trình P1, P2, P3 được viết liền nhau, ngăn cách nhau bởi dấu phẩy. VD: 1,2,3)",
     "choices": [],
     "correct_labels": [],
     "wrong_labels": [],
@@ -48488,7 +48488,7 @@
   },
   {
     "qtype": "numeric",
-    "question_text": "Not answered Marked out of 1.00 Giả sử một hệ thống sử dụng phân trang theo yêu cầu mà không có Bảng chuyển đổi (TLB - Translation Look-aside Table). Thời gian truy cập bộ nhớ là 200 ns; thời gian phục vụ lỗi trang là 8ms; tỷ lệ lỗi trang là 1/1000. Tính Thời gian truy cập hiệu quả (EAT - Effective Access Time) (tính theo ms) của hệ thống?",
+    "question_text": "Giả sử một hệ thống sử dụng phân trang theo yêu cầu mà không có Bảng chuyển đổi (TLB - Translation Look-aside Table). Thời gian truy cập bộ nhớ là 200 ns; thời gian phục vụ lỗi trang là 8ms; tỷ lệ lỗi trang là 1/1000. Tính Thời gian truy cập hiệu quả (EAT - Effective Access Time) (tính theo ms) của hệ thống?",
     "choices": [],
     "correct_labels": [],
     "wrong_labels": [],
@@ -48623,7 +48623,7 @@
   },
   {
     "qtype": "numeric",
-    "question_text": "Not answered Marked out of 1.00 Giả sử một hệ thống sử dụng thuật toán thay thế trang FIFO với 3 khung. Cho chuỗi tham chiếu: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. Hãy hiển thị các trang (theo thứ tự xuất hiện) được chọn là nạn nhân bị tráo đổi?(Các trang được viết liền nhau, chỉ ngăn cách nhau bởi dấu phẩy. VD: 1,2,4,3)",
+    "question_text": "Giả sử một hệ thống sử dụng thuật toán thay thế trang FIFO với 3 khung. Cho chuỗi tham chiếu: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. Hãy hiển thị các trang (theo thứ tự xuất hiện) được chọn là nạn nhân bị tráo đổi?(Các trang được viết liền nhau, chỉ ngăn cách nhau bởi dấu phẩy. VD: 1,2,4,3)",
     "choices": [],
     "correct_labels": [],
     "wrong_labels": [],
@@ -48741,7 +48741,7 @@
   },
   {
     "qtype": "numeric",
-    "question_text": "Not answered Marked out of 1.00 Cho chuỗi tham chiếu: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. Giả sử một hệ thống sử dụng thuật toán thay thế trang FIFO với 3 khung. Tính tổng số lỗi trang?",
+    "question_text": "Cho chuỗi tham chiếu: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. Giả sử một hệ thống sử dụng thuật toán thay thế trang FIFO với 3 khung. Tính tổng số lỗi trang?",
     "choices": [],
     "correct_labels": [],
     "wrong_labels": [],
@@ -49162,7 +49162,7 @@
   },
   {
     "qtype": "numeric",
-    "question_text": "Not answered Marked out of 1.00 Một hệ thống sử dụng mô hình tập làm việc với Δ = 10. Cho một chuỗi tham chiếu: 2 6 1 5 7 7 7 7 5 1 6 2 3 4 4 4 3 4 4 4 1 3 2 3 4 4 4 3 4 4 4. Hãy hiển thị tập làm việc tại tham chiếu thứ 20? (Các phần tử của tập được viết liền nhau, ngăn cách nhau bởi dấu phẩy. VD: {1,2,3,4})",
+    "question_text": "Một hệ thống sử dụng mô hình tập làm việc với Δ = 10. Cho một chuỗi tham chiếu: 2 6 1 5 7 7 7 7 5 1 6 2 3 4 4 4 3 4 4 4 1 3 2 3 4 4 4 3 4 4 4. Hãy hiển thị tập làm việc tại tham chiếu thứ 20? (Các phần tử của tập được viết liền nhau, ngăn cách nhau bởi dấu phẩy. VD: {1,2,3,4})",
     "choices": [],
     "correct_labels": [],
     "wrong_labels": [],
@@ -73769,7 +73769,7 @@
   },
   {
     "qtype": "numeric",
-    "question_text": "Not flaggedNot flaggedFlag question Hệ thống có M tiến trình chia sẻ N tài nguyên cùng kiểu. Mỗi tiến trình cần nhiều nhất N tài nguyên, và tổng số tài nguyên cần thiết của M tiến trình luôn ít hơn (M+N). Khẳng định nào sau đây là đúng:",
+    "question_text": "Hệ thống có M tiến trình chia sẻ N tài nguyên cùng kiểu. Mỗi tiến trình cần nhiều nhất N tài nguyên, và tổng số tài nguyên cần thiết của M tiến trình luôn ít hơn (M+N). Khẳng định nào sau đây là đúng:",
     "choices": [
       {
         "label": "a",

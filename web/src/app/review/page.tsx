@@ -51,6 +51,8 @@ export default function ReviewPage() {
     return all.filter((q) => q.needs_review);
   }, [all, tab, bookmarks]);
 
+  const allById = useMemo(() => new Map(all.map((q) => [q.id, q])), [all]);
+
   // Reset idx on tab change (skip if we have a pending jump targeting this tab)
   useEffect(() => {
     if (pendingJumpId === null) setIdx(0);
@@ -219,22 +221,46 @@ export default function ReviewPage() {
             <p className="py-8 text-center text-sm text-zinc-500">Chưa có câu nào được xác nhận.</p>
           ) : (
             <ul className="space-y-2">
-              {history.map((h, i) => (
+              {history.map((h, i) => {
+                const hq = allById.get(h.id);
+                const noChange =
+                  h.before.correct_labels.join(",") === h.after.correct_labels.join(",") &&
+                  (h.before.numeric_answer ?? "") === (h.after.numeric_answer ?? "");
+                return (
                 <li
                   key={`${h.hid ?? h.id}-${i}`}
                   onClick={() => jumpToQuestion(h.id)}
-                  className="group flex flex-wrap items-center gap-3 rounded-xl border border-zinc-800 bg-zinc-950/50 px-4 py-3 text-sm cursor-pointer transition-colors hover:border-violet-500/40 hover:bg-zinc-900/60"
+                  className={`group flex flex-col gap-2 rounded-xl border px-4 py-3 text-sm cursor-pointer transition-colors ${
+                    noChange
+                      ? "border-amber-500/40 bg-amber-500/5 hover:border-amber-400/60 hover:bg-amber-500/10"
+                      : "border-zinc-800 bg-zinc-950/50 hover:border-violet-500/40 hover:bg-zinc-900/60"
+                  }`}
                   title="Click để mở câu này và sửa lại"
                 >
+                  {/* Question text */}
+                  <p className="line-clamp-2 text-xs leading-relaxed text-zinc-300">
+                    {hq ? hq.question_text : <span className="italic text-zinc-600">Đang tải…</span>}
+                  </p>
+                  {/* Metadata row */}
+                  <div className="flex flex-wrap items-center gap-3">
                   <span className="font-mono text-xs text-zinc-500 tabular-nums">
                     {new Date(h.ts).toLocaleString("vi-VN")}
                   </span>
-                  <span className="font-mono text-zinc-300">{h.id}</span>
-                  <span className="rounded bg-rose-500/15 px-1.5 py-0.5 font-mono text-xs text-rose-300">
+                  <span className="font-mono text-zinc-500">{h.id}</span>
+                  {noChange && (
+                    <span className="inline-flex items-center gap-1 rounded bg-amber-500/20 px-1.5 py-0.5 text-xs text-amber-300">
+                      <AlertCircle className="h-3 w-3" /> trước=sau
+                    </span>
+                  )}
+                  <span className={`rounded px-1.5 py-0.5 font-mono text-xs ${
+                    noChange ? "bg-zinc-700/40 text-zinc-400" : "bg-rose-500/15 text-rose-300"
+                  }`}>
                     {(h.before.correct_labels.join(", ") || h.before.numeric_answer || "—").toUpperCase()}
                   </span>
                   <span className="text-zinc-600">→</span>
-                  <span className="rounded bg-emerald-500/15 px-1.5 py-0.5 font-mono text-xs text-emerald-300">
+                  <span className={`rounded px-1.5 py-0.5 font-mono text-xs ${
+                    noChange ? "bg-zinc-700/40 text-zinc-400" : "bg-emerald-500/15 text-emerald-300"
+                  }`}>
                     {(h.after.correct_labels.join(", ") || h.after.numeric_answer || "—").toUpperCase()}
                   </span>
                   {h.note && <span className="text-xs italic text-zinc-500">{h.note}</span>}
@@ -259,8 +285,10 @@ export default function ReviewPage() {
                       <span className="text-xs text-zinc-700">legacy</span>
                     )}
                   </div>
+                  </div>
                 </li>
-              ))}
+                );
+              })}
             </ul>
           )}
         </div>
@@ -373,7 +401,7 @@ export default function ReviewPage() {
                         ? "Đã xác nhận ✓"
                         : saveState === "error"
                           ? "Lỗi!"
-                          : "Xác nhận & tiếp theo"}
+                          : "Lưu"}
                   </button>
                   <button
                     onClick={() => toggleBookmark(q.id)}
