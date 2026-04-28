@@ -71,8 +71,8 @@ export default function TheoryPage() {
       </div>
 
       {tab === "notes" && (
-        <div className="grid gap-4 lg:grid-cols-[260px_1fr]">
-          <div className="space-y-2">
+        <div className="grid items-start gap-4 lg:grid-cols-[260px_1fr]">
+          <div className="space-y-2 lg:sticky lg:top-20 lg:self-start">
             {NOTES.map((n) => (
               <button
                 key={n.file}
