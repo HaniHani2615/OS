@@ -21,6 +21,11 @@ tools/__pycache__/
 docs/
 kienthuc/
 
+# ---- Agent / Copilot skills (local only) ----
+.agents/
+.claude/
+skills-lock.json
+
 # ---- OS / editor ----
 .DS_Store
 Thumbs.db
