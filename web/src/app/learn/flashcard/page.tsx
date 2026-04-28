@@ -129,7 +129,7 @@ export default function FlashcardPage() {
                 exit={{ opacity: 0, rotateY: flipped ? 90 : -90 }}
                 transition={{ duration: 0.25 }}
                 onClick={() => setFlipped((f) => !f)}
-                className="absolute inset-0 cursor-pointer rounded-2xl border border-zinc-800 bg-gradient-to-br from-zinc-900 to-zinc-950 p-8 shadow-xl shadow-black/40"
+                className="absolute inset-0 cursor-pointer rounded-2xl border border-zinc-800 bg-zinc-900 p-8 shadow-xl shadow-black/40"
               >
                 {!flipped ? (
                   <FrontFace q={card} />
@@ -156,7 +156,7 @@ export default function FlashcardPage() {
             </button>
             <button
               onClick={markMastered}
-              className="inline-flex items-center gap-1.5 rounded-md bg-emerald-500/15 px-4 py-2 text-sm font-medium text-emerald-300 ring-1 ring-emerald-500/30 hover:bg-emerald-500/20"
+              className="inline-flex items-center gap-1.5 rounded-md bg-emerald-600 px-4 py-2 text-sm font-medium text-white shadow-sm shadow-emerald-900/40 transition-all duration-150 hover:bg-emerald-500 active:scale-95"
             >
               <Sparkles className="h-4 w-4" /> Đã thuộc
             </button>

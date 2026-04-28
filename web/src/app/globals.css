@@ -47,10 +47,30 @@ html.light header {
   border-color: oklch(87% 0.005 264 / 0.7) !important;
 }
 
-/* Surface backgrounds */
-html.light [class*="bg-zinc-950"] { background-color: oklch(100% 0 0) !important; }
-html.light [class*="bg-zinc-900"] { background-color: oklch(99% 0.002 264 / 0.9) !important; }
-html.light [class*="bg-zinc-800"] { background-color: oklch(88% 0.004 264 / 0.55) !important; }
+/* Surface backgrounds — also reset background-image so gradients don't bleed */
+html.light [class*="bg-zinc-950"] {
+  background-color: oklch(100% 0 0) !important;
+  background-image: none !important;
+}
+html.light [class*="bg-zinc-900"] {
+  background-color: oklch(98.5% 0.002 264) !important;
+  background-image: none !important;
+}
+html.light [class*="bg-zinc-800"] {
+  background-color: oklch(88% 0.004 264 / 0.55) !important;
+  background-image: none !important;
+}
+
+/* Gradient cards that use via-zinc-9xx / to-zinc-9xx — just clear the gradient */
+html.light [class*="via-zinc-9"],
+html.light [class*="to-zinc-9"] {
+  background-image: none !important;
+}
+/* Give those panels a tinted background instead of the cleared gradient */
+html.light [class*="via-zinc-9"][class*="from-violet"],
+html.light [class*="to-zinc-9"][class*="from-violet"] {
+  background-color: oklch(93% 0.05 290 / 0.4) !important;
+}
 
 /* Borders */
 html.light [class*="border-zinc-800"] { border-color: oklch(85% 0.005 264 / 0.7) !important; }
@@ -59,7 +79,7 @@ html.light [class*="border-zinc-700"] { border-color: oklch(78% 0.006 264 / 0.7)
 /* Text — neutral */
 html.light .text-zinc-100 { color: oklch(14% 0.006 264) !important; }
 html.light .text-zinc-200 { color: oklch(20% 0.006 264) !important; }
-html.light .text-zinc-300 { color: oklch(32% 0.007 264) !important; }
+html.light .text-zinc-300 { color: oklch(30% 0.007 264) !important; }
 html.light .text-zinc-400 { color: oklch(48% 0.007 264) !important; }
 html.light .text-zinc-500 { color: oklch(58% 0.007 264) !important; }
 html.light .text-zinc-600 { color: oklch(58% 0.007 264) !important; }
@@ -122,6 +142,12 @@ html.light [class*="bg-violet-500\/15"]  { background-color: oklch(88% 0.07 290 
 html.light [class*="bg-violet-500\/20"]  { background-color: oklch(86% 0.08 290 / 0.7) !important; }
 html.light [class*="bg-violet-500\/30"]  { background-color: oklch(82% 0.09 290 / 0.7) !important; }
 html.light [class*="bg-violet-500\/10"]  { background-color: oklch(90% 0.06 290 / 0.5) !important; }
+
+/* Shadow reset — shadow-black looks too heavy on light backgrounds */
+html.light [class*="shadow-black"] {
+  --tw-shadow-color: oklch(70% 0.006 264 / 0.25);
+  --tw-shadow: var(--tw-shadow-colored);
+}
 
 /* Inline code blocks inside explanations */
 html.light [class*="bg-zinc-800\/70"] { background-color: oklch(88% 0.004 264 / 0.6) !important; }
