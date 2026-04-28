@@ -203,3 +203,48 @@ button, a, [role="button"] {
   transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+
+/* ═══════════════════════════════════════════
+   THEORY MARKDOWN
+═══════════════════════════════════════════ */
+.theory-md { color: oklch(91% 0.005 264); line-height: 1.7; font-size: 0.95rem; }
+.theory-md h1 { font-size: 1.5rem; font-weight: 700; margin: 0 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgb(39 39 42); }
+.theory-md h2 { font-size: 1.2rem; font-weight: 700; margin: 1.75rem 0 0.75rem; color: rgb(196 181 253); }
+.theory-md h3 { font-size: 1.05rem; font-weight: 600; margin: 1.25rem 0 0.5rem; color: rgb(216 180 254); }
+.theory-md h4 { font-size: 0.95rem; font-weight: 600; margin: 1rem 0 0.4rem; color: rgb(228 228 231); }
+.theory-md p { margin: 0.6rem 0; }
+.theory-md ul, .theory-md ol { margin: 0.5rem 0 0.75rem; padding-left: 1.5rem; }
+.theory-md li { margin: 0.25rem 0; }
+.theory-md ul li::marker { color: rgb(139 92 246); }
+.theory-md ol li::marker { color: rgb(139 92 246); font-weight: 600; }
+.theory-md strong { color: rgb(244 244 245); font-weight: 600; }
+.theory-md em { color: rgb(212 212 216); }
+.theory-md code { background: rgb(24 24 27); border: 1px solid rgb(39 39 42); padding: 0.1rem 0.35rem; border-radius: 0.25rem; font-size: 0.85em; color: rgb(196 181 253); }
+.theory-md pre { background: rgb(9 9 11); border: 1px solid rgb(39 39 42); padding: 0.75rem 1rem; border-radius: 0.5rem; overflow-x: auto; margin: 0.75rem 0; }
+.theory-md pre code { background: transparent; border: 0; padding: 0; color: rgb(212 212 216); font-size: 0.82rem; }
+.theory-md blockquote { border-left: 3px solid rgb(139 92 246); padding: 0.4rem 0.9rem; margin: 0.75rem 0; background: rgb(139 92 246 / 0.06); color: rgb(212 212 216); border-radius: 0 0.4rem 0.4rem 0; }
+.theory-md table { border-collapse: collapse; margin: 0.75rem 0; font-size: 0.85rem; width: 100%; display: block; overflow-x: auto; }
+.theory-md th, .theory-md td { border: 1px solid rgb(39 39 42); padding: 0.4rem 0.7rem; text-align: left; vertical-align: top; }
+.theory-md th { background: rgb(24 24 27); color: rgb(228 228 231); font-weight: 600; }
+.theory-md td { color: rgb(212 212 216); }
+.theory-md hr { border: 0; border-top: 1px solid rgb(39 39 42); margin: 1.5rem 0; }
+.theory-md a { color: rgb(196 181 253); text-decoration: underline; text-underline-offset: 2px; }
+.theory-md a:hover { color: rgb(216 180 254); }
+
+html.light .theory-md { color: oklch(20% 0.006 264); }
+html.light .theory-md h1 { border-bottom-color: oklch(85% 0.005 264); color: oklch(15% 0.006 264); }
+html.light .theory-md h2, html.light .theory-md h3 { color: oklch(35% 0.18 280); }
+html.light .theory-md h4 { color: oklch(20% 0.006 264); }
+html.light .theory-md strong { color: oklch(13% 0.006 264); }
+html.light .theory-md em { color: oklch(30% 0.006 264); }
+html.light .theory-md ul li::marker, html.light .theory-md ol li::marker { color: oklch(45% 0.18 280); }
+html.light .theory-md code { background: oklch(96% 0.005 264); border-color: oklch(87% 0.005 264); color: oklch(35% 0.18 280); }
+html.light .theory-md pre { background: oklch(95% 0.005 264); border-color: oklch(87% 0.005 264); }
+html.light .theory-md pre code { color: oklch(20% 0.006 264); }
+html.light .theory-md th { background: oklch(94% 0.005 264); color: oklch(15% 0.006 264); }
+html.light .theory-md td { color: oklch(25% 0.006 264); }
+html.light .theory-md th, html.light .theory-md td { border-color: oklch(85% 0.005 264); }
+html.light .theory-md blockquote { background: oklch(70% 0.15 280 / 0.08); color: oklch(25% 0.006 264); border-left-color: oklch(45% 0.18 280); }
+html.light .theory-md hr { border-top-color: oklch(85% 0.005 264); }
+html.light .theory-md a { color: oklch(40% 0.18 280); }
+html.light .theory-md a:hover { color: oklch(30% 0.18 280); }

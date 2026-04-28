@@ -1,17 +1,28 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import { AlertCircle, Save, Trash2, CheckCircle, ArrowLeft, ArrowRight, Bookmark, BookmarkCheck } from "lucide-react";
+import { AlertCircle, Save, Trash2, CheckCircle, ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, ShieldCheck, History } from "lucide-react";
 import { loadQuestions } from "@/lib/data";
 import type { Question } from "@/lib/types";
 import { useExam } from "@/lib/store";
 
 type Filter = "needs_review" | "low_confidence" | "all" | "overridden" | "flagged";
+type HistoryEntry = {
+  id: string;
+  ts: string;
+  before: { correct_labels: string[]; numeric_answer?: string };
+  after: { correct_labels: string[]; numeric_answer?: string };
+  note?: string;
+};
 
 export default function ReviewPage() {
   const [all, setAll] = useState<Question[]>([]);
   const [filter, setFilter] = useState<Filter>("needs_review");
   const [idx, setIdx] = useState(0);
   const [saveState, setSaveState] = useState<"idle" | "saving" | "saved" | "error">("idle");
+  const [canonState, setCanonState] = useState<"idle" | "running" | "done" | "error">("idle");
+  const [canonMsg, setCanonMsg] = useState<string>("");
+  const [history, setHistory] = useState<HistoryEntry[]>([]);
+  const [showHistory, setShowHistory] = useState(false);
   const overrides = useExam((s) => s.overrides);
   const setOverride = useExam((s) => s.setOverride);
   const clearOverride = useExam((s) => s.clearOverride);
@@ -20,7 +31,51 @@ export default function ReviewPage() {
 
   useEffect(() => {
     loadQuestions().then(setAll);
+    fetch("/data/edit_history.json", { cache: "no-store" })
+      .then((r) => r.json())
+      .then((h) => setHistory(Array.isArray(h) ? h : []))
+      .catch(() => setHistory([]));
   }, []);
+
+  async function refreshHistory() {
+    try {
+      const r = await fetch("/data/edit_history.json", { cache: "no-store" });
+      const h = await r.json();
+      setHistory(Array.isArray(h) ? h : []);
+    } catch {
+      /* ignore */
+    }
+  }
+
+  async function canonicalize() {
+    if (!confirm(`Áp dụng ${Object.keys(overrides).length} override vào questions.json (chuẩn hoá)?\nLịch sử sẽ được lưu lại để xem/khôi phục.`)) return;
+    setCanonState("running");
+    setCanonMsg("");
+    try {
+      // First save current overrides to file (in case user hasn't)
+      const patch = Object.entries(overrides).map(([id, v]) => ({ id, ...v }));
+      const sv = await fetch("/api/save-overrides", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(patch),
+      });
+      if (!sv.ok) throw new Error(await sv.text());
+      const res = await fetch("/api/canonicalize", { method: "POST" });
+      if (!res.ok) throw new Error(await res.text());
+      const data = await res.json();
+      setCanonState("done");
+      setCanonMsg(`Đã chuẩn hoá ${data.applied} câu`);
+      // Clear all in-memory overrides
+      Object.keys(overrides).forEach((id) => clearOverride(id));
+      // Reload questions (bust cache)
+      window.location.reload();
+    } catch (e) {
+      setCanonState("error");
+      setCanonMsg(String(e));
+      setTimeout(() => setCanonState("idle"), 3500);
+    }
+  }
+  void refreshHistory;
 
   const list = useMemo(() => {
     if (filter === "all") return all;
@@ -74,27 +129,92 @@ export default function ReviewPage() {
             Sửa đáp án sai, override sẽ ghi vào localStorage và áp dụng cho mọi mode.
           </p>
         </div>
-        <button
-          onClick={saveToFile}
-          disabled={Object.keys(overrides).length === 0 || saveState === "saving"}
-          className={`inline-flex items-center gap-1.5 rounded-md border px-3 py-2 text-sm transition-colors disabled:opacity-40 ${
-            saveState === "saved"
-              ? "border-emerald-500/50 bg-emerald-500/10 text-emerald-300"
-              : saveState === "error"
-                ? "border-rose-500/50 bg-rose-500/10 text-rose-300"
-                : "border-zinc-700/60 bg-zinc-900/40 text-zinc-300 hover:bg-zinc-800/60"
-          }`}
-        >
-          <CheckCircle className="h-3.5 w-3.5" />
-          {saveState === "saving"
-            ? "Đang lưu..."
-            : saveState === "saved"
-              ? `Đã lưu file (${Object.keys(overrides).length})`
-              : saveState === "error"
-                ? "Lỗi!"
-                : `Lưu ra file (${Object.keys(overrides).length})`}
-        </button>
+        <div className="flex flex-wrap items-center gap-2">
+          <button
+            onClick={() => setShowHistory((v) => !v)}
+            className="inline-flex items-center gap-1.5 rounded-md border border-zinc-700/60 bg-zinc-900/40 px-3 py-2 text-sm text-zinc-300 transition-colors hover:bg-zinc-800/60"
+          >
+            <History className="h-3.5 w-3.5" /> Lịch sử ({history.length})
+          </button>
+          <button
+            onClick={saveToFile}
+            disabled={Object.keys(overrides).length === 0 || saveState === "saving"}
+            className={`inline-flex items-center gap-1.5 rounded-md border px-3 py-2 text-sm transition-colors disabled:opacity-40 ${
+              saveState === "saved"
+                ? "border-emerald-500/50 bg-emerald-500/10 text-emerald-300"
+                : saveState === "error"
+                  ? "border-rose-500/50 bg-rose-500/10 text-rose-300"
+                  : "border-zinc-700/60 bg-zinc-900/40 text-zinc-300 hover:bg-zinc-800/60"
+            }`}
+          >
+            <CheckCircle className="h-3.5 w-3.5" />
+            {saveState === "saving"
+              ? "Đang lưu..."
+              : saveState === "saved"
+                ? `Đã lưu file (${Object.keys(overrides).length})`
+                : saveState === "error"
+                  ? "Lỗi!"
+                  : `Lưu nháp (${Object.keys(overrides).length})`}
+          </button>
+          <button
+            onClick={canonicalize}
+            disabled={Object.keys(overrides).length === 0 || canonState === "running"}
+            className={`inline-flex items-center gap-1.5 rounded-md border px-3 py-2 text-sm transition-colors disabled:opacity-40 ${
+              canonState === "done"
+                ? "border-emerald-500/50 bg-emerald-500/10 text-emerald-300"
+                : canonState === "error"
+                  ? "border-rose-500/50 bg-rose-500/10 text-rose-300"
+                  : "border-violet-500/50 bg-violet-600/15 text-violet-200 hover:bg-violet-600/25"
+            }`}
+            title="Áp dụng overrides hiện tại vào questions.json (chuẩn hoá)"
+          >
+            <ShieldCheck className="h-3.5 w-3.5" />
+            {canonState === "running"
+              ? "Đang chuẩn hoá..."
+              : canonState === "done"
+                ? canonMsg || "Đã chuẩn hoá"
+                : canonState === "error"
+                  ? "Lỗi chuẩn hoá!"
+                  : `Chuẩn hoá (${Object.keys(overrides).length})`}
+          </button>
+        </div>
       </div>
+
+      {showHistory && (
+        <div className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-4">
+          <div className="mb-3 flex items-center justify-between">
+            <h3 className="text-sm font-semibold text-zinc-200">Lịch sử chuẩn hoá ({history.length})</h3>
+            <button
+              onClick={() => setShowHistory(false)}
+              className="text-xs text-zinc-500 hover:text-zinc-300"
+            >
+              Đóng
+            </button>
+          </div>
+          {history.length === 0 ? (
+            <p className="text-xs text-zinc-500">Chưa có thay đổi nào.</p>
+          ) : (
+            <ul className="max-h-72 space-y-1.5 overflow-y-auto pr-1 text-xs">
+              {[...history].reverse().slice(0, 100).map((h, i) => (
+                <li
+                  key={`${h.id}-${h.ts}-${i}`}
+                  className="flex flex-wrap items-center gap-2 rounded-md border border-zinc-800 bg-zinc-950/50 px-3 py-1.5"
+                >
+                  <span className="font-mono text-zinc-500">{new Date(h.ts).toLocaleString("vi-VN")}</span>
+                  <span className="font-mono text-zinc-300">{h.id}</span>
+                  <span className="text-rose-400">
+                    {(h.before.correct_labels.join(",") || h.before.numeric_answer || "—").toUpperCase()}
+                  </span>
+                  <span className="text-zinc-500">→</span>
+                  <span className="text-emerald-300">
+                    {(h.after.correct_labels.join(",") || h.after.numeric_answer || "—").toUpperCase()}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
 
       <div className="flex flex-wrap gap-2">
         {(["needs_review", "low_confidence", "flagged", "overridden", "all"] as Filter[]).map((f) => (

@@ -68,7 +68,7 @@ export default function HomePage() {
           href="/learn/theory"
           icon={<FileText className="h-5 w-5" />}
           title="Lý thuyết"
-          desc="Slide bài giảng PDF gốc, theo từng bài."
+          desc="Tóm tắt cô đọng theo chương + slide gốc PDF."
           accent="amber"
         />
         <ModeCard
@@ -82,7 +82,7 @@ export default function HomePage() {
           href="/review"
           icon={<AlertCircle className="h-5 w-5" />}
           title="Review"
-          desc="Sửa đáp án sai, lọc theo cờ hoặc override đã lưu."
+          desc="Sửa đáp án sai, chuẩn hoá vào bank, xem lịch sử."
           accent="zinc"
         />
       </section>

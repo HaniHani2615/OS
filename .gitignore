@@ -16,6 +16,7 @@ web/coverage/
 # ---- Sinh ra từ pipeline ----
 tools/raw/
 tools/__pycache__/
+tools/kienthuc_extracted/
 
 # ---- Tài liệu nặng / có bản quyền (KHÔNG push) ----
 docs/
