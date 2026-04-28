@@ -1,0 +1,93 @@
+# Phân tầng nguồn tài liệu OS — dùng để gán độ tin cậy đáp án.
+# Tier A: Moodle attempt review có icon ✓/✗ máy chấm → ground truth.
+# Tier B: phao do sinh viên gõ tay → cần verify.
+# Tier C: lý thuyết / test bank gốc → tham chiếu cho AI suy luận.
+# format_hint: moodle_radio | moodle_highlight | typed_text
+sources:
+  # ===== Tier A — Ground truth (có ✓ / ✗ máy chấm) =====
+  - path: docs/bai-kiem-tra-thu-nhat-attempt-review_compress.pdf
+    tier: A
+    format_hint: moodle_radio
+    chapter_scope: [3, 4, 5, 6]   # bài kiểm tra số 1
+  - path: docs/Đề/Bài kiểm tra số 1
+    is_dir: true
+    tier: A
+    format_hint: moodle_radio
+    chapter_scope: [3, 4, 5, 6]
+  - path: docs/tổng hợp phao
+    is_dir: true
+    tier: A
+    format_hint: moodle_radio
+    chapter_scope: [3, 4, 5, 6]
+  - path: docs/Tổng hợp các bài kiểm tra trên course.pdf
+    tier: A
+    format_hint: moodle_radio
+    chapter_scope: [1, 2, 3, 4, 5, 6, 7, 8]
+
+  # ===== Tier B — Phao gõ tay / tổng hợp =====
+  - path: docs/Phao-tổng-hợp.pdf
+    tier: B
+    format_hint: moodle_radio   # thực ra cũng là Moodle review nhưng layout khác
+    chapter_scope: [1, 2, 3, 4, 5, 6, 7]
+  - path: docs/Trắc nghiệm đã gộp.pdf
+    tier: B
+    format_hint: typed_text
+    chapter_scope: [1, 2, 3, 4, 5, 6, 7]
+  - path: docs/Tổng hợp các câu hỏi có thể ra.pdf
+    tier: B
+    format_hint: typed_text
+    chapter_scope: [1, 2, 3, 4, 5, 6, 7]
+  - path: docs/Tổng hợp nguồn trên mạng.pdf
+    tier: B
+    format_hint: typed_text
+    chapter_scope: [1, 2, 3, 4, 5, 6, 7]
+  - path: docs/Thuật lần 1.pdf
+    tier: B
+    format_hint: moodle_radio
+    chapter_scope: [3, 4, 5, 6]
+  - path: docs/Chương 1-2
+    is_dir: true
+    tier: B
+    format_hint: auto
+    chapter_scope: [1, 2]
+  - path: docs/Chương 3-4
+    is_dir: true
+    tier: B
+    format_hint: auto
+    chapter_scope: [3, 4]
+  - path: docs/Chương 5-6
+    is_dir: true
+    tier: B
+    format_hint: auto
+    chapter_scope: [5, 6]
+  - path: docs/Chương 7-8
+    is_dir: true
+    tier: B
+    format_hint: auto
+    chapter_scope: [7]   # bỏ Ch 8 cho giữa kì
+
+  # ===== Tier C — Test bank gốc & lý thuyết =====
+  - path: docs/TestBank1.pdf
+    tier: C
+    format_hint: moodle_highlight
+    chapter_scope: [1, 2, 3, 4, 5, 6, 7, 8]
+  - path: docs/TestBank2.pdf
+    tier: C
+    format_hint: moodle_highlight
+    chapter_scope: [1, 2, 3, 4, 5, 6, 7, 8]
+  - path: docs/TestBank3.pdf
+    tier: C
+    format_hint: moodle_highlight
+    chapter_scope: [1, 2, 3, 4, 5, 6, 7, 8]
+  - path: docs/NLHDH_all.pdf
+    tier: C
+    format_hint: lecture
+    skip_extract: true   # slide bài giảng — chỉ dùng làm context AI
+  - path: docs/Tổng hợp (bản đầy đủ) - 1705 trang.pdf
+    tier: C
+    format_hint: lecture
+    skip_extract: true
+
+# Bỏ qua các thư mục copy (duplicate)
+exclude_globs:
+  - "docs/**/*copy*/**"
