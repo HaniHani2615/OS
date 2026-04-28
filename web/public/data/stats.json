@@ -1,0 +1,15 @@
+{
+  "total": 684,
+  "in_scope": 583,
+  "out_of_scope": 101,
+  "by_chapter": {
+    "3-4": 315,
+    "5-6": 94,
+    "1-2": 69,
+    "unknown": 63,
+    "7": 105,
+    "8": 38
+  },
+  "verified_total": 229,
+  "needs_review": 476
+}
