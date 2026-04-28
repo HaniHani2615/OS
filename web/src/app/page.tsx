@@ -47,7 +47,7 @@ export default function HomePage() {
           icon={<ClipboardList className="h-5 w-5" />}
           title="Phòng thi"
           desc="Đề ngẫu nhiên đúng tỉ lệ chương, có đếm giờ. Chấm khi nộp."
-          color="from-violet-500/30 to-violet-500/0"
+          accent="violet"
           highlight
         />
         <ModeCard
@@ -55,35 +55,35 @@ export default function HomePage() {
           icon={<Zap className="h-5 w-5" />}
           title="Quiz nhanh"
           desc="Trả lời từng câu, có phản hồi tức thì + streak + giải thích."
-          color="from-emerald-500/30 to-emerald-500/0"
+          accent="emerald"
         />
         <ModeCard
           href="/learn/flashcard"
           icon={<BookOpen className="h-5 w-5" />}
           title="Flashcard"
           desc="Lật thẻ câu lý thuyết, đánh dấu đã thuộc."
-          color="from-sky-500/30 to-sky-500/0"
+          accent="sky"
         />
         <ModeCard
           href="/learn/theory"
           icon={<FileText className="h-5 w-5" />}
           title="Lý thuyết"
           desc="Slide bài giảng PDF gốc, theo từng bài."
-          color="from-amber-500/30 to-amber-500/0"
+          accent="amber"
         />
         <ModeCard
           href="/learn/read"
           icon={<ScrollText className="h-5 w-5" />}
           title="Đọc bank"
           desc="Lướt toàn bộ ngân hàng theo chương — có gắn cờ & giải thích."
-          color="from-rose-500/30 to-rose-500/0"
+          accent="rose"
         />
         <ModeCard
           href="/review"
           icon={<AlertCircle className="h-5 w-5" />}
           title="Review"
           desc="Sửa đáp án sai, lọc theo cờ hoặc override đã lưu."
-          color="from-zinc-500/30 to-zinc-500/0"
+          accent="zinc"
         />
       </section>
 
@@ -104,9 +104,9 @@ export default function HomePage() {
                     <p className="text-sm font-medium text-zinc-200">{CHAPTER_LABELS[ch]}</p>
                     <p className="text-xs text-zinc-500">{n} câu unique</p>
                   </div>
-                  <div className="h-1.5 w-32 overflow-hidden rounded-full bg-zinc-800">
+                  <div className="h-1.5 w-32 overflow-hidden rounded-full bg-zinc-800/80">
                     <div
-                      className="h-full bg-gradient-to-r from-violet-500 to-sky-500"
+                      className="h-full rounded-full bg-violet-500/70"
                       style={{ width: `${Math.min(100, (n / 320) * 100)}%` }}
                     />
                   </div>
@@ -136,39 +136,49 @@ export default function HomePage() {
   );
 }
 
+const accentMap: Record<string, { border: string; icon: string; glow: string }> = {
+  violet: { border: "border-violet-500/30", icon: "text-violet-400", glow: "bg-violet-500/8" },
+  emerald: { border: "border-zinc-800/80", icon: "text-emerald-400", glow: "bg-emerald-500/6" },
+  sky:     { border: "border-zinc-800/80", icon: "text-sky-400",     glow: "bg-sky-500/6" },
+  amber:   { border: "border-zinc-800/80", icon: "text-amber-400",   glow: "bg-amber-500/6" },
+  rose:    { border: "border-zinc-800/80", icon: "text-rose-400",    glow: "bg-rose-500/6" },
+  zinc:    { border: "border-zinc-800/80", icon: "text-zinc-400",    glow: "" },
+};
+
 function ModeCard({
   href,
   icon,
   title,
   desc,
-  color,
+  accent = "zinc",
   highlight,
 }: {
   href: string;
   icon: React.ReactNode;
   title: string;
   desc: string;
-  color: string;
+  accent?: string;
   highlight?: boolean;
 }) {
+  const a = accentMap[accent] ?? accentMap.zinc;
   return (
     <Link
       href={href}
-      className={`group relative overflow-hidden rounded-2xl border bg-zinc-900/40 p-6 transition-all hover:-translate-y-0.5 hover:border-zinc-700 hover:bg-zinc-900/60 ${
-        highlight ? "border-violet-500/40" : "border-zinc-800/80"
+      className={`group relative overflow-hidden rounded-2xl border bg-zinc-900/40 p-6 transition-all hover:-translate-y-0.5 hover:bg-zinc-900/60 ${
+        highlight ? a.border : "border-zinc-800/80 hover:border-zinc-700/80"
       }`}
     >
-      <div
-        className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${color} opacity-50 transition-opacity group-hover:opacity-80`}
-      />
+      {a.glow && (
+        <div className={`pointer-events-none absolute inset-0 ${a.glow} transition-opacity group-hover:opacity-150`} />
+      )}
       <div className="relative">
-        <div className="mb-4 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-zinc-950/80 text-zinc-100 ring-1 ring-zinc-700/50">
+        <div className={`mb-4 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-zinc-950/80 ring-1 ring-zinc-700/50 ${a.icon}`}>
           {icon}
         </div>
         <h3 className="text-lg font-semibold tracking-tight text-zinc-100">{title}</h3>
         <p className="mt-1.5 text-sm text-zinc-400">{desc}</p>
-        <div className="mt-4 inline-flex items-center gap-1 text-sm text-zinc-300">
-          Bắt đầu{" "}
+        <div className="mt-4 inline-flex items-center gap-1 text-sm text-zinc-400 transition-colors group-hover:text-zinc-200">
+          Bắt đầu
           <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
         </div>
       </div>
