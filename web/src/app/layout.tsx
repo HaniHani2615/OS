@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import { TopProgressBar } from "@/components/TopProgressBar";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin", "vietnamese"], variable: "--font-inter" });
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="vi" className={inter.variable}>
+    <html lang="vi" className={`${inter.variable} dark`}>
       <body className="antialiased font-sans">
         <TopProgressBar />
         <header className="sticky top-0 z-30 border-b border-zinc-800/60 bg-zinc-950/70 backdrop-blur-xl">
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <NavLink href="/learn/quiz">Quiz</NavLink>
               <NavLink href="/exam">Phòng thi</NavLink>
               <NavLink href="/review">Review</NavLink>
+              <ThemeToggle />
             </div>
           </nav>
         </header>

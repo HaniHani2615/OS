@@ -164,7 +164,7 @@ function ReadCard({
         onClick={onToggle}
         className="flex w-full items-start gap-3 px-4 py-3 text-left transition-colors hover:bg-zinc-800/40"
       >
-        <span className="mt-0.5 flex-shrink-0 rounded-full bg-violet-600/20 border border-violet-500/30 px-2 py-0.5 font-mono text-xs font-bold text-violet-300 leading-5">
+        <span className="flex-shrink-0 grid place-items-center rounded-xl bg-violet-600 text-white font-bold font-mono text-sm shadow shadow-violet-700/40 min-w-[2rem] h-8 px-2">
           {index}
         </span>
         <span className="flex-1 text-sm leading-relaxed text-zinc-100">
