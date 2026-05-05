@@ -48,9 +48,16 @@ export async function POST(req: Request) {
   // Apply patch
   q.correct_labels = correct_labels;
   if (numeric_answer !== undefined) q.numeric_answer = numeric_answer;
-  q.confidence = 1;
-  q.needs_review = false;
-  q.decision = "manual_verified";
+  if (note === "risky_unconfirmed") {
+    // Acknowledge but keep low confidence so it stays in "low_confidence" filter
+    q.confidence = 0.5;
+    q.needs_review = false;
+    q.decision = "acknowledged_risky";
+  } else {
+    q.confidence = 1;
+    q.needs_review = false;
+    q.decision = "manual_verified";
+  }
 
   const after: HistoryEntry["after"] = {
     correct_labels,

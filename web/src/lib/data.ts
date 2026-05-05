@@ -9,6 +9,11 @@ const DATA_VERSION = "v2";
 
 type OverridePatch = { id: string; correct: string[]; numeric?: string; note?: string };
 
+export function clearCache() {
+  cache = null;
+  statsCache = null;
+}
+
 export async function loadQuestions(): Promise<Question[]> {
   if (cache) return cache;
   const [qs, patches] = await Promise.all([

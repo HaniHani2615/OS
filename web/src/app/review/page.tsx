@@ -11,7 +11,7 @@ import {
   Undo2,
   Pencil,
 } from "lucide-react";
-import { loadQuestions } from "@/lib/data";
+import { loadQuestions, clearCache } from "@/lib/data";
 import type { Question } from "@/lib/types";
 import { useExam } from "@/lib/store";
 
@@ -135,6 +135,47 @@ export default function ReviewPage() {
 
       const entry: HistoryEntry = { hid, id: q.id, ts: new Date().toISOString(), before, after };
       setHistory((prev) => [entry, ...prev]);
+      clearCache(); // bust module-level cache so other pages refetch
+
+      setSaveState("saved");
+      setTimeout(() => setSaveState("idle"), 1200);
+    } catch {
+      setSaveState("error");
+      setTimeout(() => setSaveState("idle"), 2500);
+    }
+  }
+
+  async function skipAsRisky() {
+    if (!q) return;
+    setSaveState("saving");
+    const hid = crypto.randomUUID();
+    const correct_labels = q.correct_labels;
+    const numeric_answer = q.qtype === "numeric" ? (q.numeric_answer ?? undefined) : undefined;
+
+    try {
+      const res = await fetch("/api/confirm-answer", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ hid, id: q.id, correct_labels, numeric_answer, note: "risky_unconfirmed" }),
+      });
+      if (!res.ok) throw new Error(await res.text());
+
+      setAll((prev) =>
+        prev.map((item) =>
+          item.id === q.id
+            ? { ...item, needs_review: false, confidence: 0.5, decision: "acknowledged_risky" }
+            : item
+        )
+      );
+
+      const before = { correct_labels, ...(numeric_answer !== undefined ? { numeric_answer } : {}) };
+      const entry: HistoryEntry = {
+        hid, id: q.id, ts: new Date().toISOString(),
+        before, after: before, note: "risky_unconfirmed",
+      };
+      setHistory((prev) => [entry, ...prev]);
+      toggleBookmark(q.id); // auto-flag as bookmark so it shows in "Đã gắn cờ"
+      clearCache(); // bust module-level cache so other pages refetch
 
       setSaveState("saved");
       setTimeout(() => setSaveState("idle"), 1200);
@@ -402,6 +443,15 @@ export default function ReviewPage() {
                         : saveState === "error"
                           ? "Lỗi!"
                           : "Lưu"}
+                  </button>
+                  <button
+                    onClick={skipAsRisky}
+                    disabled={saveState === "saving"}
+                    title="Bỏ qua, giữ nguyên đáp án máy, đánh dấu câu này là rủi ro (chưa được xác minh hoàn toàn)"
+                    className="inline-flex items-center gap-1.5 rounded-md border border-amber-700/50 bg-amber-500/10 px-3 py-2 text-sm text-amber-300 transition-colors hover:bg-amber-500/20 disabled:opacity-40"
+                  >
+                    <AlertCircle className="h-3.5 w-3.5" />
+                    Bỏ qua (rủi ro)
                   </button>
                   <button
                     onClick={() => toggleBookmark(q.id)}
