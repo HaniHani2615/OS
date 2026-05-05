@@ -2,6 +2,9 @@
   "name": "web",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "predev": "fuser -k 3005/tcp 2>/dev/null || true; rm -rf .next",
     "dev": "next dev -p 3005",
