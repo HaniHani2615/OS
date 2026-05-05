@@ -108,7 +108,7 @@ export default function ExamConfigPage() {
         </div>
       </label>
 
-      <div className="flex items-center justify-between rounded-2xl border border-violet-500/30 bg-gradient-to-br from-violet-500/10 to-zinc-900/0 p-5">
+      <div className="flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-violet-500/30 bg-gradient-to-br from-violet-500/10 to-zinc-900/0 p-5">
         <div>
           <p className="text-sm text-zinc-400">Pool sẵn sàng</p>
           <p className="text-2xl font-semibold tracking-tight">{pool.length} câu</p>
@@ -119,7 +119,7 @@ export default function ExamConfigPage() {
         <button
           onClick={start}
           disabled={pool.length === 0 || n > pool.length * 2}
-          className="inline-flex items-center gap-2 rounded-lg bg-violet-500 px-5 py-3 font-medium text-white shadow-lg shadow-violet-500/30 hover:bg-violet-400 disabled:opacity-40"
+          className="inline-flex min-h-[48px] items-center gap-2 rounded-lg bg-violet-500 px-5 py-3 font-medium text-white shadow-lg shadow-violet-500/30 hover:bg-violet-400 active:scale-95 disabled:opacity-40"
         >
           <Sparkles className="h-4 w-4" /> Bắt đầu thi
         </button>

@@ -3,6 +3,27 @@
 @tailwind utilities;
 
 /* ═══════════════════════════════════════════
+   SAFE AREA (iPhone notch / home bar)
+═══════════════════════════════════════════ */
+@layer utilities {
+  .safe-x {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+  .pb-safe {
+    padding-bottom: max(2rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* ═══════════════════════════════════════════
+   TOUCH IMPROVEMENTS
+═══════════════════════════════════════════ */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* ═══════════════════════════════════════════
    DARK MODE — default
 ═══════════════════════════════════════════ */
 :root {
