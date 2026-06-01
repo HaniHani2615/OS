@@ -26,23 +26,61 @@ type HistoryEntry = {
 };
 
 export default function ReviewPage() {
-  const [all, setAll] = useState<Question[]>([]);
+  const [rawAll, setRawAll] = useState<Question[]>([]);
   const [tab, setTab] = useState<Tab>("needs_review");
   const [idx, setIdx] = useState(0);
   const [saveState, setSaveState] = useState<"idle" | "saving" | "saved" | "error">("idle");
-  const [history, setHistory] = useState<HistoryEntry[]>([]);
+  const [legacyHistory, setLegacyHistory] = useState<HistoryEntry[]>([]);
   const [undoingHid, setUndoingHid] = useState<string | null>(null);
   const [pendingJumpId, setPendingJumpId] = useState<string | null>(null);
   const bookmarks = useExam((s) => s.bookmarks);
   const toggleBookmark = useExam((s) => s.toggleBookmark);
+  const overrides = useExam((s) => s.overrides);
+  const setOverride = useExam((s) => s.setOverride);
+  const clearOverride = useExam((s) => s.clearOverride);
+  const storeEdits = useExam((s) => s.editHistory);
+  const addEdit = useExam((s) => s.addEdit);
+  const removeEdit = useExam((s) => s.removeEdit);
+
+  const isDev = process.env.NODE_ENV === "development";
 
   useEffect(() => {
-    loadQuestions().then(setAll);
+    loadQuestions().then(setRawAll);
     fetch("/data/edit_history.json", { cache: "no-store" })
       .then((r) => r.json())
-      .then((h) => setHistory(Array.isArray(h) ? h : []))
-      .catch(() => setHistory([]));
+      .then((h) => setLegacyHistory(Array.isArray(h) ? h : []))
+      .catch(() => setLegacyHistory([]));
   }, []);
+
+  // Apply client-side overrides (localStorage) on top of the bank so a
+  // correction persists across reloads and works on Vercel, where the server
+  // can't write the question bank.
+  const all = useMemo<Question[]>(
+    () =>
+      rawAll.map((q) => {
+        const o = overrides[q.id];
+        if (!o) return q;
+        const risky = o.note === "risky_unconfirmed";
+        return {
+          ...q,
+          correct_labels: o.correct.length > 0 ? o.correct : q.correct_labels,
+          numeric_answer: o.numeric ?? q.numeric_answer,
+          confidence: risky ? 0.5 : 1,
+          needs_review: false,
+          decision: risky ? "acknowledged_risky" : "manual_verified",
+        };
+      }),
+    [rawAll, overrides]
+  );
+
+  // Merge the client edit log (undoable everywhere) with the legacy baked-in
+  // history file, newest first.
+  const history = useMemo<HistoryEntry[]>(() => {
+    const seen = new Set(storeEdits.map((e) => e.hid));
+    return [...storeEdits, ...legacyHistory.filter((h) => !h.hid || !seen.has(h.hid))].sort(
+      (a, b) => (a.ts < b.ts ? 1 : -1)
+    );
+  }, [storeEdits, legacyHistory]);
 
   const list = useMemo(() => {
     if (tab === "history" || tab === "all") return tab === "all" ? all : [];
@@ -109,40 +147,26 @@ export default function ReviewPage() {
       ...(numeric_answer !== undefined ? { numeric_answer } : {}),
     };
 
-    try {
-      const res = await fetch("/api/confirm-answer", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ hid, id: q.id, correct_labels, numeric_answer }),
-      });
-      if (!res.ok) throw new Error(await res.text());
+    // Persist client-side first — works everywhere, including Vercel.
+    setOverride(q.id, correct_labels, numeric_answer);
+    addEdit({ hid, id: q.id, ts: new Date().toISOString(), before, after });
 
-      // Update local question — drops from needs_review filter immediately
-      setAll((prev) =>
-        prev.map((item) =>
-          item.id === q.id
-            ? {
-                ...item,
-                correct_labels,
-                numeric_answer: numeric_answer ?? item.numeric_answer,
-                needs_review: false,
-                confidence: 1,
-                decision: "manual_verified",
-              }
-            : item
-        )
-      );
-
-      const entry: HistoryEntry = { hid, id: q.id, ts: new Date().toISOString(), before, after };
-      setHistory((prev) => [entry, ...prev]);
-      clearCache(); // bust module-level cache so other pages refetch
-
-      setSaveState("saved");
-      setTimeout(() => setSaveState("idle"), 1200);
-    } catch {
-      setSaveState("error");
-      setTimeout(() => setSaveState("idle"), 2500);
+    // In dev, also bake the change into the canonical bank (best-effort).
+    if (isDev) {
+      try {
+        const res = await fetch("/api/confirm-answer", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ hid, id: q.id, correct_labels, numeric_answer }),
+        });
+        if (res.ok) clearCache(); // bust module-level cache so other pages refetch
+      } catch {
+        /* ignore — client override already saved */
+      }
     }
+
+    setSaveState("saved");
+    setTimeout(() => setSaveState("idle"), 1200);
   }
 
   async function skipAsRisky() {
@@ -152,70 +176,57 @@ export default function ReviewPage() {
     const correct_labels = q.correct_labels;
     const numeric_answer = q.qtype === "numeric" ? (q.numeric_answer ?? undefined) : undefined;
 
-    try {
-      const res = await fetch("/api/confirm-answer", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ hid, id: q.id, correct_labels, numeric_answer, note: "risky_unconfirmed" }),
-      });
-      if (!res.ok) throw new Error(await res.text());
+    const before = { correct_labels, ...(numeric_answer !== undefined ? { numeric_answer } : {}) };
 
-      setAll((prev) =>
-        prev.map((item) =>
-          item.id === q.id
-            ? { ...item, needs_review: false, confidence: 0.5, decision: "acknowledged_risky" }
-            : item
-        )
-      );
+    // Keep the machine answer but acknowledge it as risky — persisted client-side.
+    setOverride(q.id, correct_labels, numeric_answer, "risky_unconfirmed");
+    addEdit({
+      hid, id: q.id, ts: new Date().toISOString(),
+      before, after: before, note: "risky_unconfirmed",
+    });
+    if (!bookmarks[q.id]) toggleBookmark(q.id); // flag so it shows in "Đã gắn cờ"
 
-      const before = { correct_labels, ...(numeric_answer !== undefined ? { numeric_answer } : {}) };
-      const entry: HistoryEntry = {
-        hid, id: q.id, ts: new Date().toISOString(),
-        before, after: before, note: "risky_unconfirmed",
-      };
-      setHistory((prev) => [entry, ...prev]);
-      toggleBookmark(q.id); // auto-flag as bookmark so it shows in "Đã gắn cờ"
-      clearCache(); // bust module-level cache so other pages refetch
-
-      setSaveState("saved");
-      setTimeout(() => setSaveState("idle"), 1200);
-    } catch {
-      setSaveState("error");
-      setTimeout(() => setSaveState("idle"), 2500);
+    if (isDev) {
+      try {
+        const res = await fetch("/api/confirm-answer", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ hid, id: q.id, correct_labels, numeric_answer, note: "risky_unconfirmed" }),
+        });
+        if (res.ok) clearCache();
+      } catch {
+        /* ignore — client override already saved */
+      }
     }
+
+    setSaveState("saved");
+    setTimeout(() => setSaveState("idle"), 1200);
   }
 
   async function undoEntry(entry: HistoryEntry) {
     if (!entry.hid) return;
     setUndoingHid(entry.hid);
-    try {
-      const res = await fetch("/api/undo-answer", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ hid: entry.hid }),
-      });
-      if (!res.ok) throw new Error();
 
-      setAll((prev) =>
-        prev.map((item) =>
-          item.id === entry.id
-            ? {
-                ...item,
-                correct_labels: entry.before.correct_labels,
-                numeric_answer: entry.before.numeric_answer ?? item.numeric_answer,
-                needs_review: true,
-                confidence: 0,
-                decision: "reverted",
-              }
-            : item
-        )
-      );
-      setHistory((prev) => prev.filter((h) => h.hid !== entry.hid));
-    } catch {
-      /* ignore */
-    } finally {
-      setUndoingHid(null);
+    // Revert client-side: drop the override (back to bank value) and the log entry.
+    clearOverride(entry.id);
+    removeEdit(entry.hid);
+    setLegacyHistory((prev) => prev.filter((h) => h.hid !== entry.hid));
+
+    // In dev, also revert the canonical bank (best-effort).
+    if (isDev) {
+      try {
+        const res = await fetch("/api/undo-answer", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ hid: entry.hid }),
+        });
+        if (res.ok) clearCache();
+      } catch {
+        /* ignore — client override already cleared */
+      }
     }
+
+    setUndoingHid(null);
   }
 
   return (
@@ -480,7 +491,7 @@ export default function ReviewPage() {
                 </button>
                 <span className="inline-flex items-center gap-1 text-xs text-zinc-500">
                   <AlertCircle className="h-3 w-3" />
-                  Xác nhận ghi thẳng vào questions.json
+                  {isDev ? "Lưu vào trình duyệt + bank gốc" : "Lưu vào trình duyệt (localStorage)"}
                 </span>
                 <button
                   onClick={() => setIdx((i) => Math.min(list.length - 1, i + 1))}

@@ -14,6 +14,18 @@ export interface ExamSession {
   score?: number;
 }
 
+/** A client-side log entry of an answer correction made on the Review page.
+ *  Persisted in localStorage so corrections survive reloads even on Vercel
+ *  (where the server can't write to the question bank). */
+export interface EditHistoryEntry {
+  hid: string;
+  id: string;
+  ts: string;
+  before: { correct_labels: string[]; numeric_answer?: string };
+  after: { correct_labels: string[]; numeric_answer?: string };
+  note?: string;
+}
+
 interface ExamState {
   active: ExamSession | null;
   history: ExamSession[];
@@ -23,6 +35,8 @@ interface ExamState {
   mastered: Record<string, number>;
   /** Cross-session bookmarks: questions user wants to revisit */
   bookmarks: Record<string, boolean>;
+  /** Client-side log of answer corrections made on the Review page */
+  editHistory: EditHistoryEntry[];
   startExam(s: ExamSession): void;
   setAnswer(qid: string, ans: string | string[] | null): void;
   toggleFlag(qid: string): void;
@@ -34,6 +48,8 @@ interface ExamState {
   bumpMastered(id: string): void;
   resetMastered(id: string): void;
   toggleBookmark(id: string): void;
+  addEdit(entry: EditHistoryEntry): void;
+  removeEdit(hid: string): void;
 }
 
 export const useExam = create<ExamState>()(
@@ -44,6 +60,7 @@ export const useExam = create<ExamState>()(
       overrides: {},
       mastered: {},
       bookmarks: {},
+      editHistory: [],
       startExam: (s) => set({ active: s }),
       setAnswer: (qid, ans) =>
         set((st) =>
@@ -106,6 +123,10 @@ export const useExam = create<ExamState>()(
           else next[id] = true;
           return { bookmarks: next };
         }),
+      addEdit: (entry) =>
+        set((st) => ({ editHistory: [entry, ...st.editHistory].slice(0, 500) })),
+      removeEdit: (hid) =>
+        set((st) => ({ editHistory: st.editHistory.filter((e) => e.hid !== hid) })),
     }),
     { name: "os-onthi-v1" }
   )
