@@ -66140,5 +66140,7339 @@
     "id": "q00679",
     "needs_review": false,
     "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Những điều kiện ĐÚNG của khu vực quan trọng là gì? a. loại trừ lẫn nhau, chờ đợi ràng buộc, tiến triển b. loại trừ lẫn nhau, tiến bộ, chờ đợi ràng buộc c. loại trừ lẫn nhau, bảo vệ, chờ đợi ràng buộc d. loại trừ lẫn nhau, bảo vệ, giới hạn sử dụng 12. Hệ điều hành cung cấp phương thức nào để truy cập đến các dịch vụ của hệ điều hành:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Các thư viện"
+      },
+      {
+        "label": "b",
+        "text": "Các lệnh assembly"
+      },
+      {
+        "label": "c",
+        "text": "API"
+      },
+      {
+        "label": "d",
+        "text": "Các hàm hệ thống"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "1-2",
+    "id": "u00000",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Phát biểu nào sau đây là đúng: (I) Thuật toán lập lịch SJF có thể gây ra nạn đói. SJF is priority scheduling => causes starvation (II) Thuật toán lập lịch ưu tiên có thể gây ra nạn đói. Priority scheduling causes starvation (III)Thuật toán Round Robin tốt hơn FCFS về thời gian phản hồi (if time quantum is small enough) a. chỉ I và III b. cả I, II, và III c. chỉ II và III d. chỉ I 17. Giả sử một hệ thống sử dụng thuật toán lập lịch RR, thông tin về các tiến trình (thời gian đến, thời gian thực hiện) là:P1 (0,20), P2 (30,10), P3 (20,40), P4 (40,25) và lượng tử thời gian là 15. Tổng thời gian chờ của các tiến trình là gì? Q = 15 P1(5) P1 P3(25) P2 P4(10) P3(10) P(4) P(3) 0 15 20 35 45 60 75 85 95 => Tổng thời gian chờ = (35 – 30)(P2) + (60 – 35 + 75 - 60)(P3) + (45 – 40 + 85 – 75)(P4) = 60 Thời gian chờ = (Lần đầu thực hiện – Xuất hiện) + Tổng(Lần thực hiện sau – Kết thúc lần trước)",
+    "choices": [
+      {
+        "label": "a",
+        "text": "60"
+      },
+      {
+        "label": "b",
+        "text": "40"
+      },
+      {
+        "label": "c",
+        "text": "50"
+      },
+      {
+        "label": "d",
+        "text": "70"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00001",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "must claim maximum usage 63. Trong hệ thống chia sẻ thời gian, thuật toán lập lịch Round Robin:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Sử dụng time quantum rất nhỏ để tăng hiệu suất thực thi"
+      },
+      {
+        "label": "b",
+        "text": "Sử dụng time quantum rất lớn để chuyển thành thuật toán SJF"
+      },
+      {
+        "label": "c",
+        "text": "Sử dụng time quantum rất nhỏ để chuyển thành thuật toán FCFS"
+      },
+      {
+        "label": "d",
+        "text": "Sử dụng time quantum rất lớn để chuyển thành thuật toán FCFS"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00002",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "hơn với time quantum đủ bé 64. Điều kiện loại trừ lẫn nhau có thể được đảm bảo bằng cách sử dụng _________.",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Semaphore nhị phân"
+      },
+      {
+        "label": "b",
+        "text": "Khoá mutex"
+      },
+      {
+        "label": "c",
+        "text": "Cả ba phương án trên đều sai"
+      },
+      {
+        "label": "d",
+        "text": "Khoá mutex và Semaphore nhị phân"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00003",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "use a resource 65. Nếu chúng ta đảm bảo hệ thống không bao giờ rơi vào bế tắc, đó là loại phương pháp xử lý bế tắc này?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Bỏ qua bế tắc"
+      },
+      {
+        "label": "b",
+        "text": "Phát hiện bế tắc"
+      },
+      {
+        "label": "c",
+        "text": "Ngăn chặn bế tắc"
+      },
+      {
+        "label": "d",
+        "text": "Phục hồi bế tắc"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00004",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "chấp) 67. Truyền thông giữa các tiến trình__________________",
+    "choices": [
+      {
+        "label": "a",
+        "text": "cho phép tiến trình đồng bộ hoá hoạt động"
+      },
+      {
+        "label": "b",
+        "text": "được thực hiện thông qua ổ đĩa"
+      },
+      {
+        "label": "c",
+        "text": "không bao giờ cần"
+      },
+      {
+        "label": "d",
+        "text": "là cần thiết đối với tất cả các tiến trình"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00005",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Bộ lập lịch nào sau đây chịu trách nhiệm chuyển tiến trình ra khỏi bộ nhớ chính ? => ko học",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Các phương án trên đều sai"
+      },
+      {
+        "label": "b",
+        "text": "Bộ lập lịch dài hạn"
+      },
+      {
+        "label": "c",
+        "text": "Bộ lập lịch trung hạn"
+      },
+      {
+        "label": "d",
+        "text": "Bộ lập lịch ngắn hạn"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00006",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Đâu là một trong các chức năng của hệ điều hành ? a. khôi phục lỗi b. quản lý bộ nhớ c. cả ba phương án trên d. quản lý tài nguyên 71. Windows XP thuộc loại hệ điều hành nào? => multi-tasking os",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Nhúng"
+      },
+      {
+        "label": "b",
+        "text": "Đơn chương trình"
+      },
+      {
+        "label": "c",
+        "text": "Đa chương trình"
+      },
+      {
+        "label": "d",
+        "text": "Mục đích đặc biệt"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "1-2",
+    "id": "u00007",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Bộ nhớ ảo cho phép: a. thực thi một tiến trình mà có thể không được tải hoàn toàn vào bộ nhớ trong b. một chương trình có dung lượng lớn hơn bộ nhớ ngoài c. lưu nội dung một tiến trình trên thanh ghi d. thực thi một tiến trình không có trong bộ nhớ trong 79. Thuật toán thay thế trang tối ưu rất khó thực thi bởi vì:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "nó quá phức tạp"
+      },
+      {
+        "label": "b",
+        "text": "nó đòi hỏi thông tin về chuỗi sử dụng trang trong tương lai"
+      },
+      {
+        "label": "c",
+        "text": "nó đòi hỏi rất nhiều thông tin"
+      },
+      {
+        "label": "d",
+        "text": "vô cùng tốn kém"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00008",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "dịch địa chỉ 84. Thuật toán thay thế trang nào lựa chọn trang không được sử dụng lâu nhất ?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "LRU"
+      },
+      {
+        "label": "b",
+        "text": "thuật toán thay thế trang dựa vào bộ đếm"
+      },
+      {
+        "label": "c",
+        "text": "FIFO"
+      },
+      {
+        "label": "d",
+        "text": "thuật toán sử dụng reference bit"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00009",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Nội dung cần thiết trong mỗi hàng của một bảng phân trang là:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "số hiệu frame"
+      },
+      {
+        "label": "b",
+        "text": "Thông tin quyền truy cập"
+      },
+      {
+        "label": "c",
+        "text": "số hiệu trang và số hiệu frame"
+      },
+      {
+        "label": "d",
+        "text": "số hiệu trang"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00010",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "chạy 98. Cấp phát chỉ mục ______________________ truy cập trực tiếp.",
+    "choices": [
+      {
+        "label": "a",
+        "text": "hỗ trợ"
+      },
+      {
+        "label": "b",
+        "text": "Cả ba phương án trên đều sai"
+      },
+      {
+        "label": "c",
+        "text": "không liên quan đến"
+      },
+      {
+        "label": "d",
+        "text": "không hỗ trợ"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "10",
+    "id": "u00011",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "FAT có cấu trúc giống như ______________________ a. Danh sách liên kết b. Ngăn xếp c. Bảng băm d. Bảng chỉ mục 102. Giả sử một hệ thống sử dụng phân bổ đĩa dạng danh sách liên kết. Đâu là cách để truy cập khối dữ liệu thứ n của tệp?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Đọc khối đầu tiên để suy ra vị trí của khối thứ n"
+      },
+      {
+        "label": "b",
+        "text": "Đọc đệ quy khối n-1 trước đó để tìm vị trí của khối thứ n"
+      },
+      {
+        "label": "c",
+        "text": "Đọc khối 10 đầu tiên để suy ra vị trí của khối thứ n"
+      },
+      {
+        "label": "d",
+        "text": "Vị trí của khối thứ n có thể được tính thông qua bản đồ"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "10",
+    "id": "u00012",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Phòng ngừa bế tắc là gì? a. Luôn kiểm tra xem hệ thống có ở trạng thái bế tắc không b. Bất cứ khi nào hệ thống phân bổ tài nguyên, nó sẽ kiểm tra xem hệ thống có ở trạng thái bế tắc không c. Khôi phục hệ thống nếu tồn tại bế tắc d. Tránh một trong bốn điều kiện bế tắc xảy ra 120. Bế tắc sẽ xảy ra nếu và chỉ nếu các điều kiện sau xảy ra cùng một lúc",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Loại trừ lẫn nhau, giữ và chờ đợi, không chờ đợi vòng tròn, không cho phép dừng"
+      },
+      {
+        "label": "b",
+        "text": "Giữ và chờ đợi, chờ đợi theo vòng tròn, không có quyền ưu tiên"
+      },
+      {
+        "label": "c",
+        "text": "Loại trừ lẫn nhau, giữ và chờ đợi, chờ đợi vòng tròn"
+      },
+      {
+        "label": "d",
+        "text": "Loại trừ lẫn nhau, giữ và chờ đợi, chờ đợi vòng tròn, không có quyền ưu tiên"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00013",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "chạy 135. Thuật toán LRU sử dụng thông tin ______ của mỗi trang.",
+    "choices": [
+      {
+        "label": "a",
+        "text": "thời điểm cuối cùng sử dụng"
+      },
+      {
+        "label": "b",
+        "text": "trang trước và trang sau"
+      },
+      {
+        "label": "c",
+        "text": "thời điểm đưa vào bộ nhớ"
+      },
+      {
+        "label": "d",
+        "text": "Tất cả các phương án trên"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00014",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Khi một tiến trình bắt đầu thực thi mà không có trang nào trong bộ nhớ: a. tiến trình không thể thực thi b. tiến trình gây sự cố cho hệ thống c. Các phương án trên đều sai d. lỗi trang xảy để tải trang cần thiết vào bộ nhớ 143. Đâu là phát biểu KHÔNG ĐÚNG về các thuật toán phân bổ động?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Chúng chỉ được sử dụng trong các hệ thống MFT"
+      },
+      {
+        "label": "b",
+        "text": "Chúng được gọi bất cứ khi nào một tiến trình mới đến"
+      },
+      {
+        "label": "c",
+        "text": "Một trong các thuật toán không cần tìm kiếm toàn bộ danh sách bộ nhớ trống để tìm vùng nhớ phù hợp"
+      },
+      {
+        "label": "d",
+        "text": "Nhiệm vụ của chúng là tìm một vùng nhớ phù hợp để tải tiến trình vào"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00015",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Một số thông tin của thư mục được lưu trên bộ nhớ trong hoặc cache để________________ a. tăng tốc độ truy cập b. giảm không gian trống của bộ nhớ ngoài c. tăng không gian trống của bộ nhớ ngoài d. làm đầy bộ cache 150. Đâu không phải là một cuộc tấn công, nhưng nó tìm kiếm các lỗ hổng để tấn công?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Tái chế"
+      },
+      {
+        "label": "b",
+        "text": "Quét cổng"
+      },
+      {
+        "label": "c",
+        "text": "Vi phạm truy cập bộ nhớ"
+      },
+      {
+        "label": "d",
+        "text": "Từ chối dịch vụ"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "9",
+    "id": "u00016",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "dịch địa chỉ 173. Các câu lệnh đang được thực thi cần:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "ở trong thiết bị"
+      },
+      {
+        "label": "b",
+        "text": "Các phương án trên đều sai"
+      },
+      {
+        "label": "c",
+        "text": "ở trong bộ nhớ logic"
+      },
+      {
+        "label": "d",
+        "text": "ở trong bộ nhớ vật lý"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00017",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "bit ít quan trọng nhất 179. Giả sử một hệ thống có RAM 4GB được phân trang với kích thước khung là 1KB. Đâu là kích thước tối đa của một bảng trang?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "4 MB"
+      },
+      {
+        "label": "b",
+        "text": "8 MB"
+      },
+      {
+        "label": "c",
+        "text": "1 MB"
+      },
+      {
+        "label": "d",
+        "text": "2 MB"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00018",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Mục đích của việc tạo ra các thuật toán thay thế trang là: a. tăng tỷ lệ lỗi trang b. giảm tỷ lệ lỗi trang c. để cấp phát nhiều trang cho tiến trình d. thay thế các trang nhanh hơn 182. Mô hình tập hợp các trang đang làm việc thay thế trang được dựa trên",
+    "choices": [
+      {
+        "label": "a",
+        "text": "truy cập ngẫu nhiên"
+      },
+      {
+        "label": "b",
+        "text": "khu vực địa phương"
+      },
+      {
+        "label": "c",
+        "text": "khu vực toàn cục"
+      },
+      {
+        "label": "d",
+        "text": "khu vực mô-đun"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00019",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Đâu là phát biểu ĐÚNG về bộ nhớ kết (associative memory)? a. Đó là bộ đệm được sử dụng trong tiến trình dịch địa chỉ b. Đó là bộ đệm hệ thống c. Đó là một phần của RAM d. Đó là RAM 188. _______ là một cách tiếp cận để hạn chế quyền truy cập hệ thống đối với người dùng được uỷ quyền.",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Kiểm soát truy cập dựa trên tiến trình"
+      },
+      {
+        "label": "b",
+        "text": "Kiểm soát truy cập dựa trên nhiệm vụ"
+      },
+      {
+        "label": "c",
+        "text": "Kiểm soát truy cập dựa trên vai trò"
+      },
+      {
+        "label": "d",
+        "text": "Các phương án trên đều sai"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00020",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "RAID cấp độ ___________ sử dụng chế độ phân dải dữ liệu cấp độ bit và bit chẵn lẻ cho mỗi byte.",
+    "choices": [
+      {
+        "label": "a",
+        "text": "5"
+      },
+      {
+        "label": "b",
+        "text": "2"
+      },
+      {
+        "label": "c",
+        "text": "3"
+      },
+      {
+        "label": "d",
+        "text": "4"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "11",
+    "id": "u00021",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "mong muốn 198. Giả sử một hệ thống sử dụng phân bổ đĩa dạng danh sách liên kết. Đâu là lý do tại sao chúng ta không thể có quyền truy cập ngẫu nhiên?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Vì thông tin về khối dữ liệu của tệp bị ẩn"
+      },
+      {
+        "label": "b",
+        "text": "Vì lý do bảo mật"
+      },
+      {
+        "label": "c",
+        "text": "Vì các khối dữ liệu của một tệp không liền kề nhau"
+      },
+      {
+        "label": "d",
+        "text": "Vì không thể biết vị trí của khối thứ n từ khối thứ nhất"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "10",
+    "id": "u00022",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Chọn mô tả KHÔNG ĐÚNG về các tác vụ chính của hệ điều hành a. Quản lý tiến trình b. Cung cấp Giao diện lập trình ứng dụng (API) cho các nhà phát triển ứng dụng c. Phân bổ tài nguyên (cho các tiến trình) d. Cung cấp hệ thống quản lý cơ sở dữ liệu 205. Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy Thời gian đến P1 3 0 P2 12 4 P3 4 6 P4 7 8 P5 3 11 Sử dụng thuật toán SJF cho phép dừng. Khẳng định nào sau đây là đúng:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Thời phản hồi của P3 dài hơn thời phản hồi của P4"
+      },
+      {
+        "label": "b",
+        "text": "Thời gian chờ của P2 dài hơn thời gian chờ của P4"
+      },
+      {
+        "label": "c",
+        "text": "Thời gian chờ của P3 dài hơn thời gian chờ của P2"
+      },
+      {
+        "label": "d",
+        "text": "Thời gian chờ của P2 và thời gian chờ của P5 giống nhau"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "1-2",
+    "id": "u00023",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "… 207. Xem xét bài toán nhà sản xuất - người tiêu dùng với hai tiến trình chia sẻ bộ đệm tròn, phát biểu nào sau đây là ĐÚNG?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Không có khu vực quan trọng"
+      },
+      {
+        "label": "b",
+        "text": "Các câu lệnh vận dụng cả biến đếm và biến bộ đệm để tạo ra một khu vực quan trọng"
+      },
+      {
+        "label": "c",
+        "text": "Các câu lệnh vận dụng biến đếm để tạo ra một khu vực quan trọng"
+      },
+      {
+        "label": "d",
+        "text": "Các câu lệnh vận dụng biến bộ đệm để tạo một khu vực quan trọng"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00024",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Một tiến trình có thể bị dừng do: a. Thực thi kết thúc bình thường b. Bị giết chết bởi một tiến trình khác c. Bị lỗi nghiêm trọng d. Tất cả các phương án trên 215. Mô-đun nào giao quyền kiểm soát CPU cho tiến trình được lựa chọn bởi bộ lập lịch ngắn hạn ?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Cả ba phương án trên"
+      },
+      {
+        "label": "b",
+        "text": "bộ lập lịch"
+      },
+      {
+        "label": "c",
+        "text": "ngắt"
+      },
+      {
+        "label": "d",
+        "text": "bộ điều phối"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00025",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Đâu là phát biểu KHÔNG ĐÚNG về sự phân mảnh? a. Sự phân mảnh dẫn đến việc sử dụng bộ nhớ kém hiệu quả b. Sự phân mảnh có thể dẫn đến tình huống một tiến trình không thể chạy mặc dù tổng bộ nhớ trống lớn hơn kích thước tiến trình c. Có hai loại: phân mảnh bên trong và bên ngoài d. Không có sự phân mảnh trên ổ đĩa 221. Giả sử một hệ thống sử dụng phân trang (bảng trang cấp 1) với kích thước khung là 4KB; bảng trang của một tiến trình là [56, 120, 3]. Địa chỉ vật lý của tham chiếu (1, 1296) là gì?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "120 * 1024 + 1296"
+      },
+      {
+        "label": "b",
+        "text": "560 * 4096 + 1296"
+      },
+      {
+        "label": "c",
+        "text": "120 * 4096 + 1296"
+      },
+      {
+        "label": "d",
+        "text": "3 * 4096 + 1296"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00026",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Cho chuỗi tham chiếu: 7 0 1 2 0 3 0 4 2 3 0 3 2 1 2 0 1 7 0 1. Thuật toán tối ưu (thay thế trang) được sử dụng với 3 khung. Hãy hiển thị các trang (theo thứ tự xuất hiện ) được chọn là nạn nhân để được trao đổi.",
+    "choices": [
+      {
+        "label": "a",
+        "text": "7 1 0 3 4 2"
+      },
+      {
+        "label": "b",
+        "text": "7 0 1 4 3 2"
+      },
+      {
+        "label": "c",
+        "text": "7 1 0 4 3 2"
+      },
+      {
+        "label": "d",
+        "text": "7 1 4 1 3 2"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00027",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Lý do sử dụng thuật toán thay thế trang LFU là: a. Tất cả các phương án trên b. một trang đã được dùng nhiều có nhiều cơ hội được sử dụng lại c. vì thuật toán rất hiệu quả và tối ưu d. một trang ít được sử dụng có nhiều cơ hội được sử dụng lại 227. Một tiến trình sửu dụng 5 trang 1,2,3,4,5 theo trình tự: 1,2,4,5,2,1,2,4. Nếu sử dụng thuật toán thay thế trang OPT (tối ưu), số lỗi trang xảy ra khi dùng 3 frame là:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "7"
+      },
+      {
+        "label": "b",
+        "text": "8"
+      },
+      {
+        "label": "c",
+        "text": "5"
+      },
+      {
+        "label": "d",
+        "text": "6"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00028",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Lý do sử dụng thuật toán thay thế trang MFU là: a. Tất cả các phương án trên b. một trang đã được dùng nhiều có nhiều cơ hội được sử dụng lại c. vì thuật toán rất hiệu quả và tối ưu d. một trang ít được sử dụng có nhiều cơ hội được sử dụng lại 233. Ánh xạ bộ nhớ ảo 2GB lên bộ nhớ vật lý có 256 frame, mỗi frame có kích thước 4 KB. Kích thước mỗi đơn vị bộ nhớ là 1 byte. Số bit cần dùng để đánh số hiệu trang là ?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "20 bit"
+      },
+      {
+        "label": "b",
+        "text": "18 bit"
+      },
+      {
+        "label": "c",
+        "text": "19 bit"
+      },
+      {
+        "label": "d",
+        "text": "8 bit"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00029",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Bộ kiểm tra tính nhất quán ________________ và cố sửa các lỗi không nhất quán mà nó tìm thấy. a. so sánh dữ liệu của hệ thống tạo ra với dữ liệu ra mà người dùng yêu cầu b. so sánh dữ liệu trong cấu trúc thư mục với khối dữ liệu trên ổ đĩa c. cả ba phương án trên d. so sánh dữ liệu trong bộ nhớ ngoài với dữ liệu trong cache 245. Giả sử một hệ thống sử dụng phân bổ đĩa dạng danh sách liên kết. Đâu là lý do tại sao chúng ta không thể có quyền truy cập ngẫu nhiên?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Vì lý do bảo mật"
+      },
+      {
+        "label": "b",
+        "text": "Vì các khối dữ liệu của một tệp không liền kề nhau"
+      },
+      {
+        "label": "c",
+        "text": "Vì không thể biết vị trí của khối thứ n từ khối thứ nhất"
+      },
+      {
+        "label": "d",
+        "text": "Vì thông tin về khối dữ liệu của tệp bị ẩn"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "10",
+    "id": "u00030",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Hai tiến trình sau chia sẻ một biến chung X (khởi tạo bằng 5), và hai semaphore nhị phân S1, S2 (khởi tạo bằng 0): Tiến trình A {int Y; wait(S1); A1: Y = X*2; signal(S2); wait(S1); A2: X = Y; } Tiến trình B {int Z; B1: Z=X+1; signal(S1); wait(S2); B2: X=Z; signal(S1); } Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Giá trị cuối cùng của X sau khi thực thi xong hai tiến trình A và B sẽ là:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "10"
+      },
+      {
+        "label": "b",
+        "text": "12"
+      },
+      {
+        "label": "c",
+        "text": "11"
+      },
+      {
+        "label": "d",
+        "text": "6"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00031",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "thông qua 2 hoạt động nguyên tử 260. Ý nào KHÔNG ĐÚNG về thuật toán lập lịch Shortest Remaining Time First (SRTF) ?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Đây cũng là một thuật toán lập lịch ưu tiên"
+      },
+      {
+        "label": "b",
+        "text": "Tiến trình ngắn nhất sẽ được chạy trước"
+      },
+      {
+        "label": "c",
+        "text": "Tiến trình có thời gian còn lại ngắn nhất sẽ được chọn để chạy"
+      },
+      {
+        "label": "d",
+        "text": "Đây là thuật toán Shortest Job First (SJF) có phòng ngừa"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00032",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "chương trình 264. Điều nào KHÔNG ĐÚNG về Biểu đồ phân bổ tài nguyên (RAG - Resource Allocation Graph)?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Một vòng tròn đại diện cho một tiến trình"
+      },
+      {
+        "label": "b",
+        "text": "Một cạnh từ đỉnh tài nguyên đến đỉnh tiến trình thể hiện tài nguyên được phân bổ cho tiến trình"
+      },
+      {
+        "label": "c",
+        "text": "Một hình chữ nhật đại diện cho một tiến trình"
+      },
+      {
+        "label": "d",
+        "text": "Một cạnh yêu cầu là từ đỉnh tiến trình đến đỉnh tài nguyên"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00033",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Bộ nhớ ảo cho phép: a. thực thi một tiến trình không có trong bộ nhớ trong b. một chương trình có dung lượng lớn hơn bộ nhớ ngoài c. lưu nội dung một tiến trình trên thanh ghi d. thực thi một tiến trình mà có thể không được tải hoàn toàn vào bộ nhớ trong 273. Hiện tượng phân mảnh ngoài sẽ không xảy ra khi:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Worst fit được sử dụng"
+      },
+      {
+        "label": "b",
+        "text": "First fit được sử dụng"
+      },
+      {
+        "label": "c",
+        "text": "Dù sử dụng bất cứ thuật toán nào thì nó vẫn luôn xảy ra"
+      },
+      {
+        "label": "d",
+        "text": "Best fit được sử dụng"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00034",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "bit ít quan trọng nhất 275. Một tiến trình sử dụng 5 trang 1,2,3,4,5 theo trình tự: 1,2,4,5,2,1,2,4. Nếu sử dụng thuật toán thay thế trang FIFO, số lỗi trang xảy ra khi dùng 3 frame là:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "8"
+      },
+      {
+        "label": "b",
+        "text": "7"
+      },
+      {
+        "label": "c",
+        "text": "6"
+      },
+      {
+        "label": "d",
+        "text": "5"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00035",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Thuật toán thay thế trang nào sau đây có hiện tượng bất thường Belady ? a. tối ưu (OPT) b. LRU c. Cả tối ưu và FIFO d. FIFO 286. _______ là một cách tiếp cận để hạn chế quyền truy cập hệ thống đối với người dùng được uỷ quyền.",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Các phương án trên đều sai"
+      },
+      {
+        "label": "b",
+        "text": "Kiểm soát truy cập dựa trên tiến trình"
+      },
+      {
+        "label": "c",
+        "text": "Kiểm soát truy cập dựa trên vai trò"
+      },
+      {
+        "label": "d",
+        "text": "Kiểm soát truy cập dựa trên nhiệm vụ"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00036",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Đoạn mã sử dụng sai mục đích được gọi là ____________ a. Trojan b. Trộm nội bộ c. Các phương án trên đều sai d. Mã sửa đổi ngăn xếp 298. Đâu không phải là một cuộc tấn công, nhưng nó tìm kiếm các lỗ hổng để tấn công?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Từ chối dịch vụ"
+      },
+      {
+        "label": "b",
+        "text": "Tái chế"
+      },
+      {
+        "label": "c",
+        "text": "Vi phạm truy cập bộ nhớ"
+      },
+      {
+        "label": "d",
+        "text": "Quét cổng"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "14",
+    "id": "u00037",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Đâu là loại semaphore ĐÚNG? a. Multiple value semaphore b. Boolean semaphore c. Waiting semaphore d. Counting semaphore 305. Hệ điều hành Linux có",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Nhân (kernel) monolithic"
+      },
+      {
+        "label": "b",
+        "text": "Vi nhân (microkernel)"
+      },
+      {
+        "label": "c",
+        "text": "Nhân (kernel) monolithic có modules"
+      },
+      {
+        "label": "d",
+        "text": "Các phương án trên đều sai"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00038",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "các giá trị từ các bảng trang bên ngoài và bên trong 317. Đâu là phát biểu KHÔNG ĐÚNG về thuật toán phân bổ bộ nhớ cho Đa chương trình với số nhiệm vụ thay đổi (MVT - Multiprogramming with a Variable number of Tasks )?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Bộ nhớ không được phân chia trước thành các phân vùng"
+      },
+      {
+        "label": "b",
+        "text": "Có sự phân mảnh bộ nhớ"
+      },
+      {
+        "label": "c",
+        "text": "Bộ nhớ được chia trước thành các phân vùng"
+      },
+      {
+        "label": "d",
+        "text": "Một tiến trình nằm trong vùng nhớ liền kề"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00039",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Trong mã hóa bất đối xứng a. Khoá mã hóa và khoá giải mã giống nhau b. Không cần khóa để mã hóa và giải mã c. Khoá mã hóa và khoá giải mã khác nhau d. Các phương án trên đều sai 334. Bộ kiểm tra tính nhất quán ________________ và cố sửa các lỗi không nhất quán mà nó tìm thấy.",
+    "choices": [
+      {
+        "label": "a",
+        "text": "so sánh dữ liệu trong cấu trúc thư mục với khối dữ liệu trên ổ đĩa"
+      },
+      {
+        "label": "b",
+        "text": "so sánh dữ liệu trong bộ nhớ ngoài với dữ liệu trong cache"
+      },
+      {
+        "label": "c",
+        "text": "cả ba phương án trên"
+      },
+      {
+        "label": "d",
+        "text": "so sánh dữ liệu của hệ thống tạo ra với dữ liệu ra mà người dùng yêu cầu"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "14",
+    "id": "u00040",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "hoán đổi là một tiến trình 352. Giả sử một hệ thống có RAM 4GB được phân trang với kích thước khung là 1KB. Đâu là kích thước tối đa của một bảng trang?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "1 MB"
+      },
+      {
+        "label": "b",
+        "text": "2 MB"
+      },
+      {
+        "label": "c",
+        "text": "8 MB"
+      },
+      {
+        "label": "d",
+        "text": "4 MB"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00041",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Đâu là phát biểu KHÔNG ĐÚNG về các thuật toán phân bổ động? a. Chúng được gọi bất cứ khi nào một tiến trình mới đến b. Nhiệm vụ của chúng là tìm một vùng nhớ phù hợp để tải tiến trình vào c. Chúng chỉ được sử dụng trong các hệ thống MFT d. Một trong các thuật toán không cần tìm kiếm toàn bộ danh sách bộ nhớ trống để tìm vùng nhớ phù hợp 359. Một hệ thống sử dụng Bộ đệm chuyển đổi (TLB - Translation Look-aside Buffer) để dịch địa chỉ trong phân trang (bảng trang cấp 1). Giả sử thời gian truy cập của TLB là a; thời gian truy cập của bộ nhớ là b; và tỷ lệ trúng của TLB là c. Thời gian truy cập hiệu quả (EAT - Effective Access Time) của hệ thống là gì?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "2*b + c * a"
+      },
+      {
+        "label": "b",
+        "text": "c * a + b"
+      },
+      {
+        "label": "c",
+        "text": "2*b + a"
+      },
+      {
+        "label": "d",
+        "text": "2*b + a-c * b"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00042",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Đâu là phát biểu KHÔNG ĐÚNG về phân trang (bảng trang cấp 1)? a. Bộ nhớ được chia thành các khung bằng nhau b. Hệ thống tìm n khung sao cho tích n * frame_size lớn hơn hoặc bằng kích thước tiến trình c. Có sự phân mảnh bên trong d. Hệ thống tìm n khung liên tiếp sao cho tích n * frame_size lớn hơn hoặc bằng kích thước tiến trình 364. Khi một tiến trình bắt đầu thực thi mà không có trang nào trong bộ nhớ:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "lỗi trang xảy để tải trang cần thiết vào bộ nhớ"
+      },
+      {
+        "label": "b",
+        "text": "tiến trình không thể thực thi"
+      },
+      {
+        "label": "c",
+        "text": "Các phương án trên đều sai"
+      },
+      {
+        "label": "d",
+        "text": "tiến trình gây sự cố cho hệ thống"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00043",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Trong thuật toán lập lịch đa cấp phản hồi,",
+    "choices": [
+      {
+        "label": "a",
+        "text": "tiến trình có thể di chuyển đến một hàng đợi sẵn sàng được phân cấp khác"
+      },
+      {
+        "label": "b",
+        "text": "tiến trình không bị phân thành các nhóm khác nhau"
+      },
+      {
+        "label": "c",
+        "text": "tiến trình không thể chuyển đổi giữa các cấp hàng đợi"
+      },
+      {
+        "label": "d",
+        "text": "tiến trình liên tục gửi thông điệp cho hệ thống"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00044",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 415. Đâu không phải là một thực hiện của khu vực quan trọng?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Điều kiện"
+      },
+      {
+        "label": "b",
+        "text": "Giải pháp Peterson"
+      },
+      {
+        "label": "c",
+        "text": "Semaphore"
+      },
+      {
+        "label": "d",
+        "text": "Giám sát"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00045",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "416*. Tiến trình nào có thể ảnh hưởng đến / bị ảnh hưởng bởi các tiến trình khác đang thực thi trong hệ thống ?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "tiến trình cha mẹ x"
+      },
+      {
+        "label": "b",
+        "text": "tiến trình hợp tác"
+      },
+      {
+        "label": "c",
+        "text": "tiến trình con x"
+      },
+      {
+        "label": "d",
+        "text": "tiến trình init"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00046",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "417*. Nếu tất cả các tiến trình liên tục vào/ra dữ liệu thì hàng đợi sẵn sàng sẽ luôn......., bộ lập lịch ngắn hạn sẽ làm việc ........",
+    "choices": [
+      {
+        "label": "a",
+        "text": "đầy, ít"
+      },
+      {
+        "label": "b",
+        "text": "trống rỗng, ít"
+      },
+      {
+        "label": "c",
+        "text": "trống rỗng, rất nhiều x"
+      },
+      {
+        "label": "d",
+        "text": "đầy, rất nhiều"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00047",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "418*. Khi một tiến trình kết thúc:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Nó bị loại ra khỏi tất cả các hàng đợi"
+      },
+      {
+        "label": "b",
+        "text": "Nó vào hàng đợi kết thúc"
+      },
+      {
+        "label": "c",
+        "text": "Khối điều khiển tiến trình của nó được lưu ở tập tin log của hệ thống"
+      },
+      {
+        "label": "d",
+        "text": "Nó bị loại ra khỏi tất cả các hàng đợi trừ hàng đợi nhiệm vụ"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00048",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "419*. Thuật toán lập lịch CPU nào thường cho thời gian phản hồi trung bình nhỏ nhất:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Thứ tự ưu tiên cho phép dừng"
+      },
+      {
+        "label": "b",
+        "text": "FCFS"
+      },
+      {
+        "label": "c",
+        "text": "SJF cho phép dừng"
+      },
+      {
+        "label": "d",
+        "text": "Round Robin với time quantum nhỏ"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00049",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "420*. Khi sử dụng bộ đếm để triển khai LRU, chúng ta thay thế trang có:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "giá trị thời gian lớn nhất"
+      },
+      {
+        "label": "b",
+        "text": "giá trị thời gian nhỏ nhất -"
+      },
+      {
+        "label": "c",
+        "text": "kích thước lớn nhất"
+      },
+      {
+        "label": "d",
+        "text": "Các phương án trên đều sai x"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00050",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "423*. Đối với một miền, _______ là một danh sách các đối tượng cùng với các quyền cho phép các đối tượng đó.",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Danh mục khả năng"
+      },
+      {
+        "label": "b",
+        "text": "Danh sách truy cập x"
+      },
+      {
+        "label": "c",
+        "text": "Các phương án trên đều sai"
+      },
+      {
+        "label": "d",
+        "text": "Danh mục khả năng và danh sách truy cập"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "13",
+    "id": "u00051",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "65,67,98,122,124,183,199,0,14,37 co the co 53 o dau 425. Trong cấp phát liên kết, thư mục chứa con trỏ trỏ đến______________________",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Tất cả các khối của tập tin"
+      },
+      {
+        "label": "b",
+        "text": "Khối đầu tiên của tập tin"
+      },
+      {
+        "label": "c",
+        "text": "Khối cuối cùng của tập tin"
+      },
+      {
+        "label": "d",
+        "text": "Khối đầu tiên và cuối cùng của tập tin x"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "10",
+    "id": "u00052",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "427*. Khi tiến trình yêu cầu truy cập tập tin thì nó cần _______________",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Sử dụng các ngắt đặc biệt"
+      },
+      {
+        "label": "b",
+        "text": "Chạy một chương trình riêng biệt khác"
+      },
+      {
+        "label": "c",
+        "text": "Gửi yêu cầu đến khối điều khiển tập tin"
+      },
+      {
+        "label": "d",
+        "text": "Sử dụng hàm hệ thống open() và close()"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "9",
+    "id": "u00053",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "428*. Đâu là phát biểu ĐÚNG về thuật toán banker?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Nó phát hiện trạng thái bế tắc của hệ thống"
+      },
+      {
+        "label": "b",
+        "text": "Nó phát hiện các thể hiện tài nguyên có sẵn của hệ thống -"
+      },
+      {
+        "label": "c",
+        "text": "Nó tìm ra một trật tự của các tiến trình trong đó các tiến trình kết thúc"
+      },
+      {
+        "label": "d",
+        "text": "Nó phát hiện tiến trình nào có thể gây ra bế tắc"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00054",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "430*. Khi một tiến trình P thực hiện phần mã ở khu vực quan trọng (critical section), không có tiến trình Q nào khác có thể thực hiện trong khu vực quan trọng (của Q). Tình huống này được gọi là",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Điều kiện động"
+      },
+      {
+        "label": "b",
+        "text": "Điều kiện găng"
+      },
+      {
+        "label": "c",
+        "text": "Điều kiện cần thiết"
+      },
+      {
+        "label": "d",
+        "text": "Điều kiện tương tranh"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00055",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "431*. Phát biểu nào KHÔNG ĐÚNG về thuật toán phát hiện bế tắc dựa trên biểu đồ?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Nếu có một chu kỳ, hệ thống ở trạng thái bế tắc x"
+      },
+      {
+        "label": "b",
+        "text": "Các đỉnh của đồ thị biểu thị các tiến trình"
+      },
+      {
+        "label": "c",
+        "text": "Các đỉnh của biểu đồ có thể biểu thị các tiến trình hoặc tài nguyên"
+      },
+      {
+        "label": "d",
+        "text": "Một cạnh từ đỉnh này sang đỉnh khác có nghĩa là một tiến trình đang chờ tài nguyên được"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00056",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "giữ bởi tiến trình khác 432*. Ý nào KHÔNG ĐÚNG về các tiêu chí để đánh giá một thuật toán lập lịch CPU tốt?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Giảm thiểu thời gian chờ đợi"
+      },
+      {
+        "label": "b",
+        "text": "Tối đa hóa thời gian quay vòng"
+      },
+      {
+        "label": "c",
+        "text": "Tối đa hóa thông lượng x"
+      },
+      {
+        "label": "d",
+        "text": "Giảm thiểu thời gian phản hồi"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00057",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "435*. Sử dụng kỹ thuật phân trang :",
+    "choices": [
+      {
+        "label": "a",
+        "text": "giảm dung lượng bộ nhớ ảo"
+      },
+      {
+        "label": "b",
+        "text": "làm tăng thời gian swapping"
+      },
+      {
+        "label": "c",
+        "text": "làm tăng dung lượng bộ nhớ vật lý cần thiết"
+      },
+      {
+        "label": "d",
+        "text": "giảm thời gian swapping"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00058",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "437*. Giả sử một hệ thống có RAM 4GB được phân trang kích thước khung là 1KB. Loại dữ liệu của cột khung trong bảng trang là gì?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "double (64 bit)"
+      },
+      {
+        "label": "b",
+        "text": "long (64 bit)"
+      },
+      {
+        "label": "c",
+        "text": "int (32 bit)"
+      },
+      {
+        "label": "d",
+        "text": "float (32 bit) x"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00059",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "438*. Khi tỷ lệ lỗi trang thấp:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "thời gian truy cập hiệu quả giảm"
+      },
+      {
+        "label": "b",
+        "text": "thời gian truy cập hiệu quả tăng"
+      },
+      {
+        "label": "c",
+        "text": "thời gian hoàn thành tăng"
+      },
+      {
+        "label": "d",
+        "text": "thời gian hoàn thành tăng và thời gian truy cập hiệu quả tăng x"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00060",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "bế tắc không 444*. Ý nào KHÔNG ĐÚNG về việc không cho phép dừng trong các thuật toán lập lịch CPU? a. FIFO là một thuật toán lập lịch không cho phép dừng b. Tiến trình hiện tại có thể được chuyển sang trạng waiting c. Chỉ có tiến trình hiện tại có thể sử dụng CPU d. Tiến trình hiện tại sẽ luôn được chạy cho đến khi chấm dứt 445. Mô-đun nào KHÔNG NÊN được thực hiện trong nhân của hệ điều hành?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Mô-đun mạng"
+      },
+      {
+        "label": "b",
+        "text": "Mô-đun quản lý bộ nhớ"
+      },
+      {
+        "label": "c",
+        "text": "Các trình điều khiển thiết bị (như trình điều khiển thiết bị card mạng)"
+      },
+      {
+        "label": "d",
+        "text": "Mô-đun quản lý tiến trình"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00061",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Khi valid-invalid bit có giá trị true có nghĩa là trang: a. có dữ liệu b. ở trong TLB x c. ở trong ổ đĩa d. ở trong bộ nhớ trong 451. Ánh xạ bộ nhớ ảo 2GB lên bộ nhớ vật lý có 256 frame, mỗi frame có kích thước 4 KB. Kích thước mỗi đơn vị bộ nhớ là 1 byte. Kích thước bảng phân trang nghịch đảo là ?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "6912 bit"
+      },
+      {
+        "label": "b",
+        "text": "3200 bit"
+      },
+      {
+        "label": "c",
+        "text": "2048 bit"
+      },
+      {
+        "label": "d",
+        "text": "4864 bit"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00062",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "sửa đổi, v.v. 453. Đâu KHÔNG PHẢI là một loại hệ điều hành?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Hệ điều hành đơn chương trình"
+      },
+      {
+        "label": "b",
+        "text": "Hệ thống nhúng"
+      },
+      {
+        "label": "c",
+        "text": "Hệ thống theo mẻ (hàng loạt)"
+      },
+      {
+        "label": "d",
+        "text": "Hệ thống tuần tự"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "1-2",
+    "id": "u00063",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "476*. Bộ lập lịch dài hạn dùng để:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Lựa chọn tiến trình để loại khỏi bộ nhớ bằng swapping"
+      },
+      {
+        "label": "b",
+        "text": "Lựa chọn tiến trình được thực thi tiếp theo và phân phối CPU cho nó"
+      },
+      {
+        "label": "c",
+        "text": "Các phương án trên đều sai"
+      },
+      {
+        "label": "d",
+        "text": "Lựa chọn tiến trình cần được đưa vào hàng đợi sẵn sàng"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00064",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "483*. Đâu là thuật toán lập lịch CPU cho phép dừng?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Không có thuật toán nào"
+      },
+      {
+        "label": "b",
+        "text": "RR"
+      },
+      {
+        "label": "c",
+        "text": "FIFO"
+      },
+      {
+        "label": "d",
+        "text": "SJN (or SJF) x"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00065",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "490*. Lỗi trang xảy ra khi:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Tất cả các phương án trên"
+      },
+      {
+        "label": "b",
+        "text": "một trang cung cấp dữ liệu không thống nhất"
+      },
+      {
+        "label": "c",
+        "text": "một trang không thể truy cập do không có trong bộ nhớ"
+      },
+      {
+        "label": "d",
+        "text": "trang bị ẩn đi"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00066",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "492*. Ý nào KHÔNG ĐÚNG về sự cho phép dừng trong các thuật toán lập lịch CPU?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Tiến trình hiện tại có thể được chuyển sang trạng thái waiting"
+      },
+      {
+        "label": "b",
+        "text": "Tiến trình hiện tại sẽ luôn được chạy cho đến khi chấm dứt"
+      },
+      {
+        "label": "c",
+        "text": "Tiến trình hiện tại có thể được chuyển sang trạng thái ready"
+      },
+      {
+        "label": "d",
+        "text": "Tiến trình hiện tại có thể được chuyển sang trạng thái waiting terminated"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00067",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Mục đích của đa chương trình là: a. Tối đa hoá việc sử dụng CPU b. Có nhiều chương trình chờ trong hàng đợi sẵn sàng để chạy c. Tối đa hoá mức sử dụng các thiết bị vào ra d. Tối đa hoá mức sử dụng bộ nhớ 495. Điều nào KHÔNG ĐÚNG về truyền thông giữa các tiến trình (IPC - Inter-process communication)?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Cơ chế IPC trong các hệ điều hành khác nhau có thể khác nhau"
+      },
+      {
+        "label": "b",
+        "text": "Ví dụ về cơ chế IPC trong Linux là hàng đợi tin nhắn, semaphore, bộ nhớ dùng chung, ..."
+      },
+      {
+        "label": "c",
+        "text": "IPC chỉ có thể được sử dụng giữa các tiến trình trong cùng hệ thống"
+      },
+      {
+        "label": "d",
+        "text": "Trong hệ điều hành đơn chương trình có thể KHÔNG cần IPC cục bộ"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00068",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "511*. Điều kiện loại trừ lẫn nhau (trong bế tắc) xảy ra khi: a. Có ít nhất một một tài nguyên chia sẻ b. Tất cả các phương án trên c. Bộ vi xử lý phải là đơn vi xử lý 512. Đâu không là tiêu chí để đánh giá thuật toán lập lịch CPU?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Sử dụng RAM"
+      },
+      {
+        "label": "b",
+        "text": "Sử dụng CPU"
+      },
+      {
+        "label": "c",
+        "text": "Thời gian đáp ứng"
+      },
+      {
+        "label": "d",
+        "text": "Thời gian chờ đợi"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00069",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Đâu KHÔNG PHẢI là mục đích của máy ảo?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Cho phép nhiều hệ điều hành chạy trên cùng một phần cứng"
+      },
+      {
+        "label": "b",
+        "text": "Cho phép các hệ điều hành trên cùng một phần cứng sử dụng một số tài nguyên (như địa chỉ IP, cổng, tên miền, ...) một cách độc lập nhau"
+      },
+      {
+        "label": "c",
+        "text": "Tăng số lượng tiến trình trong bộ nhớ"
+      },
+      {
+        "label": "d",
+        "text": "Sử dụng RAM và CPU hiệu quả hơn"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "1-2",
+    "id": "u00070",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Thuật toán lập lịch CPU nào thường cho thời gian phản hồi trung bình nhỏ nhất:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Round Robin với time quantum nhỏ"
+      },
+      {
+        "label": "b",
+        "text": "SJF cho phép dừng"
+      },
+      {
+        "label": "c",
+        "text": "Thứ tự ưu tiên cho phép dừng"
+      },
+      {
+        "label": "d",
+        "text": "FCFS"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00071",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct Yêu cầu vào/ra các khối dữ liệu trên các trục rãnh (theo trình tự FIFO) như sau: 69, 12, 196, 80, 55, 161, 156, 103, 149, 181. Sơ đồ đường đi của đầu đọc/ghi khi sử dụng thuật toán lập lịch SCAN là: 1.00",
+    "choices": [
+      {
+        "label": "a",
+        "text": "50 --> 55 --> 69 --> 80 --> 103 --> 149 --> 156 --> 161 --> 181 --> 196 --> 12"
+      },
+      {
+        "label": "b",
+        "text": "50 --> 12 --> 196 --> 181 --> 161 --> 156 --> 149 --> 103 --> 80 --> 69 --> 55"
+      },
+      {
+        "label": "c",
+        "text": "50 --> 12 --> 0 -->199 --> 196 --> 181 --> 161 --> 156 --> 149 --> 103 --> 80 --> 69 --> 55"
+      },
+      {
+        "label": "d",
+        "text": "50 --> 12 --> 0 --> 55 --> 69 --> 80 --> 103 --> 149 --> 156 --> 161 --> 181 --> 196 "
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "11",
+    "id": "u00072",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Incorrect gian trống của khối 0 đến 15 là _____________ 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "1000011000000111"
+      },
+      {
+        "label": "b",
+        "text": "0011110011111100"
+      },
+      {
+        "label": "c",
+        "text": "1100001100001110 "
+      },
+      {
+        "label": "d",
+        "text": "0111100111110000"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "10",
+    "id": "u00073",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Incorrect byte. Tốc độ truyền dữ liệu là: 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "1120 Kbps"
+      },
+      {
+        "label": "b",
+        "text": "700 Kbps "
+      },
+      {
+        "label": "c",
+        "text": "1024 Kbps"
+      },
+      {
+        "label": "d",
+        "text": "800 Kbps"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "11",
+    "id": "u00074",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct lưu trên ổ đĩa riêng. 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "2"
+      },
+      {
+        "label": "b",
+        "text": "4 "
+      },
+      {
+        "label": "c",
+        "text": "3"
+      },
+      {
+        "label": "d",
+        "text": "5"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "11",
+    "id": "u00075",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct kích thước 3MB. Đâu là vị trí chính xác của vị trí tệp tin 35KB? 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "(block index, offset)=(9, 3071)"
+      },
+      {
+        "label": "b",
+        "text": "(block index, offset)=(9, 3072)"
+      },
+      {
+        "label": "c",
+        "text": "(block index, offset)=(8, 3072) "
+      },
+      {
+        "label": "d",
+        "text": "(block index, offset)=(8, 3071)"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "10",
+    "id": "u00076",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Cho 3 tiến trình P0, P1, P2 và 12 băng từ. P0, P1, P2 lần lượt yêu cầu 8, 4 và 11 băng từ để thực hiện xong. Biết rằng hiện tại 3 tiến trình đó đang lần lượt chiếm giữ 4, 2, 3 băng từ. Thứ tự an toàn để hệ thống không bế tắc là:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "P0, P2, P1"
+      },
+      {
+        "label": "b",
+        "text": "P2, P1, P0"
+      },
+      {
+        "label": "c",
+        "text": "P1, P0, P2"
+      },
+      {
+        "label": "d",
+        "text": "P0, P1, P2"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00077",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct (bảng trang cấp 1). Phát biểu nào là KHÔNG ĐÚNG? 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Trong mọi trường hợp, trong tiến trình dịch địa chỉ, chúng ta chỉ cần truy cập TLB "
+      },
+      {
+        "label": "b",
+        "text": "TLB giúp tăng tốc tiến trình dịch địa chỉ"
+      },
+      {
+        "label": "c",
+        "text": "Trong trường hợp xấu nhất, chúng ta cần truy cập cả TLB và bảng trang trong tiến trình dịch địa chỉ"
+      },
+      {
+        "label": "d",
+        "text": "Kích thước của TLB thường nhỏ (cỡ thường từ 64 đến 1024)"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00078",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Incorrect quả cho một bộ nhớ phân trang theo yêu cầu là: 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "p x ma + (1-p) x thời gian phát sinh do lỗi trang"
+      },
+      {
+        "label": "b",
+        "text": "(1-p) x ma + p x thời gian phát sinh do lỗi trang"
+      },
+      {
+        "label": "c",
+        "text": "ma + thời gian phát sinh do lỗi trang"
+      },
+      {
+        "label": "d",
+        "text": "Các phương án trên đều sai "
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00079",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct 3 4 3 4 4 4 1 3 2 3. Nếu Delta=10 thì tập các trang đang làm việc tại thời điểm t1 (… 7 5 1) là: 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "{1, 2, 4, 5, 6}"
+      },
+      {
+        "label": "b",
+        "text": "{1, 6, 5, 7, 2} "
+      },
+      {
+        "label": "c",
+        "text": "{1, 2, 3, 4, 5}"
+      },
+      {
+        "label": "d",
+        "text": "{2, 1, 6, 7, 3}"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00080",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct byte. Số bit cần dùng để đánh số hiệu trang là ? 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "8 bit"
+      },
+      {
+        "label": "b",
+        "text": "19 bit "
+      },
+      {
+        "label": "c",
+        "text": "18 bit"
+      },
+      {
+        "label": "d",
+        "text": "20 bit"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00081",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct để dịch địa chỉ. Phát biểu nào là KHÔNG ĐÚNG? 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Một tham chiếu có dạng (p, d)"
+      },
+      {
+        "label": "b",
+        "text": "Phải mất ít nhất một truy cập TLB và một truy cập bộ nhớ để tham chiếu (p, d)"
+      },
+      {
+        "label": "c",
+        "text": "Luôn mất ít nhất một lần truy cập TLB và 2 lần truy cập bộ nhớ để tham chiếu (p, d) "
+      },
+      {
+        "label": "d",
+        "text": "Địa chỉ vật lý là f * frame_size + d, trong đó f là khung tương ứng của p"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00082",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct 1200; và một tham chiếu là 1246. Đâu là kết quả của Đơn vị quản lý bộ nhớ (MMU - Memory Management Unit)? 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "1446"
+      },
+      {
+        "label": "b",
+        "text": "14154"
+      },
+      {
+        "label": "c",
+        "text": "Một lỗi "
+      },
+      {
+        "label": "d",
+        "text": "14646"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00083",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Incorrect Multiprogramming with a Variable number of Tasks )? 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Một tiến trình có thể phân tán trong một số vùng nhớ"
+      },
+      {
+        "label": "b",
+        "text": "Một tiến trình được phân bổ trên một vùng bộ nhớ liền kề "
+      },
+      {
+        "label": "c",
+        "text": "Bộ nhớ không được chia trước thành các phân vùng"
+      },
+      {
+        "label": "d",
+        "text": "Có sự phân mảnh bộ nhớ"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00084",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct Hãy hiển thị các trang (theo thứ tự xuất hiện ) được chọn là nạn nhân để được trao đổi. 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "7 0 1 4 3 2"
+      },
+      {
+        "label": "b",
+        "text": "7 1 0 4 3 2 "
+      },
+      {
+        "label": "c",
+        "text": "7 1 4 1 3 2"
+      },
+      {
+        "label": "d",
+        "text": "7 1 0 3 4 2"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00085",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Incorrect kích thước 3MB. Đâu là vị trí chính xác của vị trí tệp tin 35KB? 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "(block index, offset)=(8, 3072)"
+      },
+      {
+        "label": "b",
+        "text": "(block index, offset)=(9, 3072) "
+      },
+      {
+        "label": "c",
+        "text": "(block index, offset)=(9, 3071)"
+      },
+      {
+        "label": "d",
+        "text": "(block index, offset)=(8, 3071)"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "10",
+    "id": "u00086",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct gian trống của khối 0 đến 15 là _____________ 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "0011110011111100 "
+      },
+      {
+        "label": "b",
+        "text": "0111100111110000"
+      },
+      {
+        "label": "c",
+        "text": "1000011000000111"
+      },
+      {
+        "label": "d",
+        "text": "1100001100001110"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "10",
+    "id": "u00087",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct ____________ 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Các phương án trên đều sai"
+      },
+      {
+        "label": "b",
+        "text": "Bom logic "
+      },
+      {
+        "label": "c",
+        "text": "Cửa sập"
+      },
+      {
+        "label": "d",
+        "text": "Mã sửa đổi ngăn xếp"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "14",
+    "id": "u00088",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct là gì? 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "long (64 bit)"
+      },
+      {
+        "label": "b",
+        "text": "double (64 bit)"
+      },
+      {
+        "label": "c",
+        "text": "float (32 bit)"
+      },
+      {
+        "label": "d",
+        "text": "int (32 bit) "
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00089",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct loại bỏ, thì thuật toán thay thế trang là: 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "LFU"
+      },
+      {
+        "label": "b",
+        "text": "Các phương án trên đều sai"
+      },
+      {
+        "label": "c",
+        "text": "LRU"
+      },
+      {
+        "label": "d",
+        "text": "FIFO "
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00090",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct trình là [(1000, 1400), (400, 6300), (400, 4300), (1100, 3200), (1000, 4700)]. Địa chỉ vật lý của tham chiếu (3, 208) là gì? 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "2008"
+      },
+      {
+        "label": "b",
+        "text": "4408"
+      },
+      {
+        "label": "c",
+        "text": "3208"
+      },
+      {
+        "label": "d",
+        "text": "3408 "
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00091",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Incorrect vùng trống lớn hơn trong bộ nhớ: 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Tất cả các phương án trên "
+      },
+      {
+        "label": "b",
+        "text": "sử dụng nhiều CPU"
+      },
+      {
+        "label": "c",
+        "text": "chi phí"
+      },
+      {
+        "label": "d",
+        "text": "sử dụng nhiều dung lượng bộ nhớ"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00092",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct byte. Số bit cần dùng để đánh địa chỉ vật lý cho bộ nhớ chính ? 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "8 bit"
+      },
+      {
+        "label": "b",
+        "text": "18 bit"
+      },
+      {
+        "label": "c",
+        "text": "20 bit "
+      },
+      {
+        "label": "d",
+        "text": "19 bit"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00093",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Incorrect trang xảy ra khi dùng 3 frame là: 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "6"
+      },
+      {
+        "label": "b",
+        "text": "7 "
+      },
+      {
+        "label": "c",
+        "text": "5"
+      },
+      {
+        "label": "d",
+        "text": "8"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00094",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct 10 ns, thời gian truy cập bộ nhớ chính là 100 ns. 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "8 ns"
+      },
+      {
+        "label": "b",
+        "text": "82 ns"
+      },
+      {
+        "label": "c",
+        "text": "80 ns"
+      },
+      {
+        "label": "d",
+        "text": "28 ns "
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00095",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct thời gian truy cập cache là 10 ns, thời gian truy cập bộ nhớ chính là 100 ns. 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "66 ns"
+      },
+      {
+        "label": "b",
+        "text": "84 ns"
+      },
+      {
+        "label": "c",
+        "text": "150 ns "
+      },
+      {
+        "label": "d",
+        "text": "120 ns"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00096",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct Recent Used(LRU) với 3 khung. Đâu là THỨ TỰ của các trang được chọn là nạn nhân sẽ bị tráo đổi? 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "7 2 1 3 0 4 2 3 2"
+      },
+      {
+        "label": "b",
+        "text": "7 1 2 3 1 4 1 3 2"
+      },
+      {
+        "label": "c",
+        "text": "7 1 2 3 0 4 0 3 2 "
+      },
+      {
+        "label": "d",
+        "text": "7 1 2 3 0 4 1 2 3"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00097",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct trang LRU, số lỗi trang xảy ra khi dùng 3 frame là: 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "7"
+      },
+      {
+        "label": "b",
+        "text": "10 "
+      },
+      {
+        "label": "c",
+        "text": "8"
+      },
+      {
+        "label": "d",
+        "text": "9"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00098",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Incorrect Đã cấp phát Cần tối đa Còn A B C D A B C D A B C D 1.00 P0 2 0 0 1 4 2 1 2 3 3 2 1 P1 3 1 2 1 5 2 5 2 P2 2 1 0 3 2 3 1 6 P3 1 3 1 2 1 4 2 4 P4 1 4 3 2 3 6 6 5 Yêu cầu (0,2,1,0) của P4 sẽ dẫn hệ thống đến trạng thái nào:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Bế tắc "
+      },
+      {
+        "label": "b",
+        "text": "Được bảo vệ"
+      },
+      {
+        "label": "c",
+        "text": "An toàn"
+      },
+      {
+        "label": "d",
+        "text": "Không an toàn"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00099",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct hiện trong khu vực quan trọng (của Q). Tình huống này được gọi là 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Điều kiện tương tranh "
+      },
+      {
+        "label": "b",
+        "text": "Điều kiện động"
+      },
+      {
+        "label": "c",
+        "text": "Điều kiện cần thiết"
+      },
+      {
+        "label": "d",
+        "text": "Điều kiện găng"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00100",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Incorrect Tiến trình A {int Y; 1.00 wait(S1); A1: Y = X*2; signal(S2); wait(S1); A2: X = Y; } Tiến trình B {int Z; B1: Z=X+1; signal(S1); wait(S2); B2: X=Z; signal(S1); } Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Giá trị cuối cùng của X sau khi thực thi xong hai tiến trình A và B sẽ là:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "11"
+      },
+      {
+        "label": "b",
+        "text": "10"
+      },
+      {
+        "label": "c",
+        "text": "12"
+      },
+      {
+        "label": "d",
+        "text": "6 "
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00101",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct Tiến trình A {Int Y; 1.00 Wait (T) A1: Y = X * 2; A2: X = Y; } Tiến trình B {Int Z; B1: Z = X + 1; B2: X = Z; Signal(T) } X được khởi tạo bằng 5, T được khởi tạo bằng 0 trước khi các tiến trình bắt đầu thực thi. Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Giá trị cuối cùng của X sau khi thực thi xong hai tiến trình A và B sẽ là:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "10"
+      },
+      {
+        "label": "b",
+        "text": "12 "
+      },
+      {
+        "label": "c",
+        "text": "6"
+      },
+      {
+        "label": "d",
+        "text": "11"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00102",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Incorrect Thời gian chạy Số hiệu ưu tiên Thời gian đến P1 2 2 0 1.00 P2 3 1 3 P3 8 4 5 P4 4 5 7 P5 5 3 9 Sử dụng thuật toán Round Robin với time quantum q = 4 ms. Khẳng định nào sau đây là đúng:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Thời phản hồi của P3 dài hơn thời phản hồi của P5"
+      },
+      {
+        "label": "b",
+        "text": "Thời gian phản hồi của P4 dài hơn thời gian phản hồi của P5 "
+      },
+      {
+        "label": "c",
+        "text": "Thời gian chờ của P4 dài hơn thời gian chờ của P3"
+      },
+      {
+        "label": "d",
+        "text": "Thời gian chờ của P3 và thời gian chờ của P5 giống nhau"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00103",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct S0 = 1, S1 = 0, S2 = 0. 1.00 while(true) { wait(S1); wait(S2); wait(S0); signal (S0); signal (S0); print ‘0’; signal(S1); signal (S2);} Bao nhiêu lần P0 sẽ in '0'?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Chính xác một lần"
+      },
+      {
+        "label": "b",
+        "text": "Có ít nhất hai lần "
+      },
+      {
+        "label": "c",
+        "text": "Chính xác hai lần"
+      },
+      {
+        "label": "d",
+        "text": "Chính xác ba lần"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00104",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Incorrect Tiến trình P1 : while(S1==S2); 1.00 Critical section S1 = S2; Tiến trình P2 : while(S1!=S2); Critical section S2 = not(S1); Điều nào dưới đây là đúng về đoạn mã trên?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Nó không đảm bảo tính loại trừ lẫn nhau, và không đảm bảo tính tiến triển"
+      },
+      {
+        "label": "b",
+        "text": "Nó đảm bảo tính loại trừ lẫn nhau, nhưng không đảm bảo tính tiến triển "
+      },
+      {
+        "label": "c",
+        "text": "Nó không đảm bảo tính loại trừ lẫn nhau, nhưng đảm bảo tính tiến triển"
+      },
+      {
+        "label": "d",
+        "text": "Nó đảm bảo tính loại trừ lẫn nhau, và tính tiến triển"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00105",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Incorrect tiến trình: 1.00 while(true) { w1 = true; while(w2 == true); Critical section w1 = false; } Remainder Section P2 : while(true) { w2 = true; while(w1 == true); Critical section w2 = false; } Remainder Section Ở đây, w1 và w2 là các biến chia sẻ, được khởi tạo bằng false. Điều nào dưới đây là đúng về đoạn mã trên ?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Các tiến trình lần lượt vào khu vực quan trọng"
+      },
+      {
+        "label": "b",
+        "text": "Nó không đảm bảo tính chờ đợi có giới hạn "
+      },
+      {
+        "label": "c",
+        "text": "Nó không đảm bảo tính loại trừ lẫn nhau"
+      },
+      {
+        "label": "d",
+        "text": "Bế tắc có thể xảy ra, nhưng đảm bảo tính loại trừ lẫn nhau"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00106",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Incorrect Thời gian chạy Số hiệu ưu tiên Thời gian đến P1 2 2 0 1.00 P2 3 1 3 P3 8 4 5 P4 4 5 7 P5 5 3 9 Sử dụng thuật toán số hiệu ưu tiên cho phép dừng (tiến trình có số hiệu ưu tiên cao hơn sẽ chạy trước). Khẳng định nào sau đây là đúng:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Thời gian chờ của P4 dài hơn thời gian chờ của P3"
+      },
+      {
+        "label": "b",
+        "text": "Thời gian chờ của P2 gấp đôi thời gian chờ của P3"
+      },
+      {
+        "label": "c",
+        "text": "Thời gian phản hồi của P4 dài hơn thời gian phản hồi của P5 "
+      },
+      {
+        "label": "d",
+        "text": "Thời gian chờ của P5 gấp đôi thời gian chờ của P3"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00107",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct Tiến trình P1 { wait (S); print (\"1\"); print (\"2\"); } 1.00 Tiến trình P2 { print (\"3\"); print (\"4\"); signal (S);} Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Chuỗi kết quả in ra màn hình sau khi cả hai tiến trình kết thúc thực thi ?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "3421"
+      },
+      {
+        "label": "b",
+        "text": "3412 "
+      },
+      {
+        "label": "c",
+        "text": "1234"
+      },
+      {
+        "label": "d",
+        "text": "1324"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00108",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct Đã cấp phát Cần tối đa Còn A B C D A B C D A B C D 1.00 P0 2 0 0 1 4 2 1 2 3 3 2 1 P1 3 1 2 1 5 2 5 2 P2 2 1 0 3 2 3 1 6 P3 1 3 1 2 1 4 2 4 P4 1 4 3 2 3 6 6 5 Hệ thống đang ở trạng thái nào:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Không an toàn"
+      },
+      {
+        "label": "b",
+        "text": "Bế tắc"
+      },
+      {
+        "label": "c",
+        "text": "An toàn "
+      },
+      {
+        "label": "d",
+        "text": "Được bảo vệ"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00109",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Incorrect Thời gian chạy Số hiệu ưu tiên Thời gian đến P1 2 2 0 1.00 P2 3 1 3 P3 8 4 5 P4 4 5 7 P5 5 3 9 Sử dụng thuật toán SJF cho phép dừng. Khẳng định nào sau đây là đúng:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Thời gian chờ của P2 dài hơn thời gian chờ của P3"
+      },
+      {
+        "label": "b",
+        "text": "Thời gian phản hồi của P4 dài hơn thời gian phản hồi của P5 "
+      },
+      {
+        "label": "c",
+        "text": "Thời gian chờ của P3 dài hơn thời gian chờ của P5"
+      },
+      {
+        "label": "d",
+        "text": "Thời gian chờ của P4 dài hơn thời gian chờ của P3"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00110",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Incorrect Thời gian chạy Thời gian đến P1 3 0 1.00 P2 12 4 P3 4 6 P4 7 8 P5 3 11 Sử dụng thuật toán SJF cho phép dừng. Khẳng định nào sau đây là đúng:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Thời gian chờ của P2 dài hơn thời gian chờ của P4"
+      },
+      {
+        "label": "b",
+        "text": "Thời phản hồi của P3 dài hơn thời phản hồi của P4"
+      },
+      {
+        "label": "c",
+        "text": "Thời gian chờ của P3 dài hơn thời gian chờ của P2 "
+      },
+      {
+        "label": "d",
+        "text": "Thời gian chờ của P2 và thời gian chờ của P5 giống nhau"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00111",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Incorrect (I) Thuật toán lập lịch SJF có thể gây ra nạn đói. 1.00 (III)Thuật toán Round Robin tốt hơn FCFS về thời gian phản hồi",
+    "choices": [
+      {
+        "label": "a",
+        "text": "chỉ II và III "
+      },
+      {
+        "label": "b",
+        "text": "cả I, II, và III"
+      },
+      {
+        "label": "c",
+        "text": "chỉ I và III"
+      },
+      {
+        "label": "d",
+        "text": "chỉ I"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00112",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct phụ thuộc vào thứ tự các tiến trình truy cập vào vùng dữ liệu được gọi là: 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "nạn đói"
+      },
+      {
+        "label": "b",
+        "text": "quá trình lão hóa"
+      },
+      {
+        "label": "c",
+        "text": "điều kiện tương tranh "
+      },
+      {
+        "label": "d",
+        "text": "tính nhất quán dữ liệu"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00113",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct Multiprogramming with a Fixed number of Tasks)? 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Hệ điều hành quản lý các phân vùng được phân bổ và có sẵn"
+      },
+      {
+        "label": "b",
+        "text": "Bộ nhớ được chia thành các phân vùng có kích thước có thể thay đổi "
+      },
+      {
+        "label": "c",
+        "text": "Khi một tiến trình mới đến, nó tìm một phân vùng phù hợp để phân bổ cho tiến trình"
+      },
+      {
+        "label": "d",
+        "text": "Bộ nhớ được chia thành các phân vùng cố định"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00114",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct trang xảy ra khi dùng 3 frame là: 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "8"
+      },
+      {
+        "label": "b",
+        "text": "7 "
+      },
+      {
+        "label": "c",
+        "text": "6"
+      },
+      {
+        "label": "d",
+        "text": "5"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00115",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct trang cấp 1). Giả sử thời gian truy cập của TLB là a; thời gian truy cập của bộ nhớ là b; và tỷ lệ trúng của TLB là c. Thời gian truy cập hiệu quả (EAT - Effective Access Time) của hệ thống là gì? 1.00",
+    "choices": [
+      {
+        "label": "a",
+        "text": "2*b + a-c * b "
+      },
+      {
+        "label": "b",
+        "text": "c * a + b"
+      },
+      {
+        "label": "c",
+        "text": "2*b + c * a"
+      },
+      {
+        "label": "d",
+        "text": "2*b + a"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00116",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct byte. Số trang tối đa của một tiến trình là ? 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "2^20 (2 mũ 20)"
+      },
+      {
+        "label": "b",
+        "text": "2^18 (2 mũ 18)"
+      },
+      {
+        "label": "c",
+        "text": "2^8 (2 mũ 8)"
+      },
+      {
+        "label": "d",
+        "text": "2^19 (2 mũ 19) "
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00117",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct kích thước 20MB. Đâu là vị trí của tệp tại vị trí 15MB? 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "(index block, block offset, offset)=(4,768,0)"
+      },
+      {
+        "label": "b",
+        "text": "(index block, block offset, offset)=(3,767,4095)"
+      },
+      {
+        "label": "c",
+        "text": "(index block, block offset, offset)=(3,768,0) "
+      },
+      {
+        "label": "d",
+        "text": "(index block, block offset, offset)=(3,769,0)"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "10",
+    "id": "u00118",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct byte. Tốc độ truyền dữ liệu là: 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "640 Kbps "
+      },
+      {
+        "label": "b",
+        "text": "800 Kbps"
+      },
+      {
+        "label": "c",
+        "text": "1024 Kbps"
+      },
+      {
+        "label": "d",
+        "text": "400 Kbps"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "11",
+    "id": "u00119",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct gọi là __________ 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Tấn công đọc chậm"
+      },
+      {
+        "label": "b",
+        "text": "Tấn công nạn đói"
+      },
+      {
+        "label": "c",
+        "text": "Tấn công từ chối dịch vụ "
+      },
+      {
+        "label": "d",
+        "text": "Tấn công giả mạo"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "14",
+    "id": "u00120",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Correct bổ đĩa dạng danh sách liên kết. Kiểu dữ liệu của con trỏ là gì? 1.00 Select one:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "double"
+      },
+      {
+        "label": "b",
+        "text": "int "
+      },
+      {
+        "label": "c",
+        "text": "char"
+      },
+      {
+        "label": "d",
+        "text": "float"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "10",
+    "id": "u00121",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Phân trang làm tăng thời gian:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Tiến trình trong hàng đợi"
+      },
+      {
+        "label": "b",
+        "text": "Tiến trình thực thi"
+      },
+      {
+        "label": "c",
+        "text": "Tiến trình chuyển trạng thái"
+      },
+      {
+        "label": "d",
+        "text": "Tiến trình khởi tạo"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00122",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Phát biểu nào sau về virut máy tính là KHÔNG CHÍNH XÁC?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Virut không thể phát hiện"
+      },
+      {
+        "label": "b",
+        "text": "Virut lây nhiễm qua việc truy xuất vào các phương tiện lưu trữ"
+      },
+      {
+        "label": "c",
+        "text": "Virut là một đoạn mã ký sinh vào các chương trình"
+      },
+      {
+        "label": "d",
+        "text": "Virut phá hủy và thay đổi dữ liệu người dùng"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "14",
+    "id": "u00123",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Hệ điều hành duy trì bảng trang cho:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Mỗi địa chỉ"
+      },
+      {
+        "label": "b",
+        "text": "Mỗi luồng xử lý"
+      },
+      {
+        "label": "c",
+        "text": "Mỗi dòng lệnh"
+      },
+      {
+        "label": "d",
+        "text": "Mỗi tiến trình"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00124",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Vấn đề phân mảnh trong (Internal Fragmentation) xảy ra nghiêm trọng nhất với chiến lược cấp phát nào?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Worst-\u0000t"
+      },
+      {
+        "label": "b",
+        "text": "Best-\u0000t"
+      },
+      {
+        "label": "c",
+        "text": "First-\u0000t"
+      },
+      {
+        "label": "d",
+        "text": "Small-\u0000t"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00125",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Phát biểu nào về điểm kết nối (Mount point) là CHÍNH XÁC NHẤT?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Một thư mục bất kỳ trong hệ thống"
+      },
+      {
+        "label": "b",
+        "text": "Một thư mục mà hệ thống tệp chuẩn bị cho sự liên kết"
+      },
+      {
+        "label": "c",
+        "text": "Một thư mục rỗng mà hệ thống tệp sẽ được liên kết"
+      },
+      {
+        "label": "d",
+        "text": "Một thư mục định trước bởi hệ điều hành"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "9",
+    "id": "u00126",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Phát biểu nào sau không phải là lợi ích của bộ nhớ ảo?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Tăng khả năng chia sẻ bộ nhớ giữa các tiến trình"
+      },
+      {
+        "label": "b",
+        "text": "Tăng khả năng giải quyết nhiều bộ nhớ hơn so với bộ nhớ trong (RAM)"
+      },
+      {
+        "label": "c",
+        "text": "Tăng tốc độ tạo tiến trình mới"
+      },
+      {
+        "label": "d",
+        "text": "Tăng thời gian truy cập hiệu quả của bộ nhớ"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00127",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Bộ điều khiển DMA có tác dụng?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Giảm tải cho bộ xử lý trong khi ghi dữ liệu vào ổ cứng"
+      },
+      {
+        "label": "b",
+        "text": "Hỗ trợ bộ nhớ trong khi truyền dữ liệu vào/ra có dung lượng lớn"
+      },
+      {
+        "label": "c",
+        "text": "Hỗ trợ bộ xử lý khi truyền dữ liệu vào/ra có dung lượng lớn"
+      },
+      {
+        "label": "d",
+        "text": "Giảm tải cho ổ đĩa khi truyền dữ liệu vào/ra có dung lượng lớn"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "11",
+    "id": "u00128",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Phát biểu nào sau về vùng đệm hỗ trợ chuyển đổi (TLB) là CHÍNH XÁC NHẤT?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Số phần trăm địa chỉ trang được tìm thấy ở các thanh ghi TLB tỷ lệ nghịch với thời gian truy cập hiệu quả"
+      },
+      {
+        "label": "b",
+        "text": "Được lưu trữ, quản lý ở bộ nhớ trong"
+      },
+      {
+        "label": "c",
+        "text": "Số phần trăm địa chỉ trang được tìm thấy ở các thanh ghi TLB tỷ lệ thuận với thời gian truy cập hiệu quả"
+      },
+      {
+        "label": "d",
+        "text": "Luôn chứa toàn bộ bản sao các địa chỉ trong bảng trang"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00129",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Phương pháp lập lịch đĩa nào sau có số bước di chuyển của đầu đọc ghi dữ liệu nhiều nhất?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "FIFO"
+      },
+      {
+        "label": "b",
+        "text": "SCAN"
+      },
+      {
+        "label": "c",
+        "text": "C-SCAN"
+      },
+      {
+        "label": "d",
+        "text": "SSTF"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "11",
+    "id": "u00130",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Quyền truy cập đặc biệt nào cho phép thêm quyền sao chép toán tử trong ma trận truy cập?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Control"
+      },
+      {
+        "label": "b",
+        "text": "Switch"
+      },
+      {
+        "label": "c",
+        "text": "Copy*"
+      },
+      {
+        "label": "d",
+        "text": "Owner"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "13",
+    "id": "u00131",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Cơ chế Caching trong hệ vào/ra cho phép:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Giữ duy nhất một bản sao của dữ liệu vào/ra"
+      },
+      {
+        "label": "b",
+        "text": "Giữ một bản sao của dữ liệu vào/ra"
+      },
+      {
+        "label": "c",
+        "text": "Giữ dữ liệu đầu vào của thiết bị vào/ra"
+      },
+      {
+        "label": "d",
+        "text": "Giữ kết quả đầu ra của thiết bị vào/ra"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "11",
+    "id": "u00132",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Sử dụng thuật toán tối ưu cho việc thay thế trang cho chuỗi tham chiếu trang: 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6. Giả sử bộ nhớ trong có 3 frames, số lượng lỗi trang xảy ra là:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "11"
+      },
+      {
+        "label": "b",
+        "text": "16"
+      },
+      {
+        "label": "c",
+        "text": "14"
+      },
+      {
+        "label": "d",
+        "text": "15"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00133",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Vấn đề cần chú ý khi xây dựng thư mục có cấu trúc cây là?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Số lượng thư mục con"
+      },
+      {
+        "label": "b",
+        "text": "Chu trình liên kết giữa các tệp"
+      },
+      {
+        "label": "c",
+        "text": "Cách thức đặt tên các tệp"
+      },
+      {
+        "label": "d",
+        "text": "Độ sâu của cây thư mục"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "9",
+    "id": "u00134",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Số lượng đĩa tối thiểu yêu cầu cho RAID-1 là?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "2"
+      },
+      {
+        "label": "b",
+        "text": "4"
+      },
+      {
+        "label": "c",
+        "text": "1"
+      },
+      {
+        "label": "d",
+        "text": "3"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "11",
+    "id": "u00135",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Tấn công từ chối dịch vụ (DDOS) là?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Một phương pháp tấn công thông qua lỗ hổng setuid"
+      },
+      {
+        "label": "b",
+        "text": "Một phương pháp để mã hóa mật khẩu"
+      },
+      {
+        "label": "c",
+        "text": "Một chương trình chạy ngầm ăn trộm thông tin giá trị"
+      },
+      {
+        "label": "d",
+        "text": "Một phương pháp tấn công mạng bằng cách làm quá tải hệ thống máy chủ"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "14",
+    "id": "u00136",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Vấn đề Thrashing ảnh hưởng như thế nào với hiệu năng sử dụng CPU?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Làm tăng hiệu năng sử dụng"
+      },
+      {
+        "label": "b",
+        "text": "Không ảnh hưởng tới hiệu năng sử dụng"
+      },
+      {
+        "label": "c",
+        "text": "Làm giảm hiệu năng sử dụng"
+      },
+      {
+        "label": "d",
+        "text": "Ảnh hưởng không đáng kể tới hiệu năng sử dụng"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00137",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Bàn phím là thiết bị vào ra truyền dữ liệu vào/ra theo phương thức nào?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Ký tự (Character)"
+      },
+      {
+        "label": "b",
+        "text": "Luồng (Stream)"
+      },
+      {
+        "label": "c",
+        "text": "Byte"
+      },
+      {
+        "label": "d",
+        "text": "Khối dữ liệu (Block)"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "11",
+    "id": "u00138",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Nạp chương trình động giúp sử dụng bộ nhớ hiệu quả hơn. Để cài đặt nạp chương trình động, cần:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Hỗ trợ từ cả phần cứng và hệ điều hành"
+      },
+      {
+        "label": "b",
+        "text": "Hỗ trợ từ hệ điều hành"
+      },
+      {
+        "label": "c",
+        "text": "Hỗ trợ từ phần cứng"
+      },
+      {
+        "label": "d",
+        "text": "Không cần bất cứ hỗ trợ nào từ phần cứng và hệ điều hành"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00139",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Thành phần nào sau đòi hỏi một trình điều khiển (device driver)?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Ổ cứng (Disk)"
+      },
+      {
+        "label": "b",
+        "text": "Thanh ghi (Register)"
+      },
+      {
+        "label": "c",
+        "text": "Bộ đệm (Cache)"
+      },
+      {
+        "label": "d",
+        "text": "Bộ nhớ trong (Main Memory)"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "11",
+    "id": "u00140",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Thuật toán nào sau KHÔNG ĐƯỢC sử dụng trong việc thay thế trang?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "FIFO"
+      },
+      {
+        "label": "b",
+        "text": "LRU"
+      },
+      {
+        "label": "c",
+        "text": "SJF"
+      },
+      {
+        "label": "d",
+        "text": "Optimal"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00141",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Bộ nhớ ảo thông thường được đặt trên:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Bộ nhớ trong (RAM)"
+      },
+      {
+        "label": "b",
+        "text": "Ổ cứng"
+      },
+      {
+        "label": "c",
+        "text": "Các thanh ghi (Registers)"
+      },
+      {
+        "label": "d",
+        "text": "Bộ xử lý (CPU)"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00142",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Một hệ thống cáo 3 tiến trình chia sẻ 4 tài nguyên phần cứng. Nếu mỗi tiến trình cần tối đa 2 đơn vị tài nguyên, kết luận nào sau là CHÍNH XÁC NHẤT?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Bế tắc có thể không bao giờ xảy ra"
+      },
+      {
+        "label": "b",
+        "text": "Bế tắc có thể không xảy ra"
+      },
+      {
+        "label": "c",
+        "text": "Bế tắc có thể xảy ra"
+      },
+      {
+        "label": "d",
+        "text": "Bế tắc chắc chắn sẽ xảy ra"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00143",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Thuật toán Banker cho cấp phát tài nguyên được sử dụng trong trường hợp:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Tránh bế tắc"
+      },
+      {
+        "label": "b",
+        "text": "Khôi phục khi có bế tắc"
+      },
+      {
+        "label": "c",
+        "text": "Ngăn chặn bế tắc"
+      },
+      {
+        "label": "d",
+        "text": "Ngăn chặn chờ vòng"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00144",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Các tín hiệu ngắt không che được (unmaskable interrupts) thường được xử lý thông qua:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Bộ điều khiển thiết bị (Device controller"
+      },
+      {
+        "label": "b",
+        "text": "Bộ xử lý ngắt (Interrupt handler)"
+      },
+      {
+        "label": "c",
+        "text": "Trình điều khiển thiết bị (Device driver)"
+      },
+      {
+        "label": "d",
+        "text": "Vector ngắt (Interrupt vector)"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "1-2",
+    "id": "u00145",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Việc tăng dung lượng bộ nhớ trong (RAM) trong một máy tính sẽ làm tăng hiệu năng hệ thống. Lý do là:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Giảm số lượng lỗi hệ thống"
+      },
+      {
+        "label": "b",
+        "text": "Mở được nhiều chương trình cùng lúc"
+      },
+      {
+        "label": "c",
+        "text": "Giảm số lượng lỗi trang"
+      },
+      {
+        "label": "d",
+        "text": "Tăng dung lượng bộ nhớ ảo"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00146",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Thời gian cần để di chuyển đầu đọc ghi dữ liệu tới rãnh (track) trên ổ cứng là:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Thời gian trễ (Latency time)"
+      },
+      {
+        "label": "b",
+        "text": "Thời gian truy cập (Access time)"
+      },
+      {
+        "label": "c",
+        "text": "Đỗ trễ vòng quay (Rotational delay)"
+      },
+      {
+        "label": "d",
+        "text": "Thời gian tìm kiếm (Seek time)"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "11",
+    "id": "u00147",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Cơ chế ngắt (Interrupt) hoạt động như thế nào?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Cho phép bộ xử lý (CPU) gửi thông báo tới thiết bị khi cần"
+      },
+      {
+        "label": "b",
+        "text": "Cho phép bộ xử lý (CPU) gửi thông báo tới các controller của các thiết bị khi cần"
+      },
+      {
+        "label": "c",
+        "text": "Cho phép các thiết bị gửi thông báo tới bộ xử lý (CPU) khi cần"
+      },
+      {
+        "label": "d",
+        "text": "Cho phép các thiệt bị gửi thông báo tới các controller khi cần"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "1-2",
+    "id": "u00148",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Trong việc phát hiện bế tắc, hệ thống cần giám sát đồ thị chờ và định kỳ gọi thuật toán tìm kiếm chu trình trong đồ thị. Độ phức tạp của thuật toán tỷ lệ với:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Bình phương số lượng cạnh trong đồ thị"
+      },
+      {
+        "label": "b",
+        "text": "Bình phương số lượng đỉnh trong đồ thị"
+      },
+      {
+        "label": "c",
+        "text": "Số lượng cạnh trong đồ thị"
+      },
+      {
+        "label": "d",
+        "text": "Số lượng đỉnh trong đồ thị"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00149",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Loại RAID nào mang lại dung lượng có thể sử dụng lớn nhất?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "RAID 6"
+      },
+      {
+        "label": "b",
+        "text": "RAID 5"
+      },
+      {
+        "label": "c",
+        "text": "RAID 1"
+      },
+      {
+        "label": "d",
+        "text": "RAID 0"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "11",
+    "id": "u00150",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Khối quản lý tệp (FCB) KHÔNG chứa thông tin:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Tiến trình đang sử dụng tệp"
+      },
+      {
+        "label": "b",
+        "text": "Quyền sở hữu tệp"
+      },
+      {
+        "label": "c",
+        "text": "Kích thước tệp"
+      },
+      {
+        "label": "d",
+        "text": "Quyền truy cập tệp"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "10",
+    "id": "u00151",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Sử dụng thuật toán LRU trong việc thay thế trang cho chuỗi tham chiếu trang: 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6. Giả sử bộ nhớ trong có 4 frames, số lượng lỗi trang xảy ra là:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "14"
+      },
+      {
+        "label": "b",
+        "text": "8"
+      },
+      {
+        "label": "c",
+        "text": "11"
+      },
+      {
+        "label": "d",
+        "text": "10"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00152",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Các chương trình chỉ luôn làm việc với?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Địa chỉ logic"
+      },
+      {
+        "label": "b",
+        "text": "Địa chỉ tuyệt đối"
+      },
+      {
+        "label": "c",
+        "text": "Địa chỉ vật lý"
+      },
+      {
+        "label": "d",
+        "text": "Địa chỉ tương đối"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00153",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Một tiến trình được cấp phát vùng địa chỉ lý tại vị trí 400, giá trị thanh ghi relocation là 100, giá trị địa chỉ logic được cấp phát bởi CPU là:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "300"
+      },
+      {
+        "label": "b",
+        "text": "500"
+      },
+      {
+        "label": "c",
+        "text": "299"
+      },
+      {
+        "label": "d",
+        "text": "400"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00154",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Hệ điều hành và các tiến trình khác được bảo vệ khỏi bị sửa đổi bởi một tiến trình đang chạy bởi vì:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Chúng đang ở không gian địa chỉ logic khác nhau"
+      },
+      {
+        "label": "b",
+        "text": "Mỗi địa chỉ tạo ra bởi CPU đang được kiểm tra với các thanh ghi relocation và limit."
+      },
+      {
+        "label": "c",
+        "text": "Chúng đang ở không gian bộ nhớ vật lý khác nhau"
+      },
+      {
+        "label": "d",
+        "text": "Chúng có các thuật toán bảo vệ"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00155",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Nhược điểm NGHIÊM TRỌNG NHẤT của cơ chế Polling trong hệ vào ra (I/O) là?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Giảm hiệu năng sử dụng bộ xử lý"
+      },
+      {
+        "label": "b",
+        "text": "Hỗ trợ của phần cứng"
+      },
+      {
+        "label": "c",
+        "text": "Giảm hiệu năng sử dụng bộ nhớ"
+      },
+      {
+        "label": "d",
+        "text": "Cần nhiều các thanh ghi dữ liệu"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "1-2",
+    "id": "u00156",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Phương pháp cài đặt ma trận truy cập nào được sử dụng trong hệ điều hành Unix/Window?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Danh sách truy cập"
+      },
+      {
+        "label": "b",
+        "text": "Danh sách khả năng"
+      },
+      {
+        "label": "c",
+        "text": "Bảng toàn cục"
+      },
+      {
+        "label": "d",
+        "text": "Khóa-chìa"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "13",
+    "id": "u00157",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Nhược điểm của bảng trang ngược là gì?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Không gian lưu trữ lớn"
+      },
+      {
+        "label": "b",
+        "text": "Thời gian tìm kiếm chậm"
+      },
+      {
+        "label": "c",
+        "text": "Tốn bộ nhớ lưu trữ"
+      },
+      {
+        "label": "d",
+        "text": "Không cho phép chia sẻ trang giữa các tiến trình"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00158",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Phương pháp cấp phát nào sau đây đảm bảo rằng chỉ cần một truy cập để lấy một khối đĩa sử dụng truy cập trực tiếp?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Cấp phát chỉ số"
+      },
+      {
+        "label": "b",
+        "text": "Cấp phát bảng băm"
+      },
+      {
+        "label": "c",
+        "text": "Cấp phát liên kết"
+      },
+      {
+        "label": "d",
+        "text": "Cấp phát liên tục"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "10",
+    "id": "u00159",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Cấu trúc tệp KHÔNG bị ảnh hưởng bởi yếu tố nào?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Chương trình"
+      },
+      {
+        "label": "b",
+        "text": "Bộ nhớ trong"
+      },
+      {
+        "label": "c",
+        "text": "Hệ điều hành"
+      },
+      {
+        "label": "d",
+        "text": "Ổ đĩa"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "9",
+    "id": "u00160",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Xét một hệ thống bộ nhớ ảo sử dụng thuật toán thay trang FIFO. Việc tăng số frame trong bộ nhớ trong sẽ?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Không làm thay đổi số lượng lỗi trang"
+      },
+      {
+        "label": "b",
+        "text": "Thi thoảng làm tăng số lượng lỗi trang"
+      },
+      {
+        "label": "c",
+        "text": "Luôn làm tăng số lượng lỗi trang"
+      },
+      {
+        "label": "d",
+        "text": "Luôn làm giảm số lượng lỗi trang (page faults)"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00161",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Để vừa đảm bảo hiệu năng và tính an toàn cho hệ thống, loại RAID nào được sử dụng?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "RAID 3"
+      },
+      {
+        "label": "b",
+        "text": "RAID 2"
+      },
+      {
+        "label": "c",
+        "text": "RAID 1"
+      },
+      {
+        "label": "d",
+        "text": "RAID 0+1"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "11",
+    "id": "u00162",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Thành phần nào sau giữ thông tin trạng thái về việc sử dụng các thiết bị vào/ra",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Các thanh ghi cơ sở"
+      },
+      {
+        "label": "b",
+        "text": "Bộ xử lý CPU"
+      },
+      {
+        "label": "c",
+        "text": "Nhân hệ điều hành"
+      },
+      {
+        "label": "d",
+        "text": "Bộ nhớ trong"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "1-2",
+    "id": "u00163",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Nhược điểm của quá trình chuyển trạng thái:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Có thể làm cho tiến trình dừng hoạt động"
+      },
+      {
+        "label": "b",
+        "text": "Lãng phí thời gian của CPU"
+      },
+      {
+        "label": "c",
+        "text": "A và B đều đúng"
+      },
+      {
+        "label": "d",
+        "text": "A và B đều sai"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00164",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Thời gian đáp ứng là:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Khoảng thời gian từ khi tiến trình hoàn thành xong yêu cầu"
+      },
+      {
+        "label": "b",
+        "text": "Khoảng thời gian từ khi tiến trình bắt đầu đáp ứng yêu cầu đến khi kết thúc"
+      },
+      {
+        "label": "c",
+        "text": "Khoảng thời gian từ khi tiến trình nhận được một yêu cầu cho đến khi bắt đầu đáp ứng yêu cầu đó"
+      },
+      {
+        "label": "d",
+        "text": "Là tổng thời gian tiến trình phải nằm trong hàng chờ"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00165",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "◄ Kiểm tra giữa kỳ - Ca 1 (8.00am) Chuyển tới... Quản lý bộ nhớ ►  Hai tiến trình sau chia sẻ một biến chung X (khởi tạo bằng 5), và hai semaphore nhị phân S1, S2 (khởi tạo bằng 0): Tiến trình A {int Y; wait(S1); A1: Y = X*2; signal(S2); wait(S1); A2: X = Y; } Tiến trình B {int Z; B1: Z=X+1; signal(S1); wait(S2); B2: X=Z; signal(S1); } Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Giá trị cuối cùng của X sau khi thực thi xong hai tiến trình A và B sẽ là:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "11"
+      },
+      {
+        "label": "b",
+        "text": "10"
+      },
+      {
+        "label": "c",
+        "text": "12"
+      },
+      {
+        "label": "d",
+        "text": "6"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00166",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Để bảo vệ hệ thống, một tiến trình nên được truy cập__________ a. Một số ít tài nguyên nhưng việc cấp quyền là không cần thiết b. Tất cả các phương án trên c. Tất cả các nguồn tài nguyên d. Chỉ những nguồn tài nguyên mà nó được cấp quyền Đâu là phát biểu KHÔNG ĐÚNG về Hệ thống tệp ảo (VFS - Virtual File System)?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "VFS ẩn việc triển khai chi tiết hệ thống tệp riêng lẻ"
+      },
+      {
+        "label": "b",
+        "text": "VFS có sẵn trong tất cả các hệ điều hành"
+      },
+      {
+        "label": "c",
+        "text": "VFS cho phép một hệ thống có một số hệ thống tệp khác nhau"
+      },
+      {
+        "label": "d",
+        "text": "VFS cung cấp Giao diện lập trình ứng dụng (API - Application Programming Interface) hợp nhất cho các"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "9",
+    "id": "u00167",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Khi tiến trình yêu cầu truy cập tập tin thì nó cần _______________ a. Sử dụng hàm hệ thống open() và close() b. Gửi yêu cầu đến khối điều khiển tập tin c. Chạy một chương trình riêng biệt khác d. Sử dụng các ngắt đặc biệt Hệ điều hành Linux có",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Vi nhân (microkernel)"
+      },
+      {
+        "label": "b",
+        "text": "Nhân (kernel) monolithic"
+      },
+      {
+        "label": "c",
+        "text": "Nhân (kernel) monolithic có modules"
+      },
+      {
+        "label": "d",
+        "text": "Các phương án trên đều sai"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "1-2",
+    "id": "u00168",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Thuật toán lập lịch CPU nào thường cho thời gian phản hồi trung bình nhỏ nhất: a. Thứ tự ưu tiên cho phép dừng b. Round Robin với time quantum nhỏ c. FCFS d. SJF cho phép dừng Trong chế độ không chờ gửi:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "tiến trình gửi sẽ gửi thông điệp và rồi quay lại thực thi"
+      },
+      {
+        "label": "b",
+        "text": "Cả ba phương án trên đều sai"
+      },
+      {
+        "label": "c",
+        "text": "tiến trình gửi liên tục gửi cho đến khi nó nhận được một thông điệp"
+      },
+      {
+        "label": "d",
+        "text": "tiến trình gửi liên tục gửi cho đến khi thông điệp được nhận"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00169",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Hai tiến trình sau chia sẻ một biến chung X: Tiến trình A {Int Y; A1: Y = X * 2; X = 10, 6, 11, 12 A2: X = Y; } Tiến trình B {Int Z; B1: Z = X + 1; B2: X = Z; } X được khởi tạo bằng 5 trước khi các tiến trình bắt đầu thực thi. Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Có bao nhiêu giá trị khác nhau của X có thể sau khi cả hai tiến trình kết thúc thực thi?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "bốn"
+      },
+      {
+        "label": "b",
+        "text": "ba"
+      },
+      {
+        "label": "c",
+        "text": "tám"
+      },
+      {
+        "label": "d",
+        "text": "hai"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "5-6",
+    "id": "u00170",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Đâu là một trong các chức năng của hệ điều hành ? a. cả ba phương án trên b. quản lý tài nguyên c. quản lý bộ nhớ d. khôi phục lỗi Trong truyền thông gián tiếp giữa tiến trình P và Q:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "có một tiến trình xử lý và truyền các thông điệp giữa P và Q"
+      },
+      {
+        "label": "b",
+        "text": "có một máy giữa hai tiến trình để giúp cho việc truyền thông"
+      },
+      {
+        "label": "c",
+        "text": "Cả ba phương án trên đều sai"
+      },
+      {
+        "label": "d",
+        "text": "có một hộp thư để giúp cho việc truyền thông giữa P và Q (hoặc cổng)"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00171",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Multiprogramming with a Variable number of Tasks ), trong đó mỗi tiến trình (trong MVT) tương ứng với một phân đoạn (trong phân đoạn) 6. Đâu KHÔNG PHẢI là thuật toán phân bổ động được sử dụng trong các hệ thống MVT và MFT? a. First fit b. Worst fit c. Well fit d. Best fit 7. Tính thời gian trung bình truy cập bộ nhớ cho một hệ thống có tỉ suất trúng cache là 80% khi thời gian truy cập cache là 10 ns, thời gian truy cập bộ nhớ chính là 100 ns.",
+    "choices": [
+      {
+        "label": "a",
+        "text": "8 ns"
+      },
+      {
+        "label": "b",
+        "text": "80 ns"
+      },
+      {
+        "label": "c",
+        "text": "82 ns"
+      },
+      {
+        "label": "d",
+        "text": "28 ns"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00172",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Thuật toán LRU sử dụng thông tin ______ của mỗi trang. a. Tất cả các phương án trên b. thời điểm đưa vào bộ nhớ c. thời điểm cuối cùng sử dụng d. trang trước và trang sau 17. Một hệ thống sử dụng Bộ đệm chuyển đổi (TLB - Translation Look-aside Buffer) để dịch địa chỉ trong phân trang (bảng trang cấp 1). Giả sử thời gian truy cập của TLB là 20ms; thời gian truy cập của bộ nhớ là 200ms; và tỷ lệ trúng của TLB là 80%. Thời gian truy cập hiệu quả (EAT – Effective Access Time) của hệ thống là gì?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "180 ms"
+      },
+      {
+        "label": "b",
+        "text": "240 ms"
+      },
+      {
+        "label": "c",
+        "text": "160 ms"
+      },
+      {
+        "label": "d",
+        "text": "260 ms"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00173",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Đâu là phát biểu KHÔNG ĐÚNG về swapping? a. Swapping sử dụng đĩa cứng làm kho lưu trữ b. Một tiến trình ưu tiên thấp có thể được chọn để hoán đổi nếu tiến trình ưu tiên cao hơn cần chạy c. Swapping cho phép hệ thống hoạt động trong trường hợp tổng kích thước của các tiến trình (trong hệ thống) lớn hơn kích thước bộ nhớ d. Swapping giống như overlay 21. Kỹ thuật phân trang không có hiện tượng phân mảnh ________.",
+    "choices": [
+      {
+        "label": "a",
+        "text": "trong và ngoài"
+      },
+      {
+        "label": "b",
+        "text": "giữa"
+      },
+      {
+        "label": "c",
+        "text": "trong"
+      },
+      {
+        "label": "d",
+        "text": "ngoài"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00174",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Một tiến trình bị thashing nếu a. lỗi trang xảy ra b. nó dành nhiều thời gian thay thế trang hơn thời gian thực thi c. không thể swapping d. nó dành ít thời gian thay thế trang hơn thời gian thực thi Đâu là phát biểu KHÔNG ĐÚNG về sự phân mảnh?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Sự phân mảnh có thể dẫn đến tình huống một tiến trình không thể chạy mặc dù tổng bộ nhớ trống lớn hơn kích thước tiến trình"
+      },
+      {
+        "label": "b",
+        "text": "Sự phân mảnh dẫn đến việc sử dụng bộ nhớ kém hiệu quả"
+      },
+      {
+        "label": "c",
+        "text": "Không có sự phân mảnh trên ổ đĩa"
+      },
+      {
+        "label": "d",
+        "text": "Có hai loại: phân mảnh bên trong và bên ngoài"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00175",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "các bảng trang bên ngoài và bên trong Một hệ thống sử dụng Bộ đệm chuyển đổi (TLB - Translation Look-aside Buffer) để dịch địa chỉ trong phân trang (bảng trang cấp 1). Giả sử thời gian truy cập của TLB là 20ms; thời gian truy cập của bộ nhớ là 200ms; và tỷ lệ trúng của TLB là 80%. Thời gian truy cập hiệu quả (EAT - Effective Access Time) của hệ thống là gì?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "180 ms"
+      },
+      {
+        "label": "b",
+        "text": "240 ms"
+      },
+      {
+        "label": "c",
+        "text": "260 ms"
+      },
+      {
+        "label": "d",
+        "text": "160 ms"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00176",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "a. Swapping cho phép hệ thống hoạt động trong trường hợp tổng kích thước của các tiến trình (trong hệ thống) lớn hơn kích thước bộ nhớ b. Swapping sử dụng đĩa cứng làm kho lưu trữ c. Swapping giống như overlay d. Một tiến trình ưu tiên thấp có thể được chọn để hoán đổi nếu tiến trình ưu tiên cao hơn cần chạy Lý do sử dụng thuật toán thay thế trang LFU là:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "một trang ít được sử dụng có nhiều cơ hội được sử dụng lại"
+      },
+      {
+        "label": "b",
+        "text": "Tất cả các phương án trên"
+      },
+      {
+        "label": "c",
+        "text": "một trang đã được dùng nhiều có nhiều cơ hội được sử dụng lại"
+      },
+      {
+        "label": "d",
+        "text": "vì thuật toán rất hiệu quả và tối ưu"
+      }
+    ],
+    "correct_labels": [
+      "c"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00177",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Đâu là phát biểu KHÔNG ĐÚNG về bảo vệ bộ nhớ trong phân trang? a. Nếu bit là NULL, trang tương ứng KHÔNG được tải vào bộ nhớ b. Mỗi mục trong bảng trang có một bit valid/invalid c. Nếu bit là invalid , trang tương ứng KHÔNG được tải vào bộ nhớ d. Nếu bit là valid, trang tương ứng đã được tải vào bộ nhớ Đâu KHÔNG PHẢI là thuật toán phân bổ động được sử dụng trong các hệ thống MVT và MFT?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "First fit"
+      },
+      {
+        "label": "b",
+        "text": "Worst fit"
+      },
+      {
+        "label": "c",
+        "text": "Well fit"
+      },
+      {
+        "label": "d",
+        "text": "Best fit"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00178",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "1,2,3,4,1,2,5,3,4 <sai> 1,2,3,4,1,2,5,1,2 <sai> 2. Khi lỗi trang xảy ra, trạng thái của tiến trình:",
+    "choices": [
+      {
+        "label": "a",
+        "text": "không hợp lệ"
+      },
+      {
+        "label": "b",
+        "text": "Các phương án trên đều sai"
+      },
+      {
+        "label": "c",
+        "text": "được lưu"
+      },
+      {
+        "label": "d",
+        "text": "bị gián đoạn"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "8",
+    "id": "u00179",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Tính tổng kích thước = 138 + 96 + 164 = 398 (kb) Lấy tỉ lệ của từng tiến trình: (138/398) * (180/2)<số khung> = 31 (xấp xỉ) Tương tự với 2 tiến trình còn lại Khi cấp phát các vùng trống của bộ nhớ chính, _____________________",
+    "choices": [
+      {
+        "label": "a",
+        "text": "thuật toán best-fit luôn nhanh hơn thuật toán first-fit"
+      },
+      {
+        "label": "b",
+        "text": "cả ba phương án trên đều sai"
+      },
+      {
+        "label": "c",
+        "text": "mức sử dụng bộ nhớ của thuật toán best-fit luôn tốt hơn thuật toán first-fit"
+      },
+      {
+        "label": "d",
+        "text": "hiệu quả của thuật toán first-fit hoàn toàn phụ thuộc vào chuỗi yêu cầu dung lượng bộ nhớ của các"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00180",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "tiến trình Giả sử một hệ thống sử dụng thuật toán phân bổ bộ nhớ cho Đa chương trình với số nhiệm vụ cố định (MFT - Multiprogramming with a Fixed number of Tasks) với n phân vùng và m tiến trình (m > n). Đâu là phát biểu KHÔNG ĐÚNG?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Có thể có trường hợp, số lượng tiến trình được phân bổ ít hơn n."
+      },
+      {
+        "label": "b",
+        "text": "Một tiến trình có thể trải rộng trên một số phân vùng"
+      },
+      {
+        "label": "c",
+        "text": "Toàn bộ tiến trình nằm trong một phân vùng"
+      },
+      {
+        "label": "d",
+        "text": "Số lượng tiến trình được phân bổ tối đa là n"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00181",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "P là tỷ lệ lỗi ====================== Người dùng _______ tiến trình của họ đang chạy trên một hệ thống phân trang.",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Các phương án trên đều sai"
+      },
+      {
+        "label": "b",
+        "text": "nhận thức được"
+      },
+      {
+        "label": "c",
+        "text": "nhận thức được và chủ động điều khiển"
+      },
+      {
+        "label": "d",
+        "text": "không nhận thức được"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00182",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "các bảng trang bên ngoài và bên trong Đâu là phát biểu KHÔNG ĐÚNG về thuật toán phân bổ bộ nhớ cho Đa chương trình với số nhiệm vụ thay đổi (MVT - Multiprogramming with a Variable number of Tasks )?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Bộ nhớ không được chia trước thành các phân vùng"
+      },
+      {
+        "label": "b",
+        "text": "Một tiến trình được phân bổ trên một vùng bộ nhớ liền kề"
+      },
+      {
+        "label": "c",
+        "text": "Có sự phân mảnh bộ nhớ"
+      },
+      {
+        "label": "d",
+        "text": "Một tiến trình có thể phân tán trong một số vùng nhớ"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "7",
+    "id": "u00183",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Đoạn mã sử dụng sai mục đích được gọi là ____________ a. Mã sửa đổi ngăn xếp b. Trộm nội bộ c. Trojan d. Các phương án trên đều sai RAID cấp độ ___________ sử dụng chế độ phân dải dữ liệu cấp độ khối và bit chẵn lẻ cho mỗi khối và khối bit chẵn lẻ được lưu trên ổ đĩa riêng.",
+    "choices": [
+      {
+        "label": "a",
+        "text": "2"
+      },
+      {
+        "label": "b",
+        "text": "4"
+      },
+      {
+        "label": "c",
+        "text": "3"
+      },
+      {
+        "label": "d",
+        "text": "5"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "11",
+    "id": "u00184",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "______________________ không xảy ra với cấp phát liên kết. a. Hiện tượng phân mảnh ngoài b. Cả ba phương án trên c. Nạn đói d. Hiện tượng phân mảnh trong Khi các thay đổi được lưu vào log thì giao dịch được coi là ________________",
+    "choices": [
+      {
+        "label": "a",
+        "text": "cập nhật"
+      },
+      {
+        "label": "b",
+        "text": "bị lỗi"
+      },
+      {
+        "label": "c",
+        "text": "được chuyển vào bộ nhớ trong"
+      },
+      {
+        "label": "d",
+        "text": "hoàn thành"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "10",
+    "id": "u00185",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Trong UNIX, chuyển đổi miền được thực hiện thông qua a. Người quản trị hệ thống b. Hệ thống tập tin c. Người dùng d. Các phương án trên đều sai Đâu là phát biểu KHÔNG ĐÚNG về phân bổ đĩa theo chỉ mục (1 cấp)?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Không có sự phân mảnh bên trong"
+      },
+      {
+        "label": "b",
+        "text": "Một khối được sử dụng để lưu trữ các chỉ số"
+      },
+      {
+        "label": "c",
+        "text": "Nó hỗ trợ truy cập ngẫu nhiên"
+      },
+      {
+        "label": "d",
+        "text": "Khối chỉ mục phải được đọc trước khi thao tác dữ liệu tập tin dữ liệu"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "10",
+    "id": "u00186",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "a. Tĩnh b. Các phương án trên đều sai c. Động d. Không phải tĩnh cũng không phải động Mô hình ma trận truy cập để xác thực người dùng có chứa________",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Một danh sách các đối tượng"
+      },
+      {
+        "label": "b",
+        "text": "Một hàm trả về kiểu của một đối tượng"
+      },
+      {
+        "label": "c",
+        "text": "Một danh sách các miền"
+      },
+      {
+        "label": "d",
+        "text": "Tất cả các phương án trên"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "13",
+    "id": "u00187",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Một số thông tin của thư mục được lưu trên bộ nhớ trong hoặc cache để________________ a. tăng không gian trống của bộ nhớ ngoài b. giảm không gian trống của bộ nhớ ngoài c. làm đầy bộ cache d. tăng tốc độ truy cập Một ổ cứng có các thông số sau: Tốc độ trục quay 700 RPM, mỗi track chứa 12 sector, mỗi sector có dung lượng 1024 byte. Tốc độ truyền dữ liệu là: ((700/60) * 12) * 8",
+    "choices": [
+      {
+        "label": "a",
+        "text": "800 Kbps"
+      },
+      {
+        "label": "b",
+        "text": "700 Kbps"
+      },
+      {
+        "label": "c",
+        "text": "1120 Kbps"
+      },
+      {
+        "label": "d",
+        "text": "1024 Kbps"
+      }
+    ],
+    "correct_labels": [
+      "a"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "11",
+    "id": "u00188",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Trong cấp phát chỉ mục, ______________________ a. Cả ba phương án trên đều sai b. Mỗi tập tin được lưu trên một tập các khối liên tục trên ổ đĩa c. Mỗi tập tin là một danh sách liên kết của các khối trên ổ đĩa d. Tất cả các con trỏ đến các khối nằm rải rác được đặt trong một khu vực Các cuộc tấn công làm cho một máy tính hoặc mạng lưới tài nguyên không phục vụ được người dùng như dự kiến được gọi là __________",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Tấn công đọc chậm"
+      },
+      {
+        "label": "b",
+        "text": "Tấn công từ chối dịch vụ"
+      },
+      {
+        "label": "c",
+        "text": "Tấn công giả mạo"
+      },
+      {
+        "label": "d",
+        "text": "Tấn công nạn đói"
+      }
+    ],
+    "correct_labels": [
+      "d"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "14",
+    "id": "u00189",
+    "needs_review": true,
+    "is_theory": false
+  },
+  {
+    "qtype": "single",
+    "question_text": "Thiếu 137-142 ; tổng hợp bài ¾ _______ là một cách tiếp cận để hạn chế quyền truy cập hệ thống đối với người dùng được uỷ quyền.",
+    "choices": [
+      {
+        "label": "a",
+        "text": "Các phương án trên đều sai"
+      },
+      {
+        "label": "b",
+        "text": "Kiểm soát truy cập dựa trên vai trò"
+      },
+      {
+        "label": "c",
+        "text": "Kiểm soát truy cập dựa trên nhiệm vụ"
+      },
+      {
+        "label": "d",
+        "text": "Kiểm soát truy cập dựa trên tiến trình"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "13",
+    "id": "u00190",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "FAT có cấu trúc giống như ______________________ a. Ngăn xếp b. Danh sách liên kết c. Bảng chỉ mục d. Bảng băm Một số thông tin của thư mục được lưu trên bộ nhớ trong hoặc cache để________________",
+    "choices": [
+      {
+        "label": "a",
+        "text": "tăng tốc độ truy cập"
+      },
+      {
+        "label": "b",
+        "text": "tăng không gian trống của bộ nhớ ngoài"
+      },
+      {
+        "label": "c",
+        "text": "làm đầy bộ cache"
+      },
+      {
+        "label": "d",
+        "text": "giảm không gian trống của bộ nhớ ngoài"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "9",
+    "id": "u00191",
+    "needs_review": true,
+    "is_theory": true
+  },
+  {
+    "qtype": "single",
+    "question_text": "Số lượng trạng thái tối thiểu của một tiến trình là gì?",
+    "choices": [
+      {
+        "label": "a",
+        "text": "New, Sleeping, Terminated, Running"
+      },
+      {
+        "label": "b",
+        "text": "New, Waiting, Terminated, Running, Ready"
+      },
+      {
+        "label": "c",
+        "text": "New, Blocked, Terminated, Running"
+      },
+      {
+        "label": "d",
+        "text": "New, Blocked, Terminated, Running, Sleeping"
+      }
+    ],
+    "correct_labels": [
+      "b"
+    ],
+    "wrong_labels": [],
+    "confidence": 0.6,
+    "evidence_count": 1,
+    "sources": [
+      {
+        "path": "AI-reasoned (bank_markdown unique)",
+        "tier": "C"
+      }
+    ],
+    "chapter": "3-4",
+    "id": "u00192",
+    "needs_review": true,
+    "is_theory": true
   }
 ]

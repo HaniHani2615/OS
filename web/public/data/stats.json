@@ -1,15 +1,20 @@
 {
-  "total": 684,
-  "in_scope": 583,
-  "out_of_scope": 101,
+  "total": 631,
+  "in_scope": 585,
+  "out_of_scope": 46,
   "by_chapter": {
-    "3-4": 315,
-    "5-6": 94,
-    "1-2": 69,
-    "unknown": 63,
-    "7": 105,
-    "8": 38
+    "3-4": 207,
+    "5-6": 76,
+    "1-2": 46,
+    "unknown": 46,
+    "7": 140,
+    "8": 66,
+    "10": 15,
+    "9": 7,
+    "11": 16,
+    "14": 7,
+    "13": 5
   },
-  "verified_total": 229,
-  "needs_review": 476
+  "verified_total": 298,
+  "needs_review": 352
 }
