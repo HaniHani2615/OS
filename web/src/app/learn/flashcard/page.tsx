@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ArrowRight, RotateCcw, Sparkles, AlertTriangle } from "lucide-react";
 import { loadQuestions, filterByChapters } from "@/lib/data";
-import { CHAPTERS_MIDTERM, type Chapter, type Question } from "@/lib/types";
+import { CHAPTERS_ALL, type Chapter, type Question } from "@/lib/types";
 import { useExam, resolveCorrect, resolveNumeric } from "@/lib/store";
 import { ChapterPicker } from "@/components/ChapterPicker";
 import { AnswerActions } from "@/components/AnswerActions";
@@ -12,8 +12,8 @@ import { rng, shuffle } from "@/lib/sampler";
 
 export default function FlashcardPage() {
   const [all, setAll] = useState<Question[]>([]);
-  const [chapters, setChapters] = useState<Chapter[]>([...CHAPTERS_MIDTERM]);
-  const [verifiedOnly, setVerifiedOnly] = useState(true);
+  const [chapters, setChapters] = useState<Chapter[]>([...CHAPTERS_ALL]);
+  const [verifiedOnly, setVerifiedOnly] = useState(false);
   const [theoryOnly, setTheoryOnly] = useState(true);
   const [idx, setIdx] = useState(0);
   const [flipped, setFlipped] = useState(false);

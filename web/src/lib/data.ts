@@ -5,7 +5,7 @@ let statsCache: Stats | null = null;
 let expCache: Record<string, Explanation> | null = null;
 
 // Bump this when data files change to bust browser cache.
-const DATA_VERSION = "v2";
+const DATA_VERSION = "v3";
 
 type OverridePatch = { id: string; correct: string[]; numeric?: string; note?: string };
 

@@ -1,5 +1,5 @@
 "use client";
-import { CHAPTER_LABELS, CHAPTERS_MIDTERM, type Chapter } from "@/lib/types";
+import { CHAPTER_LABELS, CHAPTERS_ALL, type Chapter } from "@/lib/types";
 
 export function ChapterPicker({
   value,
@@ -13,7 +13,7 @@ export function ChapterPicker({
   };
   return (
     <div className="flex flex-wrap gap-2">
-      {CHAPTERS_MIDTERM.map((ch) => {
+      {CHAPTERS_ALL.map((ch) => {
         const on = value.includes(ch);
         return (
           <button

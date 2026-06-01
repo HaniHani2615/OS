@@ -29,12 +29,19 @@ export interface SampleConfig {
   seed?: number;
 }
 
+// Weights ≈ number of available questions per chapter, so a full-syllabus
+// (cuối kỳ) exam draws from every chapter proportionally to its content.
 const DEFAULT_RATIO: Record<Chapter, number> = {
-  "1-2": 0.15,
-  "3-4": 0.35,
-  "5-6": 0.3,
-  "7": 0.2,
-  "8": 0,
+  "1-2": 46,
+  "3-4": 207,
+  "5-6": 76,
+  "7": 140,
+  "8": 66,
+  "9": 7,
+  "10": 15,
+  "11": 16,
+  "13": 5,
+  "14": 7,
   unknown: 0,
 };
 

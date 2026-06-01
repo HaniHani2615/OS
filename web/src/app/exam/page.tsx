@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ClipboardList, Clock, Layers, Sparkles } from "lucide-react";
 import { loadQuestions } from "@/lib/data";
-import { CHAPTERS_MIDTERM, type Chapter, type Question } from "@/lib/types";
+import { CHAPTERS_ALL, type Chapter, type Question } from "@/lib/types";
 import { sampleExam } from "@/lib/sampler";
 import { useExam } from "@/lib/store";
 import { ChapterPicker } from "@/components/ChapterPicker";
@@ -12,10 +12,10 @@ export default function ExamConfigPage() {
   const router = useRouter();
   const startExam = useExam((s) => s.startExam);
   const [all, setAll] = useState<Question[]>([]);
-  const [chapters, setChapters] = useState<Chapter[]>([...CHAPTERS_MIDTERM]);
+  const [chapters, setChapters] = useState<Chapter[]>([...CHAPTERS_ALL]);
   const [n, setN] = useState(30);
   const [mins, setMins] = useState(30);
-  const [verifiedOnly, setVerifiedOnly] = useState(true);
+  const [verifiedOnly, setVerifiedOnly] = useState(false);
 
   useEffect(() => {
     loadQuestions().then(setAll);

@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Flame, RotateCcw, ArrowLeft, ArrowRight, AlertTriangle } from "lucide-react";
 import { loadQuestions, filterByChapters } from "@/lib/data";
-import { CHAPTERS_MIDTERM, type Chapter, type Question } from "@/lib/types";
+import { CHAPTERS_ALL, type Chapter, type Question } from "@/lib/types";
 import { rng, shuffle, gradeAnswer } from "@/lib/sampler";
 import { useExam, resolveCorrect } from "@/lib/store";
 import { ChapterPicker } from "@/components/ChapterPicker";
@@ -12,8 +12,8 @@ import { RevealedChoices } from "@/components/RevealedChoices";
 
 export default function QuizPage() {
   const [all, setAll] = useState<Question[]>([]);
-  const [chapters, setChapters] = useState<Chapter[]>([...CHAPTERS_MIDTERM]);
-  const [verifiedOnly, setVerifiedOnly] = useState(true);
+  const [chapters, setChapters] = useState<Chapter[]>([...CHAPTERS_ALL]);
+  const [verifiedOnly, setVerifiedOnly] = useState(false);
   const [seed, setSeed] = useState(1);
   const overrides = useExam((s) => s.overrides);
   const bookmarks = useExam((s) => s.bookmarks);

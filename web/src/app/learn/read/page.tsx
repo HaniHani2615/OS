@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Search, Bookmark, BookmarkCheck, BadgeCheck, AlertTriangle } from "lucide-react";
 import { loadQuestions, filterByChapters } from "@/lib/data";
-import { CHAPTERS_MIDTERM, CHAPTER_LABELS, type Chapter, type Question } from "@/lib/types";
+import { CHAPTERS_ALL, CHAPTER_LABELS, type Chapter, type Question } from "@/lib/types";
 import { ChapterPicker } from "@/components/ChapterPicker";
 import { AnswerActions } from "@/components/AnswerActions";
 import { RevealedChoices } from "@/components/RevealedChoices";
@@ -12,7 +12,7 @@ const PAGE = 25;
 
 export default function ReadPage() {
   const [all, setAll] = useState<Question[]>([]);
-  const [chapters, setChapters] = useState<Chapter[]>([...CHAPTERS_MIDTERM]);
+  const [chapters, setChapters] = useState<Chapter[]>([...CHAPTERS_ALL]);
   const [query, setQuery] = useState("");
   const [onlyVerified, setOnlyVerified] = useState(false);
   const [onlyFlagged, setOnlyFlagged] = useState(false);

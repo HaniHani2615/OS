@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { loadStats } from "@/lib/data";
-import { CHAPTER_LABELS, CHAPTERS_MIDTERM, type Stats } from "@/lib/types";
+import { CHAPTER_LABELS, CHAPTERS_ALL, type Stats } from "@/lib/types";
 import {
   BookOpen,
   Zap,
@@ -93,7 +93,7 @@ export default function HomePage() {
             Phân bổ theo chương
           </h2>
           <div className="grid gap-3 md:grid-cols-2">
-            {CHAPTERS_MIDTERM.map((ch) => {
+            {CHAPTERS_ALL.map((ch) => {
               const n = stats.by_chapter[ch] ?? 0;
               return (
                 <div
