@@ -13317,26 +13317,26 @@
   "choices": [
    {
     "label": "a",
-    "text": "Nó phát hiện các thể hiện tài nguyên có sẵn của hệ thống"
+    "text": "Nó không phát hiện trạng thái không an toàn của hệ thống"
    },
    {
     "label": "b",
-    "text": "Nó phát hiện tiến trình nào có thể gây ra bế tắc"
+    "text": "Nó tìm ra trạng thái an toàn của hệ thống"
    },
    {
     "label": "c",
-    "text": "Nó phát hiện trạng thái bế tắc của hệ thống"
+    "text": "Nó tìm ra trình tự an toàn của hệ thống khi một tiến trình yêu cầu tài nguyên"
    },
    {
     "label": "d",
-    "text": "Nó tìm ra một trật tự của các tiến trình trong đó các tiến trình kết thúc"
+    "text": "Nó phát hiện bế tắc trong hệ thống"
    }
   ],
   "correct_labels": [
-   "d"
+   "c"
   ],
   "wrong_labels": [],
-  "confidence": 0.85,
+  "confidence": 1,
   "evidence_count": 2,
   "sources": [
    {
@@ -13384,7 +13384,7 @@
     "C_wrong": 0
    }
   },
-  "decision": "ai_reasoned",
+  "decision": "manual_verified",
   "chapter": "5-6",
   "chapter_scores": {
    "7": 0,
@@ -38224,7 +38224,7 @@
    "d"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -38234,8 +38234,9 @@
   ],
   "chapter": "10",
   "id": "u00052",
-  "needs_review": true,
-  "is_theory": true
+  "needs_review": false,
+  "is_theory": true,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -38262,7 +38263,7 @@
    "d"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -38272,46 +38273,9 @@
   ],
   "chapter": "9",
   "id": "u00053",
-  "needs_review": true,
-  "is_theory": true
- },
- {
-  "qtype": "single",
-  "question_text": "Đâu là phát biểu ĐÚNG về thuật toán banker?",
-  "choices": [
-   {
-    "label": "a",
-    "text": "Nó phát hiện trạng thái bế tắc của hệ thống"
-   },
-   {
-    "label": "b",
-    "text": "Nó phát hiện các thể hiện tài nguyên có sẵn của hệ thống -"
-   },
-   {
-    "label": "c",
-    "text": "Nó tìm ra một trật tự của các tiến trình trong đó các tiến trình kết thúc"
-   },
-   {
-    "label": "d",
-    "text": "Nó phát hiện tiến trình nào có thể gây ra bế tắc"
-   }
-  ],
-  "correct_labels": [
-   "c"
-  ],
-  "wrong_labels": [],
-  "confidence": 0.6,
-  "evidence_count": 1,
-  "sources": [
-   {
-    "path": "AI-reasoned (bank_markdown unique)",
-    "tier": "C"
-   }
-  ],
-  "chapter": "5-6",
-  "id": "u00054",
-  "needs_review": true,
-  "is_theory": false
+  "needs_review": false,
+  "is_theory": true,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
