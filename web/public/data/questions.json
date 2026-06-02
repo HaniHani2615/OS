@@ -2816,7 +2816,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "______________________ không xảy ra với cấp phát liên kết.",
+  "question_text": "không xảy ra với cấp phát liên kết.",
   "choices": [
    {
     "label": "a",
@@ -6559,7 +6559,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "_______ là một cách tiếp cận để hạn chế quyền truy cập hệ thống đối với người dùng được uỷ quyền.",
+  "question_text": "là một cách tiếp cận để hạn chế quyền truy cập hệ thống đối với người dùng được uỷ quyền.",
   "choices": [
    {
     "label": "a",
@@ -17881,7 +17881,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "_____ là kỹ thuật mà trong đó một tiến trình được tải vào bộ nhớ trong từ bộ nhớ ngoài khi có yêu cầu.",
+  "question_text": "là kỹ thuật mà trong đó một tiến trình được tải vào bộ nhớ trong từ bộ nhớ ngoài khi có yêu cầu.",
   "choices": [
    {
     "label": "a",
@@ -37928,7 +37928,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 415. Đâu không phải là một thực hiện của khu vực quan trọng?",
+  "question_text": "Đâu không phải là một thực hiện của khu vực quan trọng?",
   "choices": [
    {
     "label": "a",
@@ -42357,7 +42357,7 @@
  {
   "id": "q20074",
   "qtype": "single",
-  "question_text": "_________ trình bày giao diện truy cập thiết bị thống nhất vào hệ thống con I/O, giống như các cuộc gọi hệ thống cung cấp giao diện chuẩn giữa ứng dụng và hệ điều hành.",
+  "question_text": "trình bày giao diện truy cập thiết bị thống nhất vào hệ thống con I/O, giống như các cuộc gọi hệ thống cung cấp giao diện chuẩn giữa ứng dụng và hệ điều hành.",
   "choices": [
    {
     "label": "a",
@@ -42397,7 +42397,7 @@
  {
   "id": "q20075",
   "qtype": "single",
-  "question_text": "________ là một bộ sưu tập các thiết bị điện tử có thể vận hành cổng, xe buýt hoặc thiết bị.",
+  "question_text": "là một bộ sưu tập các thiết bị điện tử có thể vận hành cổng, xe buýt hoặc thiết bị.",
   "choices": [
    {
     "label": "a",
@@ -42637,7 +42637,7 @@
  {
   "id": "q20081",
   "qtype": "single",
-  "question_text": "_________ xác định nguyên nhân của ngắt, thực hiện xử lý cần thiết và thực hiện trả về từ lệnh ngắt để đưa CPU về trạng thái thực thi trước khi ngắt.",
+  "question_text": "xác định nguyên nhân của ngắt, thực hiện xử lý cần thiết và thực hiện trả về từ lệnh ngắt để đưa CPU về trạng thái thực thi trước khi ngắt.",
   "choices": [
    {
     "label": "a",
@@ -45757,7 +45757,7 @@
  {
   "id": "q20161",
   "qtype": "single",
-  "question_text": "_______ là một cách tiếp cận để hạn chế quyền truy cập hệ thống đối với người dùng được ủy quyền.",
+  "question_text": "là một cách tiếp cận để hạn chế quyền truy cập hệ thống đối với người dùng được ủy quyền.",
   "choices": [
    {
     "label": "a",
@@ -46397,7 +46397,7 @@
  {
   "id": "q20177",
   "qtype": "single",
-  "question_text": "_____ là khái niệm trong đó một quá trình được sao chép vào bộ nhớ chính từ bộ nhớ phụ theo yêu cầu.",
+  "question_text": "là khái niệm trong đó một quá trình được sao chép vào bộ nhớ chính từ bộ nhớ phụ theo yêu cầu.",
   "choices": [
    {
     "label": "a",
@@ -50237,7 +50237,7 @@
  {
   "id": "q20274",
   "qtype": "single",
-  "question_text": "__________ được sử dụng bởi các bộ điều khiển thiết bị để yêu cầu dịch vụ.",
+  "question_text": "được sử dụng bởi các bộ điều khiển thiết bị để yêu cầu dịch vụ.",
   "choices": [
    {
     "label": "a",
@@ -52437,7 +52437,7 @@
  {
   "id": "q20330",
   "qtype": "single",
-  "question_text": "_________ thay thế cho phép một quá trình chọn khung thay thế từ tập hợp tất cả các khung, ngay cả khi khung hiện được phân bổ cho một số quy trình khác.",
+  "question_text": "thay thế cho phép một quá trình chọn khung thay thế từ tập hợp tất cả các khung, ngay cả khi khung hiện được phân bổ cho một số quy trình khác.",
   "choices": [
    {
     "label": "a",
@@ -52557,7 +52557,7 @@
  {
   "id": "q20333",
   "qtype": "single",
-  "question_text": "________ thay thế thường dẫn đến thông lượng hệ thống lớn hơn.",
+  "question_text": "thay thế thường dẫn đến thông lượng hệ thống lớn hơn.",
   "choices": [
    {
     "label": "a",
@@ -53037,7 +53037,7 @@
  {
   "id": "q20345",
   "qtype": "single",
-  "question_text": "________ giữ thông tin trạng thái về việc sử dụng các thành phần I / O.",
+  "question_text": "giữ thông tin trạng thái về việc sử dụng các thành phần I / O.",
   "choices": [
    {
     "label": "a",
@@ -53157,7 +53157,7 @@
  {
   "id": "q20348",
   "qtype": "single",
-  "question_text": "________ là kết nối song công hoàn toàn giữa trình điều khiển thiết bị và quy trình cấp người dùng.",
+  "question_text": "là kết nối song công hoàn toàn giữa trình điều khiển thiết bị và quy trình cấp người dùng.",
   "choices": [
    {
     "label": "a",
@@ -53277,7 +53277,7 @@
  {
   "id": "q20351",
   "qtype": "single",
-  "question_text": "______ là một thẻ duy nhất, thường là một số xác định tệp trong hệ thống tệp.",
+  "question_text": "là một thẻ duy nhất, thường là một số xác định tệp trong hệ thống tệp.",
   "choices": [
    {
     "label": "a",
@@ -55157,7 +55157,7 @@
  {
   "id": "q20398",
   "qtype": "single",
-  "question_text": "_____________ trong NFS liên quan đến việc phân tích tên đường dẫn thành các mục nhập thư mục riêng - hoặc các thành phần.",
+  "question_text": "trong NFS liên quan đến việc phân tích tên đường dẫn thành các mục nhập thư mục riêng - hoặc các thành phần.",
   "choices": [
    {
     "label": "a",
@@ -56757,7 +56757,7 @@
  {
   "id": "q20438",
   "qtype": "single",
-  "question_text": "_________ trở thành tên gốc của thư mục mới được gắn.",
+  "question_text": "trở thành tên gốc của thư mục mới được gắn.",
   "choices": [
    {
     "label": "a",
@@ -56797,7 +56797,7 @@
  {
   "id": "q20439",
   "qtype": "single",
-  "question_text": "___________ gắn kết, là khi một hệ thống tệp có thể được gắn trên một hệ thống tệp khác, được gắn từ xa, không phải cục bộ.",
+  "question_text": "gắn kết, là khi một hệ thống tệp có thể được gắn trên một hệ thống tệp khác, được gắn từ xa, không phải cục bộ.",
   "choices": [
    {
     "label": "a",
@@ -57077,7 +57077,7 @@
  {
   "id": "q20446",
   "qtype": "single",
-  "question_text": "____________ ghi xảy ra theo thứ tự mà hệ thống con đĩa nhận được chúng, và ghi không được đệm.",
+  "question_text": "ghi xảy ra theo thứ tự mà hệ thống con đĩa nhận được chúng, và ghi không được đệm.",
   "choices": [
    {
     "label": "a",
@@ -57557,7 +57557,7 @@
  {
   "id": "q20458",
   "qtype": "single",
-  "question_text": "_______ và ________ là các chiến lược phổ biến nhất được sử dụng để chọn lỗ miễn phí từ bộ lỗ có sẵn.",
+  "question_text": "và ________ là các chiến lược phổ biến nhất được sử dụng để chọn lỗ miễn phí từ bộ lỗ có sẵn.",
   "choices": [
    {
     "label": "a",
@@ -57917,7 +57917,7 @@
  {
   "id": "q20467",
   "qtype": "single",
-  "question_text": "_______ duy trì các vectơ bit đang chờ xử lý và bị chặn trong ngữ cảnh của mỗi quá trình.",
+  "question_text": "duy trì các vectơ bit đang chờ xử lý và bị chặn trong ngữ cảnh của mỗi quá trình.",
   "choices": [
    {
     "label": "a",
@@ -60197,7 +60197,7 @@
  {
   "id": "q20524",
   "qtype": "single",
-  "question_text": "___________ phải thiết kế và lập trình cấu trúc lớp phủ.",
+  "question_text": "phải thiết kế và lập trình cấu trúc lớp phủ.",
   "choices": [
    {
     "label": "a",
@@ -60637,7 +60637,7 @@
  {
   "id": "q20535",
   "qtype": "single",
-  "question_text": "________ bao gồm tất cả các quy trình có hình ảnh bộ nhớ nằm trong kho lưu trữ dự phòng hoặc trong bộ nhớ và sẵn sàng để chạy.",
+  "question_text": "bao gồm tất cả các quy trình có hình ảnh bộ nhớ nằm trong kho lưu trữ dự phòng hoặc trong bộ nhớ và sẵn sàng để chạy.",
   "choices": [
    {
     "label": "a",
@@ -61637,7 +61637,7 @@
  {
   "id": "q20561",
   "qtype": "single",
-  "question_text": "__________ nói chung là nhanh hơn so với _________ và _________",
+  "question_text": "nói chung là nhanh hơn so với _________ và _________",
   "choices": [
    {
     "label": "a",
@@ -61917,7 +61917,7 @@
  {
   "id": "q20568",
   "qtype": "single",
-  "question_text": "__________ được sử dụng làm chỉ mục trong bảng trang.",
+  "question_text": "được sử dụng làm chỉ mục trong bảng trang.",
   "choices": [
    {
     "label": "a",
