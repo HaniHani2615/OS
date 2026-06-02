@@ -1459,7 +1459,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạy Số hiệu ưu tiên Thời gian đến P1    2    2   0 P2    3    1    3 P3    8    4    5 P4    4    5    7 P5    5    3    9 Sử dụng thuật toán Round Robin với time quantum q = 4 ms. Khẳng định nào sau đây là đúng:",
+  "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạy Số hiệu ưu tiên Thời gian đến P1 2 2 0 P2 3 1 3 P3 8 4 5 P4 4 5 7 P5 5 3 9 Sử dụng thuật toán Round Robin với time quantum q = 4 ms. Khẳng định nào sau đây là đúng:",
   "choices": [
    {
     "label": "a",
@@ -1621,7 +1621,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy  Thời gian đến P1   3    0 P2  12    4 P3   4    6 P4   7    8 P5   3    11 Sử dụng thuật toán FCFS. Khẳng định nào sau đây là đúng:",
+  "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy Thời gian đến P1 3 0 P2 12 4 P3 4 6 P4 7 8 P5 3 11 Sử dụng thuật toán FCFS. Khẳng định nào sau đây là đúng:",
   "choices": [
    {
     "label": "a",
@@ -8786,7 +8786,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạy Số hiệu ưu tiên Thời gian đến P1    2    2   0 P2    3    1    3 P3    8    4    5 P4    4    5    7 P5    5    3    9 Sử dụng thuật toán SJF cho phép dừng. Khẳng định nào sau đây là đúng:",
+  "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạy Số hiệu ưu tiên Thời gian đến P1 2 2 0 P2 3 1 3 P3 8 4 5 P4 4 5 7 P5 5 3 9 Sử dụng thuật toán SJF cho phép dừng. Khẳng định nào sau đây là đúng:",
   "choices": [
    {
     "label": "a",
@@ -9347,7 +9347,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Hai tiến trình sau chia sẻ một semaphore nhị phân S (khởi tạo bằng 0): Tiến trình P1 { wait (S);  print (\"1\"); print (\"2\"); } Tiến trình P2 { print (\"3\"); print (\"4\"); signal (S);} Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Chuỗi kết quả  in ra màn hình sau khi cả hai tiến trình kết thúc thực thi ?",
+  "question_text": "Hai tiến trình sau chia sẻ một semaphore nhị phân S (khởi tạo bằng 0): Tiến trình P1 { wait (S); print (\"1\"); print (\"2\"); } Tiến trình P2 { print (\"3\"); print (\"4\"); signal (S);} Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Chuỗi kết quả in ra màn hình sau khi cả hai tiến trình kết thúc thực thi ?",
   "choices": [
    {
     "label": "a",
@@ -9433,7 +9433,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy Thời gian đến P1   3    0 P2  5    4 P3   8    6 P4   4    8 P5   12    9 Sử dụng thuật toán Round Robin với time quantum q = 3 ms. Khẳng định nào sau đây là đúng:",
+  "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy Thời gian đến P1 3 0 P2 5 4 P3 8 6 P4 4 8 P5 12 9 Sử dụng thuật toán Round Robin với time quantum q = 3 ms. Khẳng định nào sau đây là đúng:",
   "choices": [
    {
     "label": "a",
@@ -11197,7 +11197,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạy Số hiệu ưu tiên Thời gian đến P1    2    2   0 P2    3    1    3 P3    8    4    5 P4    4    5    7 P5    5    3    9 Sử dụng thuật toán số hiệu ưu tiên cho phép dừng (tiến trình có số hiệu ưu tiên cao hơn sẽ chạy trước). Khẳng định nào sau đây là đúng:",
+  "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) và số hiệu ưu tiên như sau: Thời gian chạy Số hiệu ưu tiên Thời gian đến P1 2 2 0 P2 3 1 3 P3 8 4 5 P4 4 5 7 P5 5 3 9 Sử dụng thuật toán số hiệu ưu tiên cho phép dừng (tiến trình có số hiệu ưu tiên cao hơn sẽ chạy trước). Khẳng định nào sau đây là đúng:",
   "choices": [
    {
     "label": "a",
@@ -14377,7 +14377,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Có 5 tiến trình P0, P1, P2, P3, P4 và 4 kiểu tài nguyên A, B, C, D. Tại thời điểm t0, trạng thái của hệ thống như sau: Đã cấp phát   Cần tối đa  Còn A B C D    A B C D   A B C D P0  2 0 0 1     4 2 1 2   3 3 2 1 P1  3 1 2 1     5 2 5 2 P2  2 1 0 3    2 3 1 6 P3  1 3 1 2     1 4 2 4 P4  1 4 3 2    3 6 6 5 Đâu là một trình tự an toàn của hệ thống:",
+  "question_text": "Có 5 tiến trình P0, P1, P2, P3, P4 và 4 kiểu tài nguyên A, B, C, D. Tại thời điểm t0, trạng thái của hệ thống như sau: Đã cấp phát Cần tối đa Còn A B C D A B C D A B C D P0 2 0 0 1 4 2 1 2 3 3 2 1 P1 3 1 2 1 5 2 5 2 P2 2 1 0 3 2 3 1 6 P3 1 3 1 2 1 4 2 4 P4 1 4 3 2 3 6 6 5 Đâu là một trình tự an toàn của hệ thống:",
   "choices": [
    {
     "label": "a",
@@ -15163,7 +15163,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Có 4 tiến trình P1, P2, P3, P4 và 2 kiểu tài nguyên A, B. Tại thời điểm t, trạng thái của hệ thống như sau: Đã cấp phát Yêu cầu A B  A B P1  1 3   1 2 P2 4 1   4 3 P3  1 2   1 7 P4  2 0   5 1 A còn 1 đơn vị tài nguyên, B còn 4 đơn vị tài nguyên. Hệ thống đang ở trạng thái nào:",
+  "question_text": "Có 4 tiến trình P1, P2, P3, P4 và 2 kiểu tài nguyên A, B. Tại thời điểm t, trạng thái của hệ thống như sau: Đã cấp phát Yêu cầu A B A B P1 1 3 1 2 P2 4 1 4 3 P3 1 2 1 7 P4 2 0 5 1 A còn 1 đơn vị tài nguyên, B còn 4 đơn vị tài nguyên. Hệ thống đang ở trạng thái nào:",
   "choices": [
    {
     "label": "a",
@@ -19980,7 +19980,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Một cách để đảm bảo điều kiện giữ và chờ (trong bế tắc)  không xảy ra:",
+  "question_text": "Một cách để đảm bảo điều kiện giữ và chờ (trong bế tắc) không xảy ra:",
   "choices": [
    {
     "label": "a",
@@ -20186,7 +20186,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Có 5 tiến trình P0, P1, P2, P3, P4 và 4 kiểu tài nguyên A, B, C, D. Tại thời điểm t0, trạng thái của hệ thống như sau: Đã cấp phát   Cần tối đa  Còn A B C D    A B C D         A B C D P0  2 0 0 1            4 2 1 2         3 3 2 1 P1  3 1 2 1            5 2 5 2 P2  2 1 0 3    2 3 1 6 P3  1 3 1 2            1 4 2 4 P4  1 4 3 2    3 6 6 5 Hệ thống đang ở trạng thái nào:",
+  "question_text": "Có 5 tiến trình P0, P1, P2, P3, P4 và 4 kiểu tài nguyên A, B, C, D. Tại thời điểm t0, trạng thái của hệ thống như sau: Đã cấp phát Cần tối đa Còn A B C D A B C D A B C D P0 2 0 0 1 4 2 1 2 3 3 2 1 P1 3 1 2 1 5 2 5 2 P2 2 1 0 3 2 3 1 6 P3 1 3 1 2 1 4 2 4 P4 1 4 3 2 3 6 6 5 Hệ thống đang ở trạng thái nào:",
   "choices": [
    {
     "label": "a",
@@ -22282,7 +22282,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Có 4 tiến trình P1, P2, P3, P4 và 2 kiểu tài nguyên A, B. Tại thời điểm t, trạng thái của hệ thống như sau: Đã cấp phát Yêu cầu A B  A B P1  1 3   1 2 P2 4 1   4 3 P3  1 2   1 7 P4  2 0   5 1 A còn 2 đơn vị tài nguyên, B còn 4 đơn vị tài nguyên. Hệ thống đang ở trạng thái nào:",
+  "question_text": "Có 4 tiến trình P1, P2, P3, P4 và 2 kiểu tài nguyên A, B. Tại thời điểm t, trạng thái của hệ thống như sau: Đã cấp phát Yêu cầu A B A B P1 1 3 1 2 P2 4 1 4 3 P3 1 2 1 7 P4 2 0 5 1 A còn 2 đơn vị tài nguyên, B còn 4 đơn vị tài nguyên. Hệ thống đang ở trạng thái nào:",
   "choices": [
    {
     "label": "a",
@@ -30083,7 +30083,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy  Thời gian đến P1   3    0 P2  12    4 P3   4    6 P4   7    8 P5   3    11 Sử dụng thuật toán SJF cho phép dừng. Khẳng định nào sau đây là đúng:",
+  "question_text": "Có 5 tiến trình P1, P2, P3, P4, P5 với thời gian chạy CPU (ms), thời gian đến (ms) như sau: Thời gian chạy Thời gian đến P1 3 0 P2 12 4 P3 4 6 P4 7 8 P5 3 11 Sử dụng thuật toán SJF cho phép dừng. Khẳng định nào sau đây là đúng:",
   "choices": [
    {
     "label": "a",
@@ -38921,7 +38921,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Incorrect gian trống của khối 0 đến 15 là _____________ 1.00 Select one:",
+  "question_text": "gian trống của khối 0 đến 15 là _____________",
   "choices": [
    {
     "label": "a",
@@ -38959,7 +38959,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Incorrect byte. Tốc độ truyền dữ liệu là: 1.00 Select one:",
+  "question_text": "byte. Tốc độ truyền dữ liệu là:",
   "choices": [
    {
     "label": "a",
@@ -38997,7 +38997,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct lưu trên ổ đĩa riêng. 1.00 Select one:",
+  "question_text": "lưu trên ổ đĩa riêng.",
   "choices": [
    {
     "label": "a",
@@ -39035,7 +39035,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct kích thước 3MB. Đâu là vị trí chính xác của vị trí tệp tin 35KB? 1.00 Select one:",
+  "question_text": "kích thước 3MB. Đâu là vị trí chính xác của vị trí tệp tin 35KB?",
   "choices": [
    {
     "label": "a",
@@ -39111,7 +39111,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct (bảng trang cấp 1). Phát biểu nào là KHÔNG ĐÚNG? 1.00 Select one:",
+  "question_text": "(bảng trang cấp 1). Phát biểu nào là KHÔNG ĐÚNG?",
   "choices": [
    {
     "label": "a",
@@ -39149,7 +39149,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Incorrect quả cho một bộ nhớ phân trang theo yêu cầu là: 1.00 Select one:",
+  "question_text": "quả cho một bộ nhớ phân trang theo yêu cầu là:",
   "choices": [
    {
     "label": "a",
@@ -39187,7 +39187,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct 3 4 3 4 4 4 1 3 2 3. Nếu Delta=10 thì tập các trang đang làm việc tại thời điểm t1 (… 7 5 1) là: 1.00 Select one:",
+  "question_text": "3 4 3 4 4 4 1 3 2 3. Nếu Delta=10 thì tập các trang đang làm việc tại thời điểm t1 (… 7 5 1) là:",
   "choices": [
    {
     "label": "a",
@@ -39225,7 +39225,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct byte. Số bit cần dùng để đánh số hiệu trang là ? 1.00 Select one:",
+  "question_text": "byte. Số bit cần dùng để đánh số hiệu trang là ?",
   "choices": [
    {
     "label": "a",
@@ -39263,7 +39263,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct để dịch địa chỉ. Phát biểu nào là KHÔNG ĐÚNG? 1.00 Select one:",
+  "question_text": "để dịch địa chỉ. Phát biểu nào là KHÔNG ĐÚNG?",
   "choices": [
    {
     "label": "a",
@@ -39301,7 +39301,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct 1200; và một tham chiếu là 1246. Đâu là kết quả của Đơn vị quản lý bộ nhớ (MMU - Memory Management Unit)? 1.00 Select one:",
+  "question_text": "1200; và một tham chiếu là 1246. Đâu là kết quả của Đơn vị quản lý bộ nhớ (MMU - Memory Management Unit)?",
   "choices": [
    {
     "label": "a",
@@ -39339,7 +39339,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Incorrect Multiprogramming with a Variable number of Tasks )? 1.00 Select one:",
+  "question_text": "Multiprogramming with a Variable number of Tasks )?",
   "choices": [
    {
     "label": "a",
@@ -39377,7 +39377,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct Hãy hiển thị các trang (theo thứ tự xuất hiện ) được chọn là nạn nhân để được trao đổi. 1.00 Select one:",
+  "question_text": "Hãy hiển thị các trang (theo thứ tự xuất hiện ) được chọn là nạn nhân để được trao đổi.",
   "choices": [
    {
     "label": "a",
@@ -39415,7 +39415,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Incorrect kích thước 3MB. Đâu là vị trí chính xác của vị trí tệp tin 35KB? 1.00 Select one:",
+  "question_text": "kích thước 3MB. Đâu là vị trí chính xác của vị trí tệp tin 35KB?",
   "choices": [
    {
     "label": "a",
@@ -39453,7 +39453,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct gian trống của khối 0 đến 15 là _____________ 1.00 Select one:",
+  "question_text": "gian trống của khối 0 đến 15 là _____________",
   "choices": [
    {
     "label": "a",
@@ -39491,7 +39491,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct ____________ 1.00 Select one:",
+  "question_text": "____________",
   "choices": [
    {
     "label": "a",
@@ -39529,7 +39529,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct là gì? 1.00 Select one:",
+  "question_text": "là gì?",
   "choices": [
    {
     "label": "a",
@@ -39567,7 +39567,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct loại bỏ, thì thuật toán thay thế trang là: 1.00 Select one:",
+  "question_text": "loại bỏ, thì thuật toán thay thế trang là:",
   "choices": [
    {
     "label": "a",
@@ -39605,7 +39605,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct trình là [(1000, 1400), (400, 6300), (400, 4300), (1100, 3200), (1000, 4700)]. Địa chỉ vật lý của tham chiếu (3, 208) là gì? 1.00 Select one:",
+  "question_text": "trình là [(1000, 1400), (400, 6300), (400, 4300), (1100, 3200), (1000, 4700)]. Địa chỉ vật lý của tham chiếu (3, 208) là gì?",
   "choices": [
    {
     "label": "a",
@@ -39643,7 +39643,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Incorrect vùng trống lớn hơn trong bộ nhớ: 1.00 Select one:",
+  "question_text": "vùng trống lớn hơn trong bộ nhớ:",
   "choices": [
    {
     "label": "a",
@@ -39681,7 +39681,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct byte. Số bit cần dùng để đánh địa chỉ vật lý cho bộ nhớ chính ? 1.00 Select one:",
+  "question_text": "byte. Số bit cần dùng để đánh địa chỉ vật lý cho bộ nhớ chính ?",
   "choices": [
    {
     "label": "a",
@@ -39719,7 +39719,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Incorrect trang xảy ra khi dùng 3 frame là: 1.00 Select one:",
+  "question_text": "trang xảy ra khi dùng 3 frame là:",
   "choices": [
    {
     "label": "a",
@@ -39757,7 +39757,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct 10 ns, thời gian truy cập bộ nhớ chính là 100 ns. 1.00 Select one:",
+  "question_text": "10 ns, thời gian truy cập bộ nhớ chính là 100 ns.",
   "choices": [
    {
     "label": "a",
@@ -39795,7 +39795,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct thời gian truy cập cache là 10 ns, thời gian truy cập bộ nhớ chính là 100 ns. 1.00 Select one:",
+  "question_text": "thời gian truy cập cache là 10 ns, thời gian truy cập bộ nhớ chính là 100 ns.",
   "choices": [
    {
     "label": "a",
@@ -39833,7 +39833,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct Recent Used(LRU) với 3 khung. Đâu là THỨ TỰ của các trang được chọn là nạn nhân sẽ bị tráo đổi? 1.00 Select one:",
+  "question_text": "Recent Used(LRU) với 3 khung. Đâu là THỨ TỰ của các trang được chọn là nạn nhân sẽ bị tráo đổi?",
   "choices": [
    {
     "label": "a",
@@ -39871,7 +39871,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct trang LRU, số lỗi trang xảy ra khi dùng 3 frame là: 1.00 Select one:",
+  "question_text": "trang LRU, số lỗi trang xảy ra khi dùng 3 frame là:",
   "choices": [
    {
     "label": "a",
@@ -39909,7 +39909,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Incorrect Đã cấp phát Cần tối đa Còn A B C D A B C D A B C D 1.00 P0 2 0 0 1 4 2 1 2 3 3 2 1 P1 3 1 2 1 5 2 5 2 P2 2 1 0 3 2 3 1 6 P3 1 3 1 2 1 4 2 4 P4 1 4 3 2 3 6 6 5 Yêu cầu (0,2,1,0) của P4 sẽ dẫn hệ thống đến trạng thái nào:",
+  "question_text": "Đã cấp phát Cần tối đa Còn A B C D A B C D A B C D 1.00 P0 2 0 0 1 4 2 1 2 3 3 2 1 P1 3 1 2 1 5 2 5 2 P2 2 1 0 3 2 3 1 6 P3 1 3 1 2 1 4 2 4 P4 1 4 3 2 3 6 6 5 Yêu cầu (0,2,1,0) của P4 sẽ dẫn hệ thống đến trạng thái nào:",
   "choices": [
    {
     "label": "a",
@@ -39947,7 +39947,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct hiện trong khu vực quan trọng (của Q). Tình huống này được gọi là 1.00 Select one:",
+  "question_text": "hiện trong khu vực quan trọng (của Q). Tình huống này được gọi là",
   "choices": [
    {
     "label": "a",
@@ -39985,7 +39985,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Incorrect Tiến trình A {int Y; 1.00 wait(S1); A1: Y = X*2; signal(S2); wait(S1); A2: X = Y; } Tiến trình B {int Z; B1: Z=X+1; signal(S1); wait(S2); B2: X=Z; signal(S1); } Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Giá trị cuối cùng của X sau khi thực thi xong hai tiến trình A và B sẽ là:",
+  "question_text": "Tiến trình A {int Y; 1.00 wait(S1); A1: Y = X*2; signal(S2); wait(S1); A2: X = Y; } Tiến trình B {int Z; B1: Z=X+1; signal(S1); wait(S2); B2: X=Z; signal(S1); } Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Giá trị cuối cùng của X sau khi thực thi xong hai tiến trình A và B sẽ là:",
   "choices": [
    {
     "label": "a",
@@ -40023,7 +40023,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct Tiến trình A {Int Y; 1.00 Wait (T) A1: Y = X * 2; A2: X = Y; } Tiến trình B {Int Z; B1: Z = X + 1; B2: X = Z; Signal(T) } X được khởi tạo bằng 5, T được khởi tạo bằng 0 trước khi các tiến trình bắt đầu thực thi. Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Giá trị cuối cùng của X sau khi thực thi xong hai tiến trình A và B sẽ là:",
+  "question_text": "Tiến trình A {Int Y; 1.00 Wait (T) A1: Y = X * 2; A2: X = Y; } Tiến trình B {Int Z; B1: Z = X + 1; B2: X = Z; Signal(T) } X được khởi tạo bằng 5, T được khởi tạo bằng 0 trước khi các tiến trình bắt đầu thực thi. Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Giá trị cuối cùng của X sau khi thực thi xong hai tiến trình A và B sẽ là:",
   "choices": [
    {
     "label": "a",
@@ -40061,7 +40061,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Incorrect Thời gian chạy Số hiệu ưu tiên Thời gian đến P1 2 2 0 1.00 P2 3 1 3 P3 8 4 5 P4 4 5 7 P5 5 3 9 Sử dụng thuật toán Round Robin với time quantum q = 4 ms. Khẳng định nào sau đây là đúng:",
+  "question_text": "Thời gian chạy Số hiệu ưu tiên Thời gian đến P1 2 2 0 1.00 P2 3 1 3 P3 8 4 5 P4 4 5 7 P5 5 3 9 Sử dụng thuật toán Round Robin với time quantum q = 4 ms. Khẳng định nào sau đây là đúng:",
   "choices": [
    {
     "label": "a",
@@ -40099,7 +40099,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Incorrect Tiến trình P1 : while(S1==S2); 1.00 Critical section S1 = S2; Tiến trình P2 : while(S1!=S2); Critical section S2 = not(S1); Điều nào dưới đây là đúng về đoạn mã trên?",
+  "question_text": "Tiến trình P1 : while(S1==S2); 1.00 Critical section S1 = S2; Tiến trình P2 : while(S1!=S2); Critical section S2 = not(S1); Điều nào dưới đây là đúng về đoạn mã trên?",
   "choices": [
    {
     "label": "a",
@@ -40137,7 +40137,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Incorrect Thời gian chạy Số hiệu ưu tiên Thời gian đến P1 2 2 0 1.00 P2 3 1 3 P3 8 4 5 P4 4 5 7 P5 5 3 9 Sử dụng thuật toán số hiệu ưu tiên cho phép dừng (tiến trình có số hiệu ưu tiên cao hơn sẽ chạy trước). Khẳng định nào sau đây là đúng:",
+  "question_text": "Thời gian chạy Số hiệu ưu tiên Thời gian đến P1 2 2 0 1.00 P2 3 1 3 P3 8 4 5 P4 4 5 7 P5 5 3 9 Sử dụng thuật toán số hiệu ưu tiên cho phép dừng (tiến trình có số hiệu ưu tiên cao hơn sẽ chạy trước). Khẳng định nào sau đây là đúng:",
   "choices": [
    {
     "label": "a",
@@ -40175,7 +40175,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct Tiến trình P1 { wait (S); print (\"1\"); print (\"2\"); } 1.00 Tiến trình P2 { print (\"3\"); print (\"4\"); signal (S);} Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Chuỗi kết quả in ra màn hình sau khi cả hai tiến trình kết thúc thực thi ?",
+  "question_text": "Tiến trình P1 { wait (S); print (\"1\"); print (\"2\"); } 1.00 Tiến trình P2 { print (\"3\"); print (\"4\"); signal (S);} Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Chuỗi kết quả in ra màn hình sau khi cả hai tiến trình kết thúc thực thi ?",
   "choices": [
    {
     "label": "a",
@@ -40213,7 +40213,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct Đã cấp phát Cần tối đa Còn A B C D A B C D A B C D 1.00 P0 2 0 0 1 4 2 1 2 3 3 2 1 P1 3 1 2 1 5 2 5 2 P2 2 1 0 3 2 3 1 6 P3 1 3 1 2 1 4 2 4 P4 1 4 3 2 3 6 6 5 Hệ thống đang ở trạng thái nào:",
+  "question_text": "Đã cấp phát Cần tối đa Còn A B C D A B C D A B C D 1.00 P0 2 0 0 1 4 2 1 2 3 3 2 1 P1 3 1 2 1 5 2 5 2 P2 2 1 0 3 2 3 1 6 P3 1 3 1 2 1 4 2 4 P4 1 4 3 2 3 6 6 5 Hệ thống đang ở trạng thái nào:",
   "choices": [
    {
     "label": "a",
@@ -40251,7 +40251,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Incorrect Thời gian chạy Số hiệu ưu tiên Thời gian đến P1 2 2 0 1.00 P2 3 1 3 P3 8 4 5 P4 4 5 7 P5 5 3 9 Sử dụng thuật toán SJF cho phép dừng. Khẳng định nào sau đây là đúng:",
+  "question_text": "Thời gian chạy Số hiệu ưu tiên Thời gian đến P1 2 2 0 1.00 P2 3 1 3 P3 8 4 5 P4 4 5 7 P5 5 3 9 Sử dụng thuật toán SJF cho phép dừng. Khẳng định nào sau đây là đúng:",
   "choices": [
    {
     "label": "a",
@@ -40289,7 +40289,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Incorrect Thời gian chạy Thời gian đến P1 3 0 1.00 P2 12 4 P3 4 6 P4 7 8 P5 3 11 Sử dụng thuật toán SJF cho phép dừng. Khẳng định nào sau đây là đúng:",
+  "question_text": "Thời gian chạy Thời gian đến P1 3 0 1.00 P2 12 4 P3 4 6 P4 7 8 P5 3 11 Sử dụng thuật toán SJF cho phép dừng. Khẳng định nào sau đây là đúng:",
   "choices": [
    {
     "label": "a",
@@ -40327,7 +40327,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Incorrect (I) Thuật toán lập lịch SJF có thể gây ra nạn đói. 1.00 (III)Thuật toán Round Robin tốt hơn FCFS về thời gian phản hồi",
+  "question_text": "(I) Thuật toán lập lịch SJF có thể gây ra nạn đói. 1.00 (III)Thuật toán Round Robin tốt hơn FCFS về thời gian phản hồi",
   "choices": [
    {
     "label": "a",
@@ -40365,7 +40365,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct phụ thuộc vào thứ tự các tiến trình truy cập vào vùng dữ liệu được gọi là: 1.00 Select one:",
+  "question_text": "phụ thuộc vào thứ tự các tiến trình truy cập vào vùng dữ liệu được gọi là:",
   "choices": [
    {
     "label": "a",
@@ -40403,7 +40403,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct Multiprogramming with a Fixed number of Tasks)? 1.00 Select one:",
+  "question_text": "Multiprogramming with a Fixed number of Tasks)?",
   "choices": [
    {
     "label": "a",
@@ -40441,7 +40441,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct trang xảy ra khi dùng 3 frame là: 1.00 Select one:",
+  "question_text": "trang xảy ra khi dùng 3 frame là:",
   "choices": [
    {
     "label": "a",
@@ -40479,7 +40479,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct trang cấp 1). Giả sử thời gian truy cập của TLB là a; thời gian truy cập của bộ nhớ là b; và tỷ lệ trúng của TLB là c. Thời gian truy cập hiệu quả (EAT - Effective Access Time) của hệ thống là gì? 1.00",
+  "question_text": "trang cấp 1). Giả sử thời gian truy cập của TLB là a; thời gian truy cập của bộ nhớ là b; và tỷ lệ trúng của TLB là c. Thời gian truy cập hiệu quả (EAT - Effective Access Time) của hệ thống là gì? 1.00",
   "choices": [
    {
     "label": "a",
@@ -40517,7 +40517,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct byte. Số trang tối đa của một tiến trình là ? 1.00 Select one:",
+  "question_text": "byte. Số trang tối đa của một tiến trình là ?",
   "choices": [
    {
     "label": "a",
@@ -40555,7 +40555,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct kích thước 20MB. Đâu là vị trí của tệp tại vị trí 15MB? 1.00 Select one:",
+  "question_text": "kích thước 20MB. Đâu là vị trí của tệp tại vị trí 15MB?",
   "choices": [
    {
     "label": "a",
@@ -40593,7 +40593,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct byte. Tốc độ truyền dữ liệu là: 1.00 Select one:",
+  "question_text": "byte. Tốc độ truyền dữ liệu là:",
   "choices": [
    {
     "label": "a",
@@ -40631,7 +40631,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct gọi là __________ 1.00 Select one:",
+  "question_text": "gọi là __________",
   "choices": [
    {
     "label": "a",
@@ -40669,7 +40669,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Correct bổ đĩa dạng danh sách liên kết. Kiểu dữ liệu của con trỏ là gì? 1.00 Select one:",
+  "question_text": "bổ đĩa dạng danh sách liên kết. Kiểu dữ liệu của con trỏ là gì?",
   "choices": [
    {
     "label": "a",
@@ -50736,7 +50736,7 @@
  {
   "id": "q20256",
   "qtype": "single",
-  "question_text": "Trong phân bổ được liên kết, thư mục chứa một con trỏ tới khối nào? I. khối đầu tiên  II. khối cuối cùng",
+  "question_text": "Trong phân bổ được liên kết, thư mục chứa một con trỏ tới khối nào? I. khối đầu tiên II. khối cuối cùng",
   "choices": [
    {
     "label": "a",
