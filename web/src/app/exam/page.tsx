@@ -8,6 +8,32 @@ import { sampleExam } from "@/lib/sampler";
 import { useExam } from "@/lib/store";
 import { ChapterPicker } from "@/components/ChapterPicker";
 
+// Hai nhóm chương: giữa kỳ (1-7) và phần riêng của cuối kỳ (8-14).
+const GROUP_A: Chapter[] = ["1-2", "3-4", "5-6", "7"];
+const GROUP_B: Chapter[] = ["8", "9", "10", "11", "13", "14"];
+
+/** Build per-chapter weights so group A (Ch 1-7) takes aPct% of the exam and
+ *  group B (Ch 8-14) the rest. Within each group, chapters are weighted by how
+ *  many questions they actually have in the current pool. */
+function buildGroupRatio(
+  pool: Question[],
+  chapters: Chapter[],
+  aPct: number
+): Partial<Record<Chapter, number>> {
+  const count: Record<string, number> = {};
+  for (const q of pool) count[q.chapter] = (count[q.chapter] || 0) + 1;
+  const ratio: Partial<Record<Chapter, number>> = {};
+  const assign = (group: Chapter[], share: number) => {
+    const sel = group.filter((c) => chapters.includes(c));
+    const tot = sel.reduce((s, c) => s + (count[c] || 0), 0);
+    if (tot === 0 || share <= 0) return;
+    for (const c of sel) ratio[c] = (share / 100) * ((count[c] || 0) / tot);
+  };
+  assign(GROUP_A, aPct);
+  assign(GROUP_B, 100 - aPct);
+  return ratio;
+}
+
 export default function ExamConfigPage() {
   const router = useRouter();
   const startExam = useExam((s) => s.startExam);
@@ -16,6 +42,8 @@ export default function ExamConfigPage() {
   const [n, setN] = useState(30);
   const [mins, setMins] = useState(30);
   const [verifiedOnly, setVerifiedOnly] = useState(false);
+  const [splitOn, setSplitOn] = useState(false);
+  const [aPct, setAPct] = useState(40);
 
   useEffect(() => {
     loadQuestions().then(setAll);
@@ -27,8 +55,19 @@ export default function ExamConfigPage() {
     return p;
   }, [all, chapters, verifiedOnly]);
 
+  const groupCounts = useMemo(() => {
+    let a = 0;
+    let b = 0;
+    for (const q of pool) {
+      if (GROUP_A.includes(q.chapter)) a++;
+      else if (GROUP_B.includes(q.chapter)) b++;
+    }
+    return { a, b };
+  }, [pool]);
+
   function start() {
-    const sample = sampleExam(pool, { total: Math.min(n, pool.length), chapters });
+    const ratio = splitOn ? buildGroupRatio(pool, chapters, aPct) : undefined;
+    const sample = sampleExam(pool, { total: Math.min(n, pool.length), chapters, ratio });
     const id = `exam-${Date.now()}`;
     startExam({
       id,
@@ -75,6 +114,60 @@ export default function ExamConfigPage() {
         </div>
       </Section>
 
+      <Section icon={<Sparkles className="h-4 w-4" />} title="Tỉ lệ theo nhóm chương">
+        <label className="flex cursor-pointer items-center gap-2 text-sm text-zinc-200">
+          <input
+            type="checkbox"
+            checked={splitOn}
+            onChange={(e) => setSplitOn(e.target.checked)}
+            className="accent-violet-500"
+          />
+          Tự đặt tỉ lệ Ch 1-7 (giữa kỳ) vs Ch 8-14
+        </label>
+        {splitOn && (
+          <div className="mt-3 space-y-3">
+            <div className="flex flex-wrap gap-2">
+              {([
+                [40, "40 / 60"],
+                [50, "50 / 50"],
+                [60, "60 / 40"],
+                [100, "Chỉ Ch 1-7"],
+                [0, "Chỉ Ch 8-14"],
+              ] as [number, string][]).map(([v, label]) => (
+                <button
+                  key={v}
+                  onClick={() => setAPct(v)}
+                  className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-all duration-150 active:scale-95 ${
+                    aPct === v
+                      ? "border-violet-500/60 bg-violet-600 text-white"
+                      : "border-zinc-700/60 bg-zinc-900/40 text-zinc-300 hover:bg-zinc-800/60"
+                  }`}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+            <input
+              type="range"
+              min={0}
+              max={100}
+              step={5}
+              value={aPct}
+              onChange={(e) => setAPct(Number(e.target.value))}
+              className="w-full accent-violet-500"
+            />
+            <div className="flex justify-between text-sm font-medium">
+              <span className="text-violet-300">Ch 1-7: {aPct}%</span>
+              <span className="text-violet-300">Ch 8-14: {100 - aPct}%</span>
+            </div>
+            <p className="text-xs text-zinc-500">
+              Pool: Ch 1-7 có {groupCounts.a} câu · Ch 8-14 có {groupCounts.b} câu. Trong mỗi
+              nhóm, câu được chia theo lượng nội dung từng chương.
+            </p>
+          </div>
+        )}
+      </Section>
+
       <Section icon={<Clock className="h-4 w-4" />} title="Thời gian">
         <div className="flex flex-wrap gap-2">
           {[15, 30, 45, 60].map((v) => (
@@ -113,7 +206,9 @@ export default function ExamConfigPage() {
           <p className="text-sm text-zinc-400">Pool sẵn sàng</p>
           <p className="text-2xl font-semibold tracking-tight">{pool.length} câu</p>
           <p className="mt-1 text-xs text-zinc-500">
-            Tỉ lệ mặc định: 1-2 (15%) · 3-4 (35%) · 5-6 (30%) · 7 (20%)
+            {splitOn
+              ? `Tỉ lệ: Ch 1-7 ${aPct}% · Ch 8-14 ${100 - aPct}%`
+              : "Tỉ lệ tự động theo lượng nội dung mỗi chương"}
           </p>
         </div>
         <button
