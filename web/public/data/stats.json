@@ -1,9 +1,9 @@
 {
-  "total": 1534,
-  "in_scope": 1197,
+  "total": 1530,
+  "in_scope": 1193,
   "out_of_scope": 337,
   "by_chapter": {
-    "3-4": 406,
+    "3-4": 402,
     "5-6": 200,
     "1-2": 152,
     "7": 439,
@@ -14,6 +14,6 @@
     "8": 160,
     "9": 19
   },
-  "verified_total": 298,
-  "needs_review": 1255
+  "verified_total": 311,
+  "needs_review": 1226
 }
