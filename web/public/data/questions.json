@@ -6161,7 +6161,7 @@
  },
  {
   "qtype": "numeric",
-  "question_text": "Một hệ thống sử dụng phân bổ đĩa dạng danh sách liên kết với kích thước khối là 2KB; kích thước con trỏ 4 byte. Giả sử một tệp có kích thước 15,5 MB. Tính chỉ số của khối (bắt đầu từ 0) của vị trí tại vị trí của tệp là 15,25KB? ◄ Bài kiểm tra thứ hai (21h00, thứ bảy 03/04/2021) Chuyển tới... Bài kiểm tra cuối cùng (21h00, thứ bảy 08/05/2021) ► Văn Ngọc Nguyễn  Nhà của tôi Các khoá học của tôi 2021II_INT2206_3 Các bài kiểm tra Bài kiểm tra thứ ba (21h00, thứ bảy 01/05/2021) Bắt đầu vào lúcSaturday, 1 May 2021, 9:00 PM StateFinished Kết thúc lúcSaturday, 1 May 2021, 9:18 PM Thời gian thực hiện18 phút 31 giây Điểm27,00/30,00 Điểm9,00 out of 10,00 (90%)",
+  "question_text": "Một hệ thống sử dụng phân bổ đĩa dạng danh sách liên kết với kích thước khối là 2KB; kích thước con trỏ 4 byte. Giả sử một tệp có kích thước 15,5 MB. Tính chỉ số của khối (bắt đầu từ 0) của vị trí tại vị trí của tệp là 15,25KB?",
   "choices": [],
   "correct_labels": [],
   "wrong_labels": [],
@@ -67608,7 +67608,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "◄ Kiểm tra giữa kỳ - Ca 1 (8.00am) Chuyển tới... Quản lý bộ nhớ ►  Hai tiến trình sau chia sẻ một biến chung X (khởi tạo bằng 5), và hai semaphore nhị phân S1, S2 (khởi tạo bằng 0): Tiến trình A {int Y; wait(S1); A1: Y = X*2; signal(S2); wait(S1); A2: X = Y; } Tiến trình B {int Z; B1: Z=X+1; signal(S1); wait(S2); B2: X=Z; signal(S1); } Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Giá trị cuối cùng của X sau khi thực thi xong hai tiến trình A và B sẽ là:",
+  "question_text": " Hai tiến trình sau chia sẻ một biến chung X (khởi tạo bằng 5), và hai semaphore nhị phân S1, S2 (khởi tạo bằng 0): Tiến trình A {int Y; wait(S1); A1: Y = X*2; signal(S2); wait(S1); A2: X = Y; } Tiến trình B {int Z; B1: Z=X+1; signal(S1); wait(S2); B2: X=Z; signal(S1); } Thông thường, các câu lệnh trong một tiến trình phải được thực thi tuần tự. Giá trị cuối cùng của X sau khi thực thi xong hai tiến trình A và B sẽ là:",
   "choices": [
    {
     "label": "a",
