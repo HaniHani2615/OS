@@ -109,7 +109,7 @@ export default function ExamConfigPage() {
 
       <Section icon={<ClipboardList className="h-4 w-4" />} title="Số câu">
         <div className="flex flex-wrap gap-2">
-          {[15, 20, 30, 40, 50].map((v) => (
+          {[15, 20, 30, 40, 50, 60].map((v) => (
             <button
               key={v}
               onClick={() => setN(v)}
@@ -181,7 +181,7 @@ export default function ExamConfigPage() {
 
       <Section icon={<Clock className="h-4 w-4" />} title="Thời gian">
         <div className="flex flex-wrap gap-2">
-          {[15, 30, 45, 60].map((v) => (
+          {[15, 30, 45, 60, 75].map((v) => (
             <button
               key={v}
               onClick={() => setMins(v)}
