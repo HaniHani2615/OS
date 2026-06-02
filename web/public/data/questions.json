@@ -37646,44 +37646,6 @@
  },
  {
   "qtype": "single",
-  "question_text": "Multiprogramming with a Variable number of Tasks )?",
-  "choices": [
-   {
-    "label": "a",
-    "text": "Một tiến trình có thể phân tán trong một số vùng nhớ"
-   },
-   {
-    "label": "b",
-    "text": "Một tiến trình được phân bổ trên một vùng bộ nhớ liền kề "
-   },
-   {
-    "label": "c",
-    "text": "Bộ nhớ không được chia trước thành các phân vùng"
-   },
-   {
-    "label": "d",
-    "text": "Có sự phân mảnh bộ nhớ"
-   }
-  ],
-  "correct_labels": [
-   "b"
-  ],
-  "wrong_labels": [],
-  "confidence": 0.6,
-  "evidence_count": 1,
-  "sources": [
-   {
-    "path": "AI-reasoned (bank_markdown unique)",
-    "tier": "C"
-   }
-  ],
-  "chapter": "7",
-  "id": "u00084",
-  "needs_review": true,
-  "is_theory": true
- },
- {
-  "qtype": "single",
   "question_text": "Đã cấp phát Cần tối đa Còn A B C D A B C D A B C D 1.00 P0 2 0 0 1 4 2 1 2 3 3 2 1 P1 3 1 2 1 5 2 5 2 P2 2 1 0 3 2 3 1 6 P3 1 3 1 2 1 4 2 4 P4 1 4 3 2 3 6 6 5 Yêu cầu (0,2,1,0) của P4 sẽ dẫn hệ thống đến trạng thái nào:",
   "choices": [
    {
