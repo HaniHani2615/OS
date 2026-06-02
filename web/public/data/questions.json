@@ -37951,7 +37951,7 @@
    "a"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37961,12 +37961,13 @@
   ],
   "chapter": "5-6",
   "id": "u00045",
-  "needs_review": true,
-  "is_theory": false
+  "needs_review": false,
+  "is_theory": false,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
-  "question_text": "416*. Tiến trình nào có thể ảnh hưởng đến / bị ảnh hưởng bởi các tiến trình khác đang thực thi trong hệ thống ?",
+  "question_text": "Tiến trình nào có thể ảnh hưởng đến / bị ảnh hưởng bởi các tiến trình khác đang thực thi trong hệ thống ?",
   "choices": [
    {
     "label": "a",
@@ -37989,7 +37990,7 @@
    "b"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37999,12 +38000,13 @@
   ],
   "chapter": "3-4",
   "id": "u00046",
-  "needs_review": true,
-  "is_theory": true
+  "needs_review": false,
+  "is_theory": true,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
-  "question_text": "417*. Nếu tất cả các tiến trình liên tục vào/ra dữ liệu thì hàng đợi sẵn sàng sẽ luôn......., bộ lập lịch ngắn hạn sẽ làm việc ........",
+  "question_text": "Nếu tất cả các tiến trình liên tục vào/ra dữ liệu thì hàng đợi sẵn sàng sẽ luôn......., bộ lập lịch ngắn hạn sẽ làm việc ........",
   "choices": [
    {
     "label": "a",
@@ -38042,7 +38044,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "418*. Khi một tiến trình kết thúc:",
+  "question_text": "Khi một tiến trình kết thúc:",
   "choices": [
    {
     "label": "a",
@@ -38080,7 +38082,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "419*. Thuật toán lập lịch CPU nào thường cho thời gian phản hồi trung bình nhỏ nhất:",
+  "question_text": "Thuật toán lập lịch CPU nào thường cho thời gian phản hồi trung bình nhỏ nhất:",
   "choices": [
    {
     "label": "a",
@@ -38118,7 +38120,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "420*. Khi sử dụng bộ đếm để triển khai LRU, chúng ta thay thế trang có:",
+  "question_text": "Khi sử dụng bộ đếm để triển khai LRU, chúng ta thay thế trang có:",
   "choices": [
    {
     "label": "a",
@@ -38156,7 +38158,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "423*. Đối với một miền, _______ là một danh sách các đối tượng cùng với các quyền cho phép các đối tượng đó.",
+  "question_text": "Đối với một miền, _______ là một danh sách các đối tượng cùng với các quyền cho phép các đối tượng đó.",
   "choices": [
    {
     "label": "a",
@@ -38232,7 +38234,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "427*. Khi tiến trình yêu cầu truy cập tập tin thì nó cần _______________",
+  "question_text": "Khi tiến trình yêu cầu truy cập tập tin thì nó cần _______________",
   "choices": [
    {
     "label": "a",
@@ -38270,7 +38272,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "428*. Đâu là phát biểu ĐÚNG về thuật toán banker?",
+  "question_text": "Đâu là phát biểu ĐÚNG về thuật toán banker?",
   "choices": [
    {
     "label": "a",
@@ -38308,7 +38310,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "430*. Khi một tiến trình P thực hiện phần mã ở khu vực quan trọng (critical section), không có tiến trình Q nào khác có thể thực hiện trong khu vực quan trọng (của Q). Tình huống này được gọi là",
+  "question_text": "Khi một tiến trình P thực hiện phần mã ở khu vực quan trọng (critical section), không có tiến trình Q nào khác có thể thực hiện trong khu vực quan trọng (của Q). Tình huống này được gọi là",
   "choices": [
    {
     "label": "a",
@@ -38346,7 +38348,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "431*. Phát biểu nào KHÔNG ĐÚNG về thuật toán phát hiện bế tắc dựa trên biểu đồ?",
+  "question_text": "Phát biểu nào KHÔNG ĐÚNG về thuật toán phát hiện bế tắc dựa trên biểu đồ?",
   "choices": [
    {
     "label": "a",
@@ -38384,7 +38386,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "435*. Sử dụng kỹ thuật phân trang :",
+  "question_text": "Sử dụng kỹ thuật phân trang :",
   "choices": [
    {
     "label": "a",
@@ -38422,7 +38424,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "437*. Giả sử một hệ thống có RAM 4GB được phân trang kích thước khung là 1KB. Loại dữ liệu của cột khung trong bảng trang là gì?",
+  "question_text": "Giả sử một hệ thống có RAM 4GB được phân trang kích thước khung là 1KB. Loại dữ liệu của cột khung trong bảng trang là gì?",
   "choices": [
    {
     "label": "a",
@@ -38460,7 +38462,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "438*. Khi tỷ lệ lỗi trang thấp:",
+  "question_text": "Khi tỷ lệ lỗi trang thấp:",
   "choices": [
    {
     "label": "a",
@@ -38498,7 +38500,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "476*. Bộ lập lịch dài hạn dùng để:",
+  "question_text": "Bộ lập lịch dài hạn dùng để:",
   "choices": [
    {
     "label": "a",
@@ -38536,7 +38538,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "483*. Đâu là thuật toán lập lịch CPU cho phép dừng?",
+  "question_text": "Đâu là thuật toán lập lịch CPU cho phép dừng?",
   "choices": [
    {
     "label": "a",
@@ -38574,7 +38576,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "490*. Lỗi trang xảy ra khi:",
+  "question_text": "Lỗi trang xảy ra khi:",
   "choices": [
    {
     "label": "a",
@@ -38612,7 +38614,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "492*. Ý nào KHÔNG ĐÚNG về sự cho phép dừng trong các thuật toán lập lịch CPU?",
+  "question_text": "Ý nào KHÔNG ĐÚNG về sự cho phép dừng trong các thuật toán lập lịch CPU?",
   "choices": [
    {
     "label": "a",
@@ -38949,44 +38951,6 @@
   ],
   "chapter": "8",
   "id": "u00085",
-  "needs_review": true,
-  "is_theory": true
- },
- {
-  "qtype": "single",
-  "question_text": "____________",
-  "choices": [
-   {
-    "label": "a",
-    "text": "Các phương án trên đều sai"
-   },
-   {
-    "label": "b",
-    "text": "Bom logic "
-   },
-   {
-    "label": "c",
-    "text": "Cửa sập"
-   },
-   {
-    "label": "d",
-    "text": "Mã sửa đổi ngăn xếp"
-   }
-  ],
-  "correct_labels": [
-   "b"
-  ],
-  "wrong_labels": [],
-  "confidence": 0.6,
-  "evidence_count": 1,
-  "sources": [
-   {
-    "path": "AI-reasoned (bank_markdown unique)",
-    "tier": "C"
-   }
-  ],
-  "chapter": "14",
-  "id": "u00088",
   "needs_review": true,
   "is_theory": true
  },
@@ -67393,7 +67357,7 @@
  {
   "id": "q20722",
   "qtype": "single",
-  "question_text": "1. Khi một chương trình truy cập một trang có ánh xạ trong không gian địa chỉ nhưng chưa được tải vào bộ nhớ vật lý thì:",
+  "question_text": "Khi một chương trình truy cập một trang có ánh xạ trong không gian địa chỉ nhưng chưa được tải vào bộ nhớ vật lý thì:",
   "choices": [
    {
     "label": "a",
