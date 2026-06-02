@@ -38026,10 +38026,10 @@
    }
   ],
   "correct_labels": [
-   "c"
+   "b"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -38039,8 +38039,9 @@
   ],
   "chapter": "3-4",
   "id": "u00047",
-  "needs_review": true,
-  "is_theory": true
+  "needs_review": false,
+  "is_theory": true,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -38067,7 +38068,7 @@
    "a"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -38077,8 +38078,9 @@
   ],
   "chapter": "3-4",
   "id": "u00048",
-  "needs_review": true,
-  "is_theory": true
+  "needs_review": false,
+  "is_theory": true,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -38105,7 +38107,7 @@
    "d"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -38115,8 +38117,9 @@
   ],
   "chapter": "3-4",
   "id": "u00049",
-  "needs_review": true,
-  "is_theory": false
+  "needs_review": false,
+  "is_theory": false,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -38143,7 +38146,7 @@
    "b"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -38153,8 +38156,9 @@
   ],
   "chapter": "8",
   "id": "u00050",
-  "needs_review": true,
-  "is_theory": false
+  "needs_review": false,
+  "is_theory": false,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -38178,10 +38182,10 @@
    }
   ],
   "correct_labels": [
-   "b"
+   "a"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -38191,12 +38195,13 @@
   ],
   "chapter": "13",
   "id": "u00051",
-  "needs_review": true,
-  "is_theory": true
+  "needs_review": false,
+  "is_theory": true,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
-  "question_text": "65,67,98,122,124,183,199,0,14,37 co the co 53 o dau 425. Trong cấp phát liên kết, thư mục chứa con trỏ trỏ đến______________________",
+  "question_text": "Trong cấp phát liên kết, thư mục chứa con trỏ trỏ đến______________________",
   "choices": [
    {
     "label": "a",
