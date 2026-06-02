@@ -55,6 +55,12 @@ export default function ExamConfigPage() {
     return p;
   }, [all, chapters, verifiedOnly]);
 
+  const poolStats = useMemo(() => {
+    let v = 0;
+    for (const q of pool) if (q.confidence >= 0.85 && q.correct_labels.length > 0) v++;
+    return { verified: v, review: pool.length - v };
+  }, [pool]);
+
   const groupCounts = useMemo(() => {
     let a = 0;
     let b = 0;
@@ -67,7 +73,12 @@ export default function ExamConfigPage() {
 
   function start() {
     const ratio = splitOn ? buildGroupRatio(pool, chapters, aPct) : undefined;
-    const sample = sampleExam(pool, { total: Math.min(n, pool.length), chapters, ratio });
+    const sample = sampleExam(pool, {
+      total: Math.min(n, pool.length),
+      chapters,
+      ratio,
+      preferVerified: verifiedOnly,
+    });
     const id = `exam-${Date.now()}`;
     startExam({
       id,
@@ -196,7 +207,8 @@ export default function ExamConfigPage() {
         <div>
           <p className="text-sm font-medium text-zinc-100">Chỉ dùng câu verified</p>
           <p className="text-xs text-zinc-500">
-            Khuyến nghị bật. Tắt nếu muốn thử cả những câu đáp án chưa chắc (confidence thấp).
+            <b>Bật</b>: chỉ {poolStats.verified} câu đáp án chuẩn (✓). <b>Tắt</b> (khuyến nghị
+            ôn cuối kỳ): trộn đều cả {poolStats.review} câu cần review để có nhiều câu hơn.
           </p>
         </div>
       </label>

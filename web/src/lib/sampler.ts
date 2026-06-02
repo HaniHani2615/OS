@@ -71,22 +71,20 @@ export function sampleExam(
     if (cfg.chapters.includes(q.chapter)) buckets[q.chapter].push(q);
   }
 
-  // sort each bucket: verified first, then by evidence_count desc
+  // Order each bucket. Default: verified-first (best questions fill the exam).
+  // When preferVerified === false, mix verified + needs-review uniformly so
+  // review questions actually appear in the exam.
+  const isVerified = (q: Question) =>
+    q.confidence >= 0.85 && q.correct_labels.length > 0;
+  const preferVerified = cfg.preferVerified !== false;
   for (const ch of cfg.chapters) {
-    buckets[ch].sort((a, b) => {
-      const va = a.confidence >= 0.85 && a.correct_labels.length > 0 ? 1 : 0;
-      const vb = b.confidence >= 0.85 && b.correct_labels.length > 0 ? 1 : 0;
-      if (va !== vb) return vb - va;
-      return b.evidence_count - a.evidence_count;
-    });
-    // shuffle within tier
-    const verified = buckets[ch].filter(
-      (q) => q.confidence >= 0.85 && q.correct_labels.length > 0
-    );
-    const rest = buckets[ch].filter(
-      (q) => !(q.confidence >= 0.85 && q.correct_labels.length > 0)
-    );
-    buckets[ch] = [...shuffle(verified, rand), ...shuffle(rest, rand)];
+    if (preferVerified) {
+      const verified = buckets[ch].filter(isVerified);
+      const rest = buckets[ch].filter((q) => !isVerified(q));
+      buckets[ch] = [...shuffle(verified, rand), ...shuffle(rest, rand)];
+    } else {
+      buckets[ch] = shuffle(buckets[ch], rand);
+    }
   }
 
   // allocate counts
