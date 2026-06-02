@@ -38302,7 +38302,7 @@
    "d"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -38312,8 +38312,9 @@
   ],
   "chapter": "5-6",
   "id": "u00055",
-  "needs_review": true,
-  "is_theory": true
+  "needs_review": false,
+  "is_theory": true,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -38340,7 +38341,7 @@
    "a"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -38350,8 +38351,9 @@
   ],
   "chapter": "5-6",
   "id": "u00056",
-  "needs_review": true,
-  "is_theory": true
+  "needs_review": false,
+  "is_theory": true,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -38378,7 +38380,7 @@
    "d"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -38388,46 +38390,9 @@
   ],
   "chapter": "7",
   "id": "u00058",
-  "needs_review": true,
-  "is_theory": true
- },
- {
-  "qtype": "single",
-  "question_text": "Giả sử một hệ thống có RAM 4GB được phân trang kích thước khung là 1KB. Loại dữ liệu của cột khung trong bảng trang là gì?",
-  "choices": [
-   {
-    "label": "a",
-    "text": "double (64 bit)"
-   },
-   {
-    "label": "b",
-    "text": "long (64 bit)"
-   },
-   {
-    "label": "c",
-    "text": "int (32 bit)"
-   },
-   {
-    "label": "d",
-    "text": "float (32 bit) x"
-   }
-  ],
-  "correct_labels": [
-   "c"
-  ],
-  "wrong_labels": [],
-  "confidence": 0.6,
-  "evidence_count": 1,
-  "sources": [
-   {
-    "path": "AI-reasoned (bank_markdown unique)",
-    "tier": "C"
-   }
-  ],
-  "chapter": "7",
-  "id": "u00059",
-  "needs_review": true,
-  "is_theory": false
+  "needs_review": false,
+  "is_theory": true,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
