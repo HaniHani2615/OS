@@ -10325,7 +10325,7 @@
    }
   ],
   "correct_labels": [
-   "a"
+   "c"
   ],
   "wrong_labels": [],
   "confidence": 1,
@@ -37591,7 +37591,7 @@
    "c"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37601,8 +37601,9 @@
   ],
   "chapter": "1-2",
   "id": "u00070",
-  "needs_review": true,
-  "is_theory": true
+  "needs_review": false,
+  "is_theory": true,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
