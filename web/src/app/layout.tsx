@@ -8,7 +8,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin", "vietnamese"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Ôn thi OS · Giữa kì",
+  title: "Ôn thi OS cuối kỳ",
   description: "Hệ thống ôn tập Hệ điều hành – Flashcard, Quiz, Phòng thi.",
 };
 
@@ -29,9 +29,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <span className="grid h-8 w-8 flex-shrink-0 place-items-center rounded-lg bg-violet-600 text-sm font-bold text-white">
                 OS
               </span>
-              <span className="text-zinc-100">ÔnThi</span>
+              <span className="text-zinc-100">Ôn thi OS</span>
               <span className="rounded border border-zinc-700/60 px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-zinc-500">
-                giữa kì
+                cuối kỳ
               </span>
             </Link>
             <NavLinks />

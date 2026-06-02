@@ -24,7 +24,7 @@ export default function HomePage() {
     <div className="space-y-12">
       <section className="pt-8 text-center">
         <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.25em] text-violet-400">
-          Hệ điều hành — Giữa kì
+          Hệ điều hành — Cuối kỳ
         </p>
         <h1 className="mx-auto max-w-3xl text-balance text-4xl font-bold tracking-tight md:text-6xl">
           Ôn cho buổi thi <span className="text-zinc-500">không có lần thi lại</span>
@@ -32,7 +32,7 @@ export default function HomePage() {
         <p className="mx-auto mt-5 max-w-xl text-balance text-zinc-400">
           {stats ? (
             <>
-              <b className="text-zinc-200">{stats.in_scope}</b> câu hỏi trong phạm vi Ch&nbsp;1-7,{" "}
+              <b className="text-zinc-200">{stats.total}</b> câu hỏi toàn bộ chương trình,{" "}
               <b className="text-emerald-400">{stats.verified_total}</b> đã đối chiếu chuẩn máy chấm.
             </>
           ) : (
