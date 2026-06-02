@@ -140,3 +140,13 @@ export function resolveCorrect(q: Question, overrides: ExamState["overrides"]): 
 export function resolveNumeric(q: Question, overrides: ExamState["overrides"]): string | null {
   return overrides[q.id]?.numeric ?? q.numeric_answer ?? null;
 }
+
+/** Effective confidence after applying a user's review override.
+ *  Confirming a question on the Review page marks it verified (1.0); an
+ *  "acknowledged but unconfirmed" (risky) override stays at 0.5. Mirrors the
+ *  override logic in the Review page so conf shows consistently everywhere. */
+export function resolveConfidence(q: Question, overrides: ExamState["overrides"]): number {
+  const o = overrides[q.id];
+  if (!o) return q.confidence;
+  return o.note === "risky_unconfirmed" ? 0.5 : 1;
+}

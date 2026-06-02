@@ -1,7 +1,7 @@
 "use client";
 import { Bookmark, BookmarkCheck, BadgeCheck, AlertTriangle, BookMarked } from "lucide-react";
 import type { Question } from "@/lib/types";
-import { useExam } from "@/lib/store";
+import { useExam, resolveConfidence } from "@/lib/store";
 
 /** Compact bookmark + verified badge bar. The deep explanation now lives
  *  per-choice in <RevealedChoices />. */
@@ -10,7 +10,8 @@ export function AnswerActions({ q, highlightWrong }: { q: Question; highlightWro
   const bookmarks = useExam((s) => s.bookmarks);
   const toggleBookmark = useExam((s) => s.toggleBookmark);
 
-  const isVerified = q.confidence >= 0.85 || (overrides[q.id]?.correct?.length ?? 0) > 0;
+  const effConf = resolveConfidence(q, overrides);
+  const isVerified = effConf >= 0.85;
   const isBookmarked = !!bookmarks[q.id];
 
   return (
@@ -24,7 +25,7 @@ export function AnswerActions({ q, highlightWrong }: { q: Question; highlightWro
           <AlertTriangle className="h-3.5 w-3.5" /> Cần review
         </span>
       )}
-      <span className="font-mono text-zinc-500">conf {q.confidence.toFixed(2)}</span>
+      <span className="font-mono text-zinc-500">conf {effConf.toFixed(2)}</span>
 
       {/* When got wrong, show a more prominent "flag to practice" button */}
       {highlightWrong && !isBookmarked ? (
