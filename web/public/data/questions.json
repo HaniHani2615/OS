@@ -14233,7 +14233,7 @@
  },
  {
   "qtype": "single",
-  "question_text": "Phát biểu nào sau đây là đúng: (I) Thuật toán lập lịch SJF có thể gây ra nạn đói. (II) Thuật toán lập lịch ưu tiên có thể gây ra nạn đói.",
+  "question_text": "Phát biểu nào sau đây là đúng: (I) Thuật toán lập lịch SJF có thể gây ra nạn đói. (II) Thuật toán lập lịch ưu tiên có thể gây ra nạn đói. (III) Thuật toán Round Robin tốt hơn FCFS về thời gian phản hồi.",
   "choices": [
    {
     "label": "a",
@@ -14321,7 +14321,7 @@
     "C_wrong": 0
    }
   },
-  "decision": "a: A_correct=15",
+  "decision": "manual_verified",
   "chapter": "3-4",
   "chapter_scores": {
    "7": 0,
@@ -37669,7 +37669,7 @@
    "d"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37679,8 +37679,9 @@
   ],
   "chapter": "5-6",
   "id": "u00099",
-  "needs_review": true,
-  "is_theory": true
+  "needs_review": false,
+  "is_theory": true,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -37707,7 +37708,7 @@
    "b"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37717,8 +37718,9 @@
   ],
   "chapter": "5-6",
   "id": "u00101",
-  "needs_review": true,
-  "is_theory": false
+  "needs_review": false,
+  "is_theory": false,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -37745,7 +37747,7 @@
    "b"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37755,8 +37757,9 @@
   ],
   "chapter": "5-6",
   "id": "u00102",
-  "needs_review": true,
-  "is_theory": false
+  "needs_review": false,
+  "is_theory": false,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -37783,7 +37786,7 @@
    "d"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37793,8 +37796,9 @@
   ],
   "chapter": "3-4",
   "id": "u00103",
-  "needs_review": true,
-  "is_theory": false
+  "needs_review": false,
+  "is_theory": false,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -37821,7 +37825,7 @@
    "b"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37831,8 +37835,9 @@
   ],
   "chapter": "5-6",
   "id": "u00105",
-  "needs_review": true,
-  "is_theory": false
+  "needs_review": false,
+  "is_theory": false,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -37859,7 +37864,7 @@
    "d"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37869,8 +37874,9 @@
   ],
   "chapter": "3-4",
   "id": "u00107",
-  "needs_review": true,
-  "is_theory": false
+  "needs_review": false,
+  "is_theory": false,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -37897,7 +37903,7 @@
    "b"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37907,8 +37913,9 @@
   ],
   "chapter": "5-6",
   "id": "u00108",
-  "needs_review": true,
-  "is_theory": false
+  "needs_review": false,
+  "is_theory": false,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -37935,7 +37942,7 @@
    "c"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37945,8 +37952,9 @@
   ],
   "chapter": "5-6",
   "id": "u00109",
-  "needs_review": true,
-  "is_theory": true
+  "needs_review": false,
+  "is_theory": true,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -37973,7 +37981,7 @@
    "c"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37983,8 +37991,9 @@
   ],
   "chapter": "3-4",
   "id": "u00110",
-  "needs_review": true,
-  "is_theory": false
+  "needs_review": false,
+  "is_theory": false,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -38011,7 +38020,7 @@
    "a"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -38021,46 +38030,9 @@
   ],
   "chapter": "3-4",
   "id": "u00111",
-  "needs_review": true,
-  "is_theory": false
- },
- {
-  "qtype": "single",
-  "question_text": "(I) Thuật toán lập lịch SJF có thể gây ra nạn đói. 1.00 (III)Thuật toán Round Robin tốt hơn FCFS về thời gian phản hồi",
-  "choices": [
-   {
-    "label": "a",
-    "text": "chỉ II và III "
-   },
-   {
-    "label": "b",
-    "text": "cả I, II, và III"
-   },
-   {
-    "label": "c",
-    "text": "chỉ I và III"
-   },
-   {
-    "label": "d",
-    "text": "chỉ I"
-   }
-  ],
-  "correct_labels": [
-   "a"
-  ],
-  "wrong_labels": [],
-  "confidence": 0.6,
-  "evidence_count": 1,
-  "sources": [
-   {
-    "path": "AI-reasoned (bank_markdown unique)",
-    "tier": "C"
-   }
-  ],
-  "chapter": "3-4",
-  "id": "u00112",
-  "needs_review": true,
-  "is_theory": false
+  "needs_review": false,
+  "is_theory": false,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -65402,46 +65374,6 @@
   "chapter": "3-4",
   "needs_review": true,
   "decision": "AI-inferred (conf=low)",
-  "sources": [
-   {
-    "path": "OsBank (đã loại trùng)",
-    "tier": "C"
-   }
-  ],
-  "is_theory": true
- },
- {
-  "id": "q20697",
-  "qtype": "single",
-  "question_text": "Xét các phát biểu: (I) ...; (II) Thuật toán lập lịch ưu tiên có thể gây ra nạn đói; (III) Thuật toán Round Robin tốt hơn FCFS về thời gian phản hồi. Phát biểu nào đúng?",
-  "choices": [
-   {
-    "label": "a",
-    "text": "chỉ II và III"
-   },
-   {
-    "label": "b",
-    "text": "chỉ I và III"
-   },
-   {
-    "label": "c",
-    "text": "cả I, II, và III"
-   },
-   {
-    "label": "d",
-    "text": "chỉ I"
-   }
-  ],
-  "correct_labels": [
-   "c"
-  ],
-  "wrong_labels": [],
-  "numeric_answer": null,
-  "confidence": 0.5,
-  "evidence_count": 1,
-  "chapter": "3-4",
-  "needs_review": true,
-  "decision": "AI-inferred (conf=med)",
   "sources": [
    {
     "path": "OsBank (đã loại trùng)",
