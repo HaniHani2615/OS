@@ -37630,7 +37630,7 @@
    "c"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37640,122 +37640,9 @@
   ],
   "chapter": "5-6",
   "id": "u00077",
-  "needs_review": true,
-  "is_theory": true
- },
- {
-  "qtype": "single",
-  "question_text": "(bảng trang cấp 1). Phát biểu nào là KHÔNG ĐÚNG?",
-  "choices": [
-   {
-    "label": "a",
-    "text": "Trong mọi trường hợp, trong tiến trình dịch địa chỉ, chúng ta chỉ cần truy cập TLB "
-   },
-   {
-    "label": "b",
-    "text": "TLB giúp tăng tốc tiến trình dịch địa chỉ"
-   },
-   {
-    "label": "c",
-    "text": "Trong trường hợp xấu nhất, chúng ta cần truy cập cả TLB và bảng trang trong tiến trình dịch địa chỉ"
-   },
-   {
-    "label": "d",
-    "text": "Kích thước của TLB thường nhỏ (cỡ thường từ 64 đến 1024)"
-   }
-  ],
-  "correct_labels": [
-   "a"
-  ],
-  "wrong_labels": [],
-  "confidence": 0.6,
-  "evidence_count": 1,
-  "sources": [
-   {
-    "path": "AI-reasoned (bank_markdown unique)",
-    "tier": "C"
-   }
-  ],
-  "chapter": "7",
-  "id": "u00078",
-  "needs_review": true,
-  "is_theory": true
- },
- {
-  "qtype": "single",
-  "question_text": "3 4 3 4 4 4 1 3 2 3. Nếu Delta=10 thì tập các trang đang làm việc tại thời điểm t1 (… 7 5 1) là:",
-  "choices": [
-   {
-    "label": "a",
-    "text": "{1, 2, 4, 5, 6}"
-   },
-   {
-    "label": "b",
-    "text": "{1, 6, 5, 7, 2} "
-   },
-   {
-    "label": "c",
-    "text": "{1, 2, 3, 4, 5}"
-   },
-   {
-    "label": "d",
-    "text": "{2, 1, 6, 7, 3}"
-   }
-  ],
-  "correct_labels": [
-   "b"
-  ],
-  "wrong_labels": [],
-  "confidence": 0.6,
-  "evidence_count": 1,
-  "sources": [
-   {
-    "path": "AI-reasoned (bank_markdown unique)",
-    "tier": "C"
-   }
-  ],
-  "chapter": "8",
-  "id": "u00080",
-  "needs_review": true,
-  "is_theory": true
- },
- {
-  "qtype": "single",
-  "question_text": "1200; và một tham chiếu là 1246. Đâu là kết quả của Đơn vị quản lý bộ nhớ (MMU - Memory Management Unit)?",
-  "choices": [
-   {
-    "label": "a",
-    "text": "1446"
-   },
-   {
-    "label": "b",
-    "text": "14154"
-   },
-   {
-    "label": "c",
-    "text": "Một lỗi "
-   },
-   {
-    "label": "d",
-    "text": "14646"
-   }
-  ],
-  "correct_labels": [
-   "c"
-  ],
-  "wrong_labels": [],
-  "confidence": 0.6,
-  "evidence_count": 1,
-  "sources": [
-   {
-    "path": "AI-reasoned (bank_markdown unique)",
-    "tier": "C"
-   }
-  ],
-  "chapter": "7",
-  "id": "u00083",
-  "needs_review": true,
-  "is_theory": true
+  "needs_review": false,
+  "is_theory": true,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -37794,120 +37681,6 @@
   "id": "u00084",
   "needs_review": true,
   "is_theory": true
- },
- {
-  "qtype": "single",
-  "question_text": "Hãy hiển thị các trang (theo thứ tự xuất hiện ) được chọn là nạn nhân để được trao đổi.",
-  "choices": [
-   {
-    "label": "a",
-    "text": "7 0 1 4 3 2"
-   },
-   {
-    "label": "b",
-    "text": "7 1 0 4 3 2 "
-   },
-   {
-    "label": "c",
-    "text": "7 1 4 1 3 2"
-   },
-   {
-    "label": "d",
-    "text": "7 1 0 3 4 2"
-   }
-  ],
-  "correct_labels": [
-   "b"
-  ],
-  "wrong_labels": [],
-  "confidence": 0.6,
-  "evidence_count": 1,
-  "sources": [
-   {
-    "path": "AI-reasoned (bank_markdown unique)",
-    "tier": "C"
-   }
-  ],
-  "chapter": "8",
-  "id": "u00085",
-  "needs_review": true,
-  "is_theory": true
- },
- {
-  "qtype": "single",
-  "question_text": "10 ns, thời gian truy cập bộ nhớ chính là 100 ns.",
-  "choices": [
-   {
-    "label": "a",
-    "text": "8 ns"
-   },
-   {
-    "label": "b",
-    "text": "82 ns"
-   },
-   {
-    "label": "c",
-    "text": "80 ns"
-   },
-   {
-    "label": "d",
-    "text": "28 ns "
-   }
-  ],
-  "correct_labels": [
-   "d"
-  ],
-  "wrong_labels": [],
-  "confidence": 0.6,
-  "evidence_count": 1,
-  "sources": [
-   {
-    "path": "AI-reasoned (bank_markdown unique)",
-    "tier": "C"
-   }
-  ],
-  "chapter": "7",
-  "id": "u00095",
-  "needs_review": true,
-  "is_theory": false
- },
- {
-  "qtype": "single",
-  "question_text": "Recent Used(LRU) với 3 khung. Đâu là THỨ TỰ của các trang được chọn là nạn nhân sẽ bị tráo đổi?",
-  "choices": [
-   {
-    "label": "a",
-    "text": "7 2 1 3 0 4 2 3 2"
-   },
-   {
-    "label": "b",
-    "text": "7 1 2 3 1 4 1 3 2"
-   },
-   {
-    "label": "c",
-    "text": "7 1 2 3 0 4 0 3 2 "
-   },
-   {
-    "label": "d",
-    "text": "7 1 2 3 0 4 1 2 3"
-   }
-  ],
-  "correct_labels": [
-   "c"
-  ],
-  "wrong_labels": [],
-  "confidence": 0.6,
-  "evidence_count": 1,
-  "sources": [
-   {
-    "path": "AI-reasoned (bank_markdown unique)",
-    "tier": "C"
-   }
-  ],
-  "chapter": "8",
-  "id": "u00097",
-  "needs_review": true,
-  "is_theory": false
  },
  {
   "qtype": "single",
@@ -38326,44 +38099,6 @@
   "id": "u00112",
   "needs_review": true,
   "is_theory": false
- },
- {
-  "qtype": "single",
-  "question_text": "Multiprogramming with a Fixed number of Tasks)?",
-  "choices": [
-   {
-    "label": "a",
-    "text": "Hệ điều hành quản lý các phân vùng được phân bổ và có sẵn"
-   },
-   {
-    "label": "b",
-    "text": "Bộ nhớ được chia thành các phân vùng có kích thước có thể thay đổi "
-   },
-   {
-    "label": "c",
-    "text": "Khi một tiến trình mới đến, nó tìm một phân vùng phù hợp để phân bổ cho tiến trình"
-   },
-   {
-    "label": "d",
-    "text": "Bộ nhớ được chia thành các phân vùng cố định"
-   }
-  ],
-  "correct_labels": [
-   "b"
-  ],
-  "wrong_labels": [],
-  "confidence": 0.6,
-  "evidence_count": 1,
-  "sources": [
-   {
-    "path": "AI-reasoned (bank_markdown unique)",
-    "tier": "C"
-   }
-  ],
-  "chapter": "7",
-  "id": "u00114",
-  "needs_review": true,
-  "is_theory": true
  },
  {
   "qtype": "single",
