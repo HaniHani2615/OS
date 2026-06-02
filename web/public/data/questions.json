@@ -37753,10 +37753,10 @@
    }
   ],
   "correct_labels": [
-   "a"
+   "c"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37766,8 +37766,9 @@
   ],
   "chapter": "7",
   "id": "u00010",
-  "needs_review": true,
-  "is_theory": true
+  "needs_review": false,
+  "is_theory": true,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -37791,10 +37792,10 @@
    }
   ],
   "correct_labels": [
-   "c"
+   "b"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37804,8 +37805,9 @@
   ],
   "chapter": "11",
   "id": "u00021",
-  "needs_review": true,
-  "is_theory": false
+  "needs_review": false,
+  "is_theory": false,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -37832,7 +37834,7 @@
    "c"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37842,8 +37844,9 @@
   ],
   "chapter": "5-6",
   "id": "u00024",
-  "needs_review": true,
-  "is_theory": true
+  "needs_review": false,
+  "is_theory": true,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -37870,7 +37873,7 @@
    "c"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37880,8 +37883,9 @@
   ],
   "chapter": "8",
   "id": "u00027",
-  "needs_review": true,
-  "is_theory": false
+  "needs_review": false,
+  "is_theory": false,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
@@ -37908,7 +37912,7 @@
    "a"
   ],
   "wrong_labels": [],
-  "confidence": 0.6,
+  "confidence": 1,
   "evidence_count": 1,
   "sources": [
    {
@@ -37918,8 +37922,9 @@
   ],
   "chapter": "3-4",
   "id": "u00044",
-  "needs_review": true,
-  "is_theory": true
+  "needs_review": false,
+  "is_theory": true,
+  "decision": "manual_verified"
  },
  {
   "qtype": "single",
