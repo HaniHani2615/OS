@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Check, X, Lightbulb } from "lucide-react";
 import type { Question, Explanation } from "@/lib/types";
 import { loadExplanations } from "@/lib/data";
+import { SHOW_EXPLANATIONS } from "@/lib/features";
 
 export function RevealedChoices({
   q,
@@ -21,6 +22,8 @@ export function RevealedChoices({
   const picked = Array.isArray(userPicked) ? userPicked : userPicked ? [userPicked] : [];
 
   useEffect(() => {
+    // Mrs.Q's bank has no matching explanations — skip loading entirely.
+    if (!SHOW_EXPLANATIONS) return;
     loadExplanations().then((all) => setExp(all[q.id] ?? null));
   }, [q.id]);
 

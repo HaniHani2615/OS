@@ -9,6 +9,7 @@ import { ChapterPicker } from "@/components/ChapterPicker";
 import { AnswerActions } from "@/components/AnswerActions";
 import { RevealedChoices } from "@/components/RevealedChoices";
 import { rng, shuffle } from "@/lib/sampler";
+import { SHOW_CHAPTERS } from "@/lib/features";
 
 export default function FlashcardPage() {
   const [all, setAll] = useState<Question[]>([]);
@@ -86,7 +87,7 @@ export default function FlashcardPage() {
       </div>
 
       <div className="space-y-3 rounded-xl border border-zinc-800/80 bg-zinc-900/30 p-4">
-        <ChapterPicker value={chapters} onChange={setChapters} />
+        {SHOW_CHAPTERS && <ChapterPicker value={chapters} onChange={setChapters} />}
         <div className="flex flex-wrap gap-4">
           <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-zinc-400">
             <input
@@ -178,7 +179,7 @@ function FrontFace({ q }: { q: Question }) {
   return (
     <div className="flex h-full flex-col">
       <span className="text-[10px] uppercase tracking-[0.2em] text-zinc-500">
-        Ch {q.chapter} · {q.qtype === "numeric" ? "Điền đáp án" : "Trắc nghiệm"}
+        {SHOW_CHAPTERS && `Ch ${q.chapter} · `}{q.qtype === "numeric" ? "Điền đáp án" : "Trắc nghiệm"}
       </span>
       <div className="mt-4 flex-1 overflow-y-auto pr-2 scrollbar-thin">
         <p className="text-balance text-xl leading-relaxed text-zinc-100">{q.question_text}</p>

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { loadStats } from "@/lib/data";
 import { CHAPTER_LABELS, CHAPTERS_ALL, type Stats } from "@/lib/types";
+import { SHOW_CHAPTERS } from "@/lib/features";
 import {
   BookOpen,
   Zap,
@@ -46,7 +47,7 @@ export default function HomePage() {
           href="/exam"
           icon={<ClipboardList className="h-5 w-5" />}
           title="Phòng thi"
-          desc="Đề ngẫu nhiên đúng tỉ lệ chương, có đếm giờ. Chấm khi nộp."
+          desc="Đề ngẫu nhiên từ ngân hàng, có đếm giờ. Chấm khi nộp."
           accent="violet"
           highlight
         />
@@ -89,6 +90,8 @@ export default function HomePage() {
 
       {stats && (
         <section>
+          {SHOW_CHAPTERS && (
+          <>
           <h2 className="mb-4 text-sm font-medium uppercase tracking-wider text-zinc-400">
             Phân bổ theo chương
           </h2>
@@ -114,6 +117,8 @@ export default function HomePage() {
               );
             })}
           </div>
+          </>
+          )}
           <div className="mt-6 flex flex-wrap items-center gap-3 text-xs text-zinc-500">
             <span className="flex items-center gap-1.5">
               <CheckCircle2 className="h-3.5 w-3.5 text-emerald-400" />

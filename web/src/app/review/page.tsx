@@ -12,6 +12,7 @@ import {
   Pencil,
 } from "lucide-react";
 import { loadQuestions, clearCache } from "@/lib/data";
+import { SHOW_CHAPTERS } from "@/lib/features";
 import type { Question } from "@/lib/types";
 import { useExam } from "@/lib/store";
 
@@ -362,9 +363,11 @@ export default function ReviewPage() {
               </div>
               <div className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 transition-all duration-150">
                 <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">
-                  <span className="rounded-md bg-zinc-800/80 px-2 py-0.5 font-mono text-zinc-300">
-                    Ch {q.chapter}
-                  </span>
+                  {SHOW_CHAPTERS && (
+                    <span className="rounded-md bg-zinc-800/80 px-2 py-0.5 font-mono text-zinc-300">
+                      Ch {q.chapter}
+                    </span>
+                  )}
                   <span
                     className={`rounded-md px-2 py-0.5 font-mono ${
                       q.confidence >= 0.85

@@ -7,6 +7,7 @@ import { CHAPTERS_ALL, type Chapter, type Question } from "@/lib/types";
 import { sampleExam } from "@/lib/sampler";
 import { useExam } from "@/lib/store";
 import { ChapterPicker } from "@/components/ChapterPicker";
+import { SHOW_CHAPTERS } from "@/lib/features";
 
 // Hai nhóm chương: giữa kỳ (1-7) và phần riêng của cuối kỳ (8-14).
 const GROUP_A: Chapter[] = ["1-2", "3-4", "5-6", "7"];
@@ -50,7 +51,7 @@ export default function ExamConfigPage() {
   }, []);
 
   const pool = useMemo(() => {
-    let p = all.filter((q) => chapters.includes(q.chapter) && q.qtype === "single" && q.choices.length >= 2);
+    let p = all.filter((q) => (!SHOW_CHAPTERS || chapters.includes(q.chapter)) && q.qtype === "single" && q.choices.length >= 2);
     if (verifiedOnly) p = p.filter((q) => q.confidence >= 0.85 && q.correct_labels.length > 0);
     return p;
   }, [all, chapters, verifiedOnly]);
@@ -99,13 +100,17 @@ export default function ExamConfigPage() {
         </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight">Phòng thi thật</h1>
         <p className="mt-2 text-sm text-zinc-400">
-          Đề được lấy stratified theo chương để đảm bảo cấu trúc cân bằng. Thi xong mới chấm.
+          {SHOW_CHAPTERS
+            ? "Đề được lấy stratified theo chương để đảm bảo cấu trúc cân bằng. Thi xong mới chấm."
+            : "Đề lấy ngẫu nhiên từ toàn bộ ngân hàng. Thi xong mới chấm."}
         </p>
       </div>
 
-      <Section icon={<Layers className="h-4 w-4" />} title="Chương">
-        <ChapterPicker value={chapters} onChange={setChapters} />
-      </Section>
+      {SHOW_CHAPTERS && (
+        <Section icon={<Layers className="h-4 w-4" />} title="Chương">
+          <ChapterPicker value={chapters} onChange={setChapters} />
+        </Section>
+      )}
 
       <Section icon={<ClipboardList className="h-4 w-4" />} title="Số câu">
         <div className="flex flex-wrap gap-2">
@@ -125,6 +130,7 @@ export default function ExamConfigPage() {
         </div>
       </Section>
 
+      {SHOW_CHAPTERS && (
       <Section icon={<Sparkles className="h-4 w-4" />} title="Tỉ lệ theo nhóm chương">
         <label className="flex cursor-pointer items-center gap-2 text-sm text-zinc-200">
           <input
@@ -178,6 +184,7 @@ export default function ExamConfigPage() {
           </div>
         )}
       </Section>
+      )}
 
       <Section icon={<Clock className="h-4 w-4" />} title="Thời gian">
         <div className="flex flex-wrap gap-2">
@@ -220,7 +227,9 @@ export default function ExamConfigPage() {
           <p className="mt-1 text-xs text-zinc-500">
             {splitOn
               ? `Tỉ lệ: Ch 1-7 ${aPct}% · Ch 8-14 ${100 - aPct}%`
-              : "Tỉ lệ tự động theo lượng nội dung mỗi chương"}
+              : SHOW_CHAPTERS
+                ? "Tỉ lệ tự động theo lượng nội dung mỗi chương"
+                : "Lấy ngẫu nhiên toàn bộ ngân hàng"}
           </p>
         </div>
         <button

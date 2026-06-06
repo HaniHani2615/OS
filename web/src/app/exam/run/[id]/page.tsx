@@ -6,6 +6,7 @@ import { loadQuestions } from "@/lib/data";
 import type { Question } from "@/lib/types";
 import { useExam, resolveCorrect } from "@/lib/store";
 import { gradeAnswer } from "@/lib/sampler";
+import { SHOW_CHAPTERS } from "@/lib/features";
 
 export default function ExamRunPage({ params }: { params: { id: string } }) {
   const router = useRouter();
@@ -107,7 +108,7 @@ export default function ExamRunPage({ params }: { params: { id: string } }) {
         <div className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6">
           <div className="mb-3 flex items-center justify-between">
             <span className="text-[10px] uppercase tracking-[0.2em] text-zinc-500">
-              Câu {idx + 1} · Ch {q.chapter}
+              Câu {idx + 1}{SHOW_CHAPTERS && ` · Ch ${q.chapter}`}
             </span>
             <button
               onClick={() => toggleFlag(q.id)}

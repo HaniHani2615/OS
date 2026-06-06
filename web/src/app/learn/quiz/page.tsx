@@ -9,6 +9,7 @@ import { useExam, resolveCorrect } from "@/lib/store";
 import { ChapterPicker } from "@/components/ChapterPicker";
 import { AnswerActions } from "@/components/AnswerActions";
 import { RevealedChoices } from "@/components/RevealedChoices";
+import { SHOW_CHAPTERS } from "@/lib/features";
 
 export default function QuizPage() {
   const [all, setAll] = useState<Question[]>([]);
@@ -100,7 +101,7 @@ export default function QuizPage() {
       </div>
 
       <div className="space-y-3 rounded-xl border border-zinc-800/80 bg-zinc-900/30 p-4">
-        <ChapterPicker value={chapters} onChange={setChapters} />
+        {SHOW_CHAPTERS && <ChapterPicker value={chapters} onChange={setChapters} />}
         <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-zinc-400">
           <input
             type="checkbox"
@@ -120,7 +121,7 @@ export default function QuizPage() {
         <>
           <div className="flex items-center justify-between text-xs text-zinc-500">
             <span>
-              Câu {idx + 1} / {deck.length} · Ch {q.chapter}
+              Câu {idx + 1} / {deck.length}{SHOW_CHAPTERS && ` · Ch ${q.chapter}`}
             </span>
             <div className="h-1 w-32 overflow-hidden rounded-full bg-zinc-800">
               <div

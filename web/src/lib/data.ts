@@ -1,11 +1,12 @@
 import type { Question, Stats, Chapter, Explanation } from "./types";
+import { SHOW_CHAPTERS } from "./features";
 
 let cache: Question[] | null = null;
 let statsCache: Stats | null = null;
 let expCache: Record<string, Explanation> | null = null;
 
 // Bump this when data files change to bust browser cache.
-const DATA_VERSION = "v3";
+const DATA_VERSION = "v4-mrsq";
 
 type OverridePatch = { id: string; correct: string[]; numeric?: string; note?: string };
 
@@ -60,6 +61,9 @@ export async function loadExplanations(): Promise<Record<string, Explanation>> {
 }
 
 export function filterByChapters(qs: Question[], chapters: Chapter[]): Question[] {
+  // When the active bank has no chapter data (e.g. Mrs.Q), chapter filtering
+  // would yield an empty pool — ignore it and return everything.
+  if (!SHOW_CHAPTERS) return qs;
   const set = new Set(chapters);
   return qs.filter((q) => set.has(q.chapter));
 }

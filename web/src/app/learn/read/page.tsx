@@ -7,6 +7,7 @@ import { ChapterPicker } from "@/components/ChapterPicker";
 import { AnswerActions } from "@/components/AnswerActions";
 import { RevealedChoices } from "@/components/RevealedChoices";
 import { useExam, resolveCorrect } from "@/lib/store";
+import { SHOW_CHAPTERS } from "@/lib/features";
 
 const PAGE = 25;
 
@@ -52,14 +53,14 @@ export default function ReadPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-semibold tracking-tight">Đọc bank theo chương</h1>
+        <h1 className="text-2xl font-semibold tracking-tight">Đọc bank{SHOW_CHAPTERS ? " theo chương" : ""}</h1>
         <p className="text-sm text-zinc-400">
           Lướt toàn bộ ngân hàng câu hỏi như tài liệu — bấm câu để xem đáp án + giải thích.
         </p>
       </div>
 
       <div className="space-y-3 rounded-xl border border-zinc-800/80 bg-zinc-900/30 p-4">
-        <ChapterPicker value={chapters} onChange={setChapters} />
+        {SHOW_CHAPTERS && <ChapterPicker value={chapters} onChange={setChapters} />}
         <div className="flex flex-wrap items-center gap-3">
           <div className="relative flex-1 min-w-[200px]">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-500" />
@@ -188,18 +189,22 @@ function ReadCard({
           >
             {isBookmarked ? <BookmarkCheck className="h-3.5 w-3.5" /> : <Bookmark className="h-3.5 w-3.5" />}
           </span>
-          <span className="rounded-md bg-zinc-800/80 px-2 py-0.5 font-mono text-zinc-400">
-            Ch {q.chapter}
-          </span>
+          {SHOW_CHAPTERS && (
+            <span className="rounded-md bg-zinc-800/80 px-2 py-0.5 font-mono text-zinc-400">
+              Ch {q.chapter}
+            </span>
+          )}
         </span>
       </button>
       {isOpen && (
         <div className="border-t border-zinc-800 px-4 pb-4 pt-3">
           <RevealedChoices q={q} correct={correct} density="compact" />
           <AnswerActions q={q} />
-          <p className="mt-2 text-[11px] text-zinc-600">
-            {CHAPTER_LABELS[q.chapter]}
-          </p>
+          {SHOW_CHAPTERS && (
+            <p className="mt-2 text-[11px] text-zinc-600">
+              {CHAPTER_LABELS[q.chapter]}
+            </p>
+          )}
         </div>
       )}
     </div>
